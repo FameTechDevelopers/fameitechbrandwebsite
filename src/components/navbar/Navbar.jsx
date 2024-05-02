@@ -52,7 +52,7 @@ useEffect(() => {
     </div> : 
     <header className='py-2 max-lg:px-6 xl:container flex justify-between items-center gap-2 w-full'>
 
-    <Image src={Logo} alt="logo" className='lg:w-52 w-44 p-2 ' width={100} height={100} objectFit='contain'/>
+    <Image src={Logo} alt="logo" className='lg:w-52 w-44 p-2 ' width={1000} height={1000} objectFit='contain'/>
       
 <nav>
 
