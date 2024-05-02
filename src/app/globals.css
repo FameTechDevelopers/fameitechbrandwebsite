@@ -2,3 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
+.hero::before{
+    position: absolute;
+    top: 0;
+    content: "";
+    left: 0;
+    height: 65%;
+    width: 100%;
+    z-index: -1;
+    background: url("../assets/about-hero.webp") center center/cover;
+}
+
+.hero::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 65%;
+    width: 100%;
+    z-index: 1;
+    background: #000;
+    opacity: 0.5;
+}
+
+.masters{
+    background-image: url("../assets/masters-bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.btn{
+    background: linear-gradient(126deg, #ff7400 0%, #fc9f57 100%);
+    padding: 0.4rem 1rem;
+    border: 1px solid white;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background: white;
+    color: #ff7400;
+    border: 1px solid #ff7400;
+
+}
+
+
+@media only screen and (max-width:768px) {
+    .hero::before{
+        position: absolute;
+        top: 0;
+        content: "";
+        left: 0;
+        height: 45%;
+        width: 100%;
+        z-index: -1;
+        background: url("../assets/about-hero.webp") center center/cover;
+    }
+    
+    .hero::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 45%;
+        width: 100%;
+        z-index: 1;
+        background: #000;
+        opacity: 0.5;
+    }
+}

@@ -7,20 +7,24 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#ff7502",
+      },
+
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "testimonial-hover": "linear-gradient(180deg,#4d4d4d 25%,#0f0f0f 100%)", // Add hover variant
       },
       animation: {
-        fade: 'fadeOut 0.5s ease-in-out',
+        fade: "fadeOut 0.5s ease-in-out",
       },
 
       // that is actual animation
-      keyframes:() => ({
+      keyframes: () => ({
         fadeOut: {
-          '0%': { opacity:"0%" },
-          '100%': { opacity:"100%" },
+          "0%": { opacity: "0%" },
+          "100%": { opacity: "100%" },
         },
       }),
     },
