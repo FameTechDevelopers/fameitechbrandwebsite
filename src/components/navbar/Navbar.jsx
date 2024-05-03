@@ -82,7 +82,7 @@ useEffect(() => {
             </button>
           </nav>
         </header>
-      )}
+      }
     </div>
   );
 };
