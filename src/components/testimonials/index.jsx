@@ -52,15 +52,15 @@ const testimonialArr = [
 
 
  {testimonialArr?.map((test,index)=>(
-       <div className='md:col-span-6 lg:col-span-3 col-span-12 relative py-10' onMouseEnter={()=>{
+       <div className='md:col-span-6 lg:col-span-3 col-span-12 relative py-10' >
+
+         <div className="hover:bg-testimonial-hover hover:text-gray-300 bg-white pt-4 pb-12 px-8 rounded-2xl flex items-center flex-col" onMouseEnter={()=>{
         setChangeQuote(true)
         setChangeQuoteIndex(index)
        }} onMouseLeave={()=>{
         setChangeQuote(false)
         setChangeQuoteIndex(null)
        }}>
-
-         <div className="hover:bg-testimonial-hover hover:text-gray-300 bg-white pt-4 pb-12 px-8 rounded-2xl flex items-center flex-col">
             {
 changeQuoteIndex === index ? changeQuote && 
 <Image width={100} height={100} src={blackQuote} alt="quote" className='w-14' />

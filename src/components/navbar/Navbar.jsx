@@ -4,6 +4,7 @@ import { LuMenu } from "react-icons/lu";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import Image from 'next/image';
 import Logo from "../../assets/logo.png"
+import Link from 'next/link';
 
 const Navbar = () => {
 
@@ -66,12 +67,12 @@ useEffect(() => {
 <nav>
 
 <ul className='flex lg:gap-6 gap-2 font-semibold xl:text-lg text-base text-slate-200 max-lg:hidden'>
-    <li className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>ABOUT US </li>
-    <li className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>LOGO DESIGN</li>
-    <li className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>WEBSITE DESIGN</li>
-    <li className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>VIDEO ANIMATION</li>
-    <li className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>OUR PACKAGES</li>
-    <li className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>CONTACT</li>
+    <Link href={"/about-us"} className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>ABOUT US </Link>
+    <Link href={"/logo-design"} className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>LOGO DESIGN</Link>
+    <Link href={"/website-design"} className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>WEBSITE DESIGN</Link>
+    <Link href={"/video-animation"} className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>VIDEO ANIMATION</Link>
+    <Link href={"/our-packages"} className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>OUR PACKAGES</Link>
+    <Link href={"/contact-us"} className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>CONTACT</Link>
 </ul>
 
             <button
