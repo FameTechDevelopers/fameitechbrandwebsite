@@ -21,7 +21,7 @@ const page = () => {
   return (
     <div>
       
-      <div className="md:h-[70vh] h-[75vh] p-2.5 ">
+      <div className="md:h-[70vh] h-[55vh] p-2.5 ">
         <div className="contact-hero flex h-full justify-center md:items-center">
           <div className="container z-30 max-md:mt-10">
             <p className="text-white w-full font-semibold my-8 flex items-center text-sm">
@@ -29,7 +29,7 @@ const page = () => {
               <span className="mx-2.5">
                 <MdArrowForwardIos />
               </span>{" "}
-              Contact Us{" "}
+              Logo Designing And Branding
             </p>
             <div className="font-semibold text-white ">
               <h1 className="xl:text-6xl lg:text-5xl text-4xl lh">
@@ -98,42 +98,52 @@ const page = () => {
 
 <div className="mt-6 grid grid-cols-12 p-1 w-full">
 
-    <div className="xl:col-span-3 md:col-span-4 col-span-6">
-        <Image src={kya} width={1000} height={1000}  className="w-full h-[26rem]"/>
+    <div className="xl:col-span-3 md:col-span-4 col-span-6 relative afterBlack">
+        <Image src={kya} width={1000} height={1000}  className="w-full h-96 object-cover"/>
     </div>
 
-    <div className="xl:col-span-3 md:col-span-4 col-span-6">
-        <Image src={bbc} width={1000} height={1000}  className="w-full h-[26rem]"/>
+    <div className="xl:col-span-3 md:col-span-4 col-span-6 relative afterBlack ">
+        <Image src={bbc} width={1000} height={1000}  className="w-full h-96 object-cover"/>
     </div>
-    <div className="xl:col-span-3 md:col-span-4 col-span-6">
-        <Image src={msfut} width={1000} height={1000}  className="w-full h-[26rem]"/>
-    </div>  <div className="xl:col-span-3 md:col-span-4 col-span-6">
-        <Image src={ascend} width={1000} height={1000}  className="w-full h-[26rem]"/>
-    </div>
-    <div className="xl:col-span-3 md:col-span-4 col-span-6">
-        <Image src={mcnasty} width={1000} height={1000}  className="w-full h-[26rem]"/>
+    
+    <div className="xl:col-span-3 md:col-span-4 col-span-6 relative afterBlack">
+        <Image src={msfut} width={1000} height={1000}  className="w-full h-96 object-cover"/>
+    </div> 
+    
+     <div className="xl:col-span-3 md:col-span-4 col-span-6 relative afterBlack">
+        <Image src={ascend} width={1000} height={1000}  className="w-full h-96 object-cover"/>
     </div>
 
-    <div className="xl:col-span-3 md:col-span-4 col-span-6">
-        <Image src={rnl} width={1000} height={1000}  className="w-full h-[26rem]"/>
+    <div className="xl:col-span-3 md:col-span-4 col-span-6 relative afterBlack">
+        <Image src={mcnasty} width={1000} height={1000}  className="w-full h-96 object-cover"/>
     </div>
-    <div className="xl:col-span-3 md:col-span-4 col-span-6">
-        <Image src={pizzera} width={1000} height={1000}  className="w-full h-[26rem]"/>
+
+    <div className="xl:col-span-3 md:col-span-4 col-span-6 relative afterBlack">
+        <Image src={rnl} width={1000} height={1000}  className="w-full h-96 object-cover"/>
     </div>
-    <div className="xl:col-span-3 md:col-span-4 col-span-6">
-        <Image src={fishon} width={1000} height={1000}  className="w-full h-[26rem]"/>
+   
+    <div className="xl:col-span-3 md:col-span-4 col-span-6 relative afterBlack">
+        <Image src={pizzera} width={1000} height={1000}  className="w-full h-96 object-cover"/>
     </div>
-    <div className="xl:col-span-3 md:col-span-4 col-span-6">
-        <Image src={dwelo} width={1000} height={1000}  className="w-full h-[26rem]"/>
+    
+    <div className="xl:col-span-3 md:col-span-4 col-span-6 relative afterBlack">
+        <Image src={fishon} width={1000} height={1000}  className="w-full h-96 object-cover"/>
     </div>
-    <div className="xl:col-span-3 md:col-span-4 col-span-6">
-        <Image src={johnhook} width={1000} height={1000}  className="w-full h-[26rem]"/>
+
+    <div className="xl:col-span-3 md:col-span-4 col-span-6 relative afterBlack">
+        <Image src={dwelo} width={1000} height={1000}  className="w-full h-96 object-cover"/>
     </div>
-    <div className="xl:col-span-3 md:col-span-4 col-span-6">
-        <Image src={floki} width={1000} height={1000}  className="w-full h-[26rem]"/>
+
+    <div className="xl:col-span-3 md:col-span-4 col-span-6 relative afterBlack">
+        <Image src={johnhook} width={1000} height={1000}  className="w-full h-96"object-cover/>
     </div>
-    <div className="xl:col-span-3 md:col-span-4 col-span-6">
-        <Image src={rosemount} width={1000} height={1000}  className="w-full h-[26rem]"/>
+
+    <div className="xl:col-span-3 md:col-span-4 col-span-6 relative afterBlack">
+        <Image src={floki} width={1000} height={1000}  className="w-full h-96"object-cover/>
+    </div>
+
+    <div className="xl:col-span-3 md:col-span-4 col-span-6 relative afterBlack">
+        <Image src={rosemount} width={1000} height={1000}  className="w-full h-96"object-cover/>
     </div>
 
 </div>
