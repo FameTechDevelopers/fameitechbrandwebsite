@@ -29,23 +29,32 @@ useEffect(() => {
 
         <header className={`bg-white fixed h-full w-full py-4 ${show && "animate-fade"}`}>
             <div className="w-full flex items-center h-full gap-6 flex-col">
-                <button onClick={()=>setShow(false)}>
-        <IoIosCloseCircleOutline size={35} color='gray'/>
-                </button>
+              <button onClick={() => setShow(false)}>
+                <IoIosCloseCircleOutline size={35} color="gray" />
+              </button>
 
-<nav className='flex justify-center items-center flex-col h-full'>
-   
-<ul className='flex gap-4 font-semibold text-lg flex-col text-slate-200 text-center w-full'>
-    <li className='text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>ABOUT US </li>
-    <li className='text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>LOGO DESIGN</li>
-    <li className='text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>WEBSITE DESIGN</li>
-    <li className='text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>VIDEO ANIMATION</li>
-    <li className='text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>OUR PACKAGES</li>
-    <li className='text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>CONTACT</li>
-</ul>
-
-</nav>
-
+              <nav className="flex justify-center items-center flex-col h-full">
+                <ul className="flex gap-4 font-semibold text-lg flex-col text-slate-200 text-center w-full">
+                  <li className="text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out">
+                    ABOUT US{" "}
+                  </li>
+                  <li className="text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out">
+                    LOGO DESIGN
+                  </li>
+                  <li className="text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out">
+                    WEBSITE DESIGN
+                  </li>
+                  <li className="text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out">
+                    VIDEO ANIMATION
+                  </li>
+                  <li className="text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out">
+                    OUR PACKAGES
+                  </li>
+                  <li className="text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out">
+                    CONTACT
+                  </li>
+                </ul>
+              </nav>
             </div>
         </header>
 
@@ -65,16 +74,17 @@ useEffect(() => {
     <li className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>CONTACT</li>
 </ul>
 
-<button className='max-lg:block hidden' onClick={()=>setShow(true)}>
-<LuMenu color='white' size={30}/>
-</button>
-
-</nav>
-
-    </header>}
-    
+            <button
+              className="max-lg:block hidden"
+              onClick={() => setShow(true)}
+            >
+              <LuMenu color="white" size={30} />
+            </button>
+          </nav>
+        </header>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
