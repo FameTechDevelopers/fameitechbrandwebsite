@@ -1,11 +1,12 @@
 import React from "react";
 import ShadeTabs from "./ShadeTabs";
-import ServiceCard from "./ServiceCard";
-import serviceData from "@/Data";
 import PricingCard from "./PricingCard";
 import pricingData from "../logo-branding-website.js"
 import branding from "../branding.js"
 import logobranding from "../logobranding.js"
+import logo from "../logodesign.js"
+import logobrand from "../websitedesign"
+import video from "../videoAnimation"
 
 const Pricings = () => {
   return (
@@ -24,13 +25,13 @@ const Pricings = () => {
           title3={"Website Design"}
           title4={"Logo + Branding"}
           title5={"Logo + Branding + Website"}
-        //   title6={"Video Animation"}
-          title1Content={<PricingCard pricing={pricingData}/>}
+          title6={"Video Animation"}
+          title1Content={<PricingCard pricing={logo}/>}
           title2Content={<PricingCard pricing={branding} />}
           title3Content={<PricingCard pricing={logobranding} />}
-          title4Content={<ServiceCard service={serviceData[3]} />}
-          title5Content={<ServiceCard service={serviceData[4]} />}
-        //   title6Content={<ServiceCard service={serviceData[5]} />}
+          title4Content={<PricingCard pricing={logobrand} />}
+          title5Content={<PricingCard pricing={pricingData} />}
+          title6Content={<PricingCard pricing={video} />}
         />
         </div>
       </div>

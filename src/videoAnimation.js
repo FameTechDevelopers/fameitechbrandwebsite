@@ -1,4 +1,4 @@
-[
+const video = [
     {
         "title":"Basic",
         "price":499,
@@ -21,3 +21,5 @@
         ]
     }
 ]
+
+export default video

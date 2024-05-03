@@ -10,42 +10,48 @@ const ShadeTabs = ({
   title3,
   title4,
   title5,
+  title6,
   title1Content,
   title2Content,
   title3Content,
   title4Content,
   title5Content,
+  title6Content,
 }) => {
   return (
     <>
-      <Tabs defaultValue="tabs" className="w-[100%] mx-auto pb-20 max-lg:mt-20">
+      <Tabs defaultValue={title1} className="w-[100%] mx-auto pb-20 max-lg:mt-20">
         <TabsList className="flex flex-col lg:flex-row justify-center items-center">
-          <TabsTrigger className=" mx-6" value="word-mark-logo">
+          <TabsTrigger className=" mx-6" value={title1}>
             {" "}
             {/* {serviceTabsData[0].title} */}
             {title1}
           </TabsTrigger>
-          <TabsTrigger className=" mx-6" value="abstract-logo">
+          <TabsTrigger className=" mx-6" value={title2}>
             {title2}
           </TabsTrigger>
-          <TabsTrigger className=" mx-6" value="illustrative-logo">
+          <TabsTrigger className=" mx-6" value={title3}>
             {title3}
           </TabsTrigger>
-          <TabsTrigger className=" mx-6" value="emblem-logo">
+          <TabsTrigger className=" mx-6" value={title4}>
             {title4}
           </TabsTrigger>
-          <TabsTrigger className=" mx-6" value="title5">
+          <TabsTrigger className=" mx-6" value={title5}>
             {title5}
+          </TabsTrigger>
+          <TabsTrigger className=" mx-6" value={title6}>
+            {title6}
           </TabsTrigger>
         </TabsList>
 
 <div className="lg:mt-6 mt-20">
 
-        <TabsContent value="word-mark-logo">{title1Content}</TabsContent>
-        <TabsContent value="abstract-logo">{title2Content}</TabsContent>
-        <TabsContent value="illustrative-logo">{title3Content}</TabsContent>
-        <TabsContent value="emblem-logo">{title4Content}</TabsContent>
-        <TabsContent value="title5">{title5Content}</TabsContent>
+        <TabsContent value={title1}>{title1Content}</TabsContent>
+        <TabsContent value={title2}>{title2Content}</TabsContent>
+        <TabsContent value={title3}>{title3Content}</TabsContent>
+        <TabsContent value={title4}>{title4Content}</TabsContent>
+        <TabsContent value={title5}>{title5Content}</TabsContent>
+        <TabsContent value={title6}>{title6Content}</TabsContent>
 
 </div>
 

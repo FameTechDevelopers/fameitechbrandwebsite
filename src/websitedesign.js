@@ -1,4 +1,4 @@
-[
+const brandlogo = [
     {
         "title":"Basic",
         "price":89,
@@ -24,3 +24,5 @@
        
     }
 ]
+
+export default brandlogo
