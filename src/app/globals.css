@@ -5,9 +5,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 
 .services {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.213), rgba(255, 255, 255, 0.213)), url(https://cdn-ikpnlcj.nitrocdn.com/weiDAkCcNhepGRAFGfsIHxqnlniULSbJ/assets/images/optimized/rev-9e3a27d/fameitech.com/wp-content/uploads/2024/03/1-st-slid-01-1-scaled.webp);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.275),
+      rgba(255, 255, 255, 0.275)
+    ),
+    url(../assets/service-banner.webp);
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.service-tabs {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.548),
+      rgba(255, 255, 255, 0.548)
+    ),
+    url(../assets/tabs-bg.webp);
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
@@ -25,3 +39,70 @@
   border-width: 1px 1px 1px 1px;
   padding: 9px 32px;
 }
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
+
+.main-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+}
+
+.btn {
+  background: linear-gradient(126deg, #ff7400 0%, #fc9f57 100%);
+  padding: 0.4rem 1rem;
+  border: 1px solid white;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.btn:hover {
+  background: white;
+  color: #ff7400;
+  border: 1px solid #ff7400;
+}
+
+.h-10.rounded-md.bg-slate-100.p-1.text-slate-500.dark\:bg-slate-800.dark\:text-slate-400.flex.justify-center.items-center {
+  background: transparent !important;
+}
+
+.h-10.rounded-md.bg-slate-100.p-1.text-slate-500.dark\:bg-slate-800.dark\:text-slate-400.flex.justify-center.items-center
+  button {
+  font-size: 18px;
+}
+
+.h-10.rounded-md.bg-slate-100.p-1.text-slate-500.dark\:bg-slate-800.dark\:text-slate-400.flex.justify-center.items-center
+  button[aria-selected="true"] {
+    border: 1px solid black;
+    border-bottom: 4px solid #ff7211;
+    padding: 12px 28px;
+  }
