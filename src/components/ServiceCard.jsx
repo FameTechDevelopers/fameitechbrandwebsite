@@ -11,13 +11,13 @@ const ServiceCard = ({ service }) => {
             className=" w-full h-[95%] object-cover"
             width={1000}
             height={1000}
-            src={service.image}
+            src={service?.image}
           />
         </div>
         <div className=" md:col-span-6 col-span-12 pl-6 flex justify-center items-center">
           <div>
-            <h2 className="text-[34px] mb-4 font-bold">{service.title}</h2>
-            <p className=" text-[16px]">{service.description}</p>
+            <h2 className="text-[34px] mb-4 font-bold">{service?.title}</h2>
+            <p className=" text-[16px]">{service?.description}</p>
 
             <div className=" flex items-center mt-4">
               <button className=" flex justify-center mr-6 text-[#ff7400] font-medium items-center">

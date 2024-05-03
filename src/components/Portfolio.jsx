@@ -4,6 +4,7 @@ import LogoDesignSlider from "./LogoDesignSlider";
 import ArtDesign from "./ArtDesign";
 import B2bPortals from "./B2bPortals";
 import Websites from "./Websites";
+import YouTubeVideos from "./YouTubeVideos";
 
 const Portfolio = () => {
   return (
@@ -19,6 +20,8 @@ const Portfolio = () => {
           design services. Our team's specialized expertise in niche markets
           positions us as the top choice in the business area.
         </p>
+
+        
         <ShadeTabs
           title1={"LOGO DESIGN"}
           title2={"ART & ILLUSTRATIONS"}
@@ -29,7 +32,7 @@ const Portfolio = () => {
           title2Content={<ArtDesign />}
           title3Content={<B2bPortals />}
           title4Content={<Websites />}
-          title5Content={" content 4"}
+          title5Content={<YouTubeVideos/>}
         />
         <button className=" discover-btn mx-auto flex justify-center items-center">
           VIEW OUR PORTFOLIO
