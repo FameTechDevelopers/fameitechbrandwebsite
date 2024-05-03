@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import whiteQuote from "../../assets/white-quote.PNG"
-import blackQuote from "@/assets/black-quote.PNG"
+import blackQuote from "../../assets/black-quote.png"
 import Image from 'next/image'
 import { FaStar } from "react-icons/fa";
 import ZachImg from "../../assets/zach.webp"
