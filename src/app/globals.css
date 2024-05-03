@@ -44,6 +44,29 @@ body {
     background: url("../assets/contact-hero-bg.webp") center center/cover;
 }
 
+.package-hero::before{
+  position: absolute;
+  top: 0;
+  content: "";
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: url("../assets/package-bg.webp") center center/cover;
+}
+
+.package-hero::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: #000;
+  opacity: 0.5;
+}
+
 .contact-form {
   background: url("../assets/contact-form-bg.webp");
   background-repeat: no-repeat;
@@ -123,6 +146,15 @@ transition: all 3s ease-in-out 1s;
 .btn {
   background: linear-gradient(126deg, #ff7400 0%, #fc9f57 100%);
   padding: 0.4rem 1rem;
+  border: 1px solid white;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-plans {
+  background: linear-gradient(126deg, #ff7400 0%, #fc9f57 100%);
+  padding: 1rem 1.2rem;
   border: 1px solid white;
   color: #fff;
   font-size: 1.2rem;
@@ -492,4 +524,47 @@ p.text-\[\#F8B421\].font-\[22px\] {
       .lh{
         line-height: 3rem !important;
       }
+  }
+
+  .bg-plans{
+        background: linear-gradient(126deg, #ff7400 0%, #fc9f57 100%);
+  }
+
+
+  
+  .digital-madia {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+  }
+  
+
+  .digital-container {
+    position: relative;
+    width: 100%;
+    height: 82vh;
+    overflow: hidden;
+  }
+  .tailored-packages {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+  }
+  
+
+  .tailored-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
   }

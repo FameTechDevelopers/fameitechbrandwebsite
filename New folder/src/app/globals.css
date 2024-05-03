@@ -4,6 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 
+
 .services {
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.275),
@@ -112,3 +113,5 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+/* Backup css */
