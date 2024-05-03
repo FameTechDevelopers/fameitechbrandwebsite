@@ -18,7 +18,7 @@ const ShadeTabs = ({
 }) => {
   return (
     <>
-      <Tabs defaultValue="tabs" className="w-[100%] mx-auto pb-20">
+      <Tabs defaultValue="tabs" className="lg:w-[60%] w-[100%] mx-auto pb-20">
         <TabsList className="flex flex-col lg:flex-row justify-center items-center">
           <TabsTrigger className=" mx-6" value="word-mark-logo">
             {" "}

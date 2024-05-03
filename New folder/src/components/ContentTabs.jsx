@@ -17,7 +17,6 @@ const ContentTabs = () => {
           design services. Our team's specialized expertise in niche markets
           positions us as the top choice in the business area.
         </p>
-        <div className="lg:w-[60%] mx-auto">
         <ShadeTabs
           title1={"WORD MARK LOGO"}
           title2={"ABSRACT LOGO"}
@@ -28,7 +27,6 @@ const ContentTabs = () => {
           title3Content={<ServiceCard service={serviceData[2]} />}
           title4Content={<ServiceCard service={serviceData[3]} />}
         />
-        </div>
       </div>
     </div>
   );

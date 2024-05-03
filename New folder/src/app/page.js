@@ -2,7 +2,7 @@ import MainSection from "@/components/MainSection";
 import OurServices from "@/components/OurServices";
 import ContentTabs from "@/components/ContentTabs";
 import Portfolio from "@/components/Portfolio";
-import Footer from "@/components/Footer";
+import MainSlider from "@/components/Slider";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <OurServices />
       <ContentTabs />
       <Portfolio />
-      <Footer />
+      <MainSlider />
     </>
   );
 }
