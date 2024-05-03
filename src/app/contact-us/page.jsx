@@ -8,9 +8,9 @@ import PricingCard from "@/components/PricingCard";
 const page = () => {
   return (
     <div className="">
-      <div className="md:h-[50vh] h-[35vh] p-2.5">
-        <div className="contact-hero flex h-full justify-center items-center">
-          <div className="container z-30">
+      <div className="md:h-[50vh] h-[55vh] p-2.5">
+        <div className="contact-hero flex h-full justify-center md:items-center">
+          <div className="container z-30 max-md:mt-10">
             <p className="text-white w-full font-semibold my-8 flex items-center text-sm">
               Home{" "}
               <span className="mx-2.5">
@@ -23,7 +23,7 @@ const page = () => {
                 Get In Touch with Our{" "}
                 <span className="text-primary italic"> Professionals </span> .
               </h1>
-              <p className="lg:text-xl mt-4">
+              <p className="lg:text-2xl md:mt-4 mt-8">
                 Get Your Brands Connected With Your Customers 24/7.
               </p>
             </div>
