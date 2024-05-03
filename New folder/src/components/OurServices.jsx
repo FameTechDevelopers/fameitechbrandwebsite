@@ -1,9 +1,8 @@
 import React from "react";
-import starIcon from "@/assets/star.PNG";
-import handShake from "@/assets/handshake.PNG";
-import charts from "@/assets/charts.PNG";
-import clock from "@/assets/clock.PNG";
-import serviceBanner from "@/assets/service-banner.webp";
+import starIcon from "../assets/star.png";
+import handShake from "../assets/handshake.png";
+import charts from "../assets/charts.png";
+import clock from "../assets/clock.png";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 
