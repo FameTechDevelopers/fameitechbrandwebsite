@@ -46,7 +46,7 @@ const DigitalMedia = () => {
               />
 
               <div className="text-center text-black">
-                <h4 className="text-5xl font-semibold my-2">1,570+</h4>
+                <h4 className="text-5xl font-semibold my-2">500+</h4>
                 <p className="font-semibold text-xl my-2">Projects Completed</p>
               </div>
             </div>
@@ -72,7 +72,7 @@ const DigitalMedia = () => {
 
               <div className="text-center text-black">
                 <h4 className="text-5xl font-semibold my-2">1000+</h4>
-                <p className="font-semibold text-xl my-2">Satified Customers</p>
+                <p className="font-semibold text-xl my-2">Satisfied Customers</p>
               </div>
             </div>
           </div>

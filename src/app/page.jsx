@@ -11,6 +11,7 @@ import clients from "@/assets/clients.png";
 import cloud from "@/assets/cloud.png";
 import Image from "next/image";
 import DigitalMedia from "@/components/DigitalMedia";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -26,9 +27,9 @@ export default function Home() {
           Pocket-friendly Design. Just a Click Away!
         </h1>
 
-        <button className="btn-plans uppercase sm:col-span-4 col-span-12 w-fit rounded">
+        <Link href={"/our-packages"} className="btn-plans uppercase sm:col-span-4 col-span-12 w-fit rounded">
           pocket Plans
-        </button>
+        </Link>
       </div>
 
       <Testimonials />

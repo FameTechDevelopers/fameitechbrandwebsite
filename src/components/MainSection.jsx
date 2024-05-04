@@ -7,7 +7,7 @@ const MainSection = () => {
         <div class="video-container">
           <video className=" w-full h-[100%] object-cover" autoPlay muted loop>
             <source
-              src="https://fameitech.com/portfolio/videos/webvid.mp4"
+              src="https://fameitech.com/wp-content/uploads/2024/03/mlm69i.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.

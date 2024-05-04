@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import Slider from "react-slick";
@@ -22,6 +22,7 @@ const LogoDesignSlider = () => {
           <div>
             <Image
               style={{ width: "300px", margin: "auto" }}
+              unoptimized
               width={1000}
               height={1000}
               src="https://fameitech.com/portfolio/logodesigns/barber.webp"
@@ -30,6 +31,7 @@ const LogoDesignSlider = () => {
           <div>
             <Image
               style={{ width: "300px", margin: "auto" }}
+              unoptimized
               width={1000}
               height={1000}
               src="https://fameitech.com/portfolio/logodesigns/demand.webp"
@@ -38,6 +40,7 @@ const LogoDesignSlider = () => {
           <div>
             <Image
               style={{ width: "300px", margin: "auto" }}
+              unoptimized
               width={1000}
               height={1000}
               src="https://fameitech.com/portfolio/logodesigns/gorilla.webp"
@@ -46,6 +49,7 @@ const LogoDesignSlider = () => {
           <div>
             <Image
               style={{ width: "300px", margin: "auto" }}
+              unoptimized
               width={1000}
               height={1000}
               src="https://fameitech.com/portfolio/logodesigns/mcb.webp"
@@ -54,6 +58,7 @@ const LogoDesignSlider = () => {
           <div>
             <Image
               style={{ width: "300px", margin: "auto" }}
+              unoptimized
               width={1000}
               height={1000}
               src="https://fameitech.com/portfolio/logodesigns/mediatune.webp"
@@ -66,6 +71,7 @@ const LogoDesignSlider = () => {
           <div>
             <Image
               style={{ width: "300px", margin: "auto" }}
+              unoptimized
               width={1000}
               height={1000}
               src="https://fameitech.com/portfolio/logodesigns/papach.webp"
@@ -74,6 +80,7 @@ const LogoDesignSlider = () => {
           <div>
             <Image
               style={{ width: "300px", margin: "auto" }}
+              unoptimized
               width={1000}
               height={1000}
               src="https://fameitech.com/portfolio/logodesigns/rivertown.webp"
@@ -82,6 +89,7 @@ const LogoDesignSlider = () => {
           <div>
             <Image
               style={{ width: "300px", margin: "auto" }}
+              unoptimized
               width={1000}
               height={1000}
               src="https://fameitech.com/portfolio/logodesigns/supreme.webp"
@@ -90,6 +98,7 @@ const LogoDesignSlider = () => {
           <div>
             <Image
               style={{ width: "300px", margin: "auto" }}
+              unoptimized
               width={1000}
               height={1000}
               src="https://fameitech.com/portfolio/logodesigns/tilov.webp"
