@@ -25,7 +25,7 @@ const LogoDesignSlider = () => {
               unoptimized
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/logodesigns/barber.webp"
+              src="https://gallery.famewheels.com/portfolio/logodesigns/barber.webp"
             />
           </div>
           <div>
@@ -34,7 +34,7 @@ const LogoDesignSlider = () => {
               unoptimized
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/logodesigns/demand.webp"
+              src="https://gallery.famewheels.com/portfolio/logodesigns/demand.webp"
             />
           </div>
           <div>
@@ -43,7 +43,7 @@ const LogoDesignSlider = () => {
               unoptimized
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/logodesigns/gorilla.webp"
+              src="https://gallery.famewheels.com/portfolio/logodesigns/gorilla.webp"
             />
           </div>
           <div>
@@ -52,7 +52,7 @@ const LogoDesignSlider = () => {
               unoptimized
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/logodesigns/mcb.webp"
+              src="https://gallery.famewheels.com/portfolio/logodesigns/mcb.webp"
             />
           </div>
           <div>
@@ -61,7 +61,7 @@ const LogoDesignSlider = () => {
               unoptimized
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/logodesigns/mediatune.webp"
+              src="https://gallery.famewheels.com/portfolio/logodesigns/mediatune.webp"
             />
           </div>
         </Slider>
@@ -74,7 +74,7 @@ const LogoDesignSlider = () => {
               unoptimized
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/logodesigns/papach.webp"
+              src="https://gallery.famewheels.com/portfolio/logodesigns/papach.webp"
             />
           </div>
           <div>
@@ -83,7 +83,7 @@ const LogoDesignSlider = () => {
               unoptimized
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/logodesigns/rivertown.webp"
+              src="https://gallery.famewheels.com/portfolio/logodesigns/rivertown.webp"
             />
           </div>
           <div>
@@ -92,7 +92,7 @@ const LogoDesignSlider = () => {
               unoptimized
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/logodesigns/supreme.webp"
+              src="https://gallery.famewheels.com/portfolio/logodesigns/supreme.webp"
             />
           </div>
           <div>
@@ -101,7 +101,7 @@ const LogoDesignSlider = () => {
               unoptimized
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/logodesigns/tilov.webp"
+              src="https://gallery.famewheels.com/portfolio/logodesigns/tilov.webp"
             />
           </div>
         </Slider>

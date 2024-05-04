@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const Pricings = () => {
   return (
-    <div className=" service-tabs py-8 lg:px-14 px-8">
+    <div className=" pricing-tabs py-8 lg:px-14 px-8">
       <div className=" max-w-[1600px] mx-auto">
         <h2 className="md:text-[46px] text-[36px] mb-2 text-center font-bold service-heading">
           Discover Our Competitive Rates

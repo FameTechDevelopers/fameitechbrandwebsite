@@ -220,6 +220,16 @@ body {
   background-position: top;
   background-repeat: no-repeat;
 } */
+.pricing-tabs {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.548),
+      rgba(255, 255, 255, 0.548)
+    ),
+    url(../assets/tabs-bg.webp);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
 .portfolio {
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.414),
@@ -357,6 +367,12 @@ body {
   padding: 0.4rem 1rem;
   border: 1px solid white;
   color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.btn-main {
+  background: linear-gradient(126deg, #ff7400 0%, #fc9f57 100%);
+  padding: 0.6rem 1rem;
   font-size: 1.2rem;
   font-weight: 500;
 }

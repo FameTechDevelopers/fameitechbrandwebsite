@@ -17,6 +17,7 @@ import rosemount from "../../assets/rosemount.webp";
 import Testimonials from "@/components/testimonials";
 import LogoPricingCard from "@/components/LogoPricingCard";
 import Pricings from "@/components/Pricings";
+import WhiteBgPortfolio from "@/components/WhiteBgPortfolio";
 
 const page = () => {
   return (
@@ -232,7 +233,7 @@ const page = () => {
               </p>
 
               <div className="my-6">
-                <Pricings />
+                <WhiteBgPortfolio />
               </div>
             </div>
           </div>

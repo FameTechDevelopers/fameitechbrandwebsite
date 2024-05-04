@@ -1,45 +1,63 @@
 import React from "react";
 import ShadeTabs from "./ShadeTabs";
-import LogoDesignSlider from "./LogoDesignSlider";
-import ArtDesign from "./ArtDesign";
-import B2bPortals from "./B2bPortals";
-import Websites from "./Websites";
-import YouTubeVideos from "./YouTubeVideos";
+import PricingCard from "./PricingCard";
+import pricingData from "../logo-branding-website.js";
+import branding from "../branding.js";
+import logobranding from "../logobranding.js";
+import logo from "../logodesign.js";
+import logobrand from "../websitedesign";
+import video from "../videoAnimation";
+import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 const WhiteBgPortfolio = () => {
-    return (
-        <div className="service-tabs">
-          <div className=" max-w-[1600px] pt-20 pb-16 lg:px-14 px-8 mx-auto">
-            <h2 className="md:text-[46px] text-[36px] mb-2 text-center font-bold service-heading">
-              A<span className="italic text-[#060605]"> Collection</span> That Will
-              Win Your Heart Over
-            </h2>
-            <p className="text-[18px] font-[400] mb-8 lg:w-[60%] mx-auto text-center">
-              Reveal the potency of our logo design services, manifesting the
-              fundamental essence of your business idea through our logo and brand
-              design services. Our team's specialized expertise in niche markets
-              positions us as the top choice in the business area.
-            </p>
-    
-            
-            <ShadeTabs
-              title1={"LOGO DESIGN"}
-              title2={"ART & ILLUSTRATIONS"}
-              title3={"B2B & B2C PORTALS"}
-              title4={"WEBSITES"}
-              title5={"VIDEO ANIMATION"}
-              title1Content={<LogoDesignSlider />}
-              title2Content={<ArtDesign />}
-              title3Content={<B2bPortals />}
-              title4Content={<Websites />}
-              title5Content={<YouTubeVideos/>}
-            />
-            <button className=" discover-btn mx-auto flex justify-center items-center">
-              VIEW OUR PORTFOLIO
-            </button>
+  return (
+    <div className=" py-8 lg:px-14 px-8">
+      <div className=" max-w-[1600px] mx-auto">
+        <h2 className="md:text-[46px] text-[36px] mb-2 text-center font-bold service-heading">
+          Discover Our Competitive Rates
+        </h2>
+        <p className="text-[18px] font-[400] mb-8 lg:w-[60%] mx-auto text-center">
+          Explore our transparent pricing model designed to offer competitive
+          rates tailored to meet your needs. We believe in clarity and fairness,
+          ensuring you have full visibility into our pricing structure for a
+          seamless experience.
+        </p>
+        <div className="lg:w-[100%] mx-auto">
+          <ShadeTabs
+            title1={"Logo Design"}
+            title2={"Branding"}
+            title3={"Website Design"}
+            title4={"Logo + Branding"}
+            title5={"Logo + Branding + Website"}
+            title6={"Video Animation"}
+            title1Content={<PricingCard pricing={logo} />}
+            title2Content={<PricingCard pricing={branding} />}
+            title3Content={<PricingCard pricing={logobranding} />}
+            title4Content={<PricingCard pricing={logobrand} />}
+            title5Content={<PricingCard pricing={pricingData} />}
+            title6Content={<PricingCard pricing={video} />}
+          />
+          <div className="flex justify-center items-center">
+            <Link
+              href={"/contact-us"}
+              className=" discover-btn mr-[12px] flex justify-center items-center"
+            >
+              Get A Quote
+              <FaArrowRight className=" ml-2" />
+            </Link>
+            <Link
+              href={"/our-packages"}
+              className=" discover-btn mr-[12px] flex justify-center items-center"
+            >
+              learn More
+              <FaArrowRight className=" ml-2" />
+            </Link>
           </div>
         </div>
-      );
-}
+      </div>
+    </div>
+  );
+};
 
-export default WhiteBgPortfolio
+export default WhiteBgPortfolio;

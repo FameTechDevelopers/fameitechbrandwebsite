@@ -24,7 +24,8 @@ const B2bPortals = () => {
               style={{ width: "380px", margin: "auto" }}
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/b2b/chart1.webp"
+              unoptimized
+              src="https://gallery.famewheels.com/portfolio/b2b/chart1.webp"
             />
           </div>
           <div>
@@ -32,7 +33,7 @@ const B2bPortals = () => {
               style={{ width: "380px", margin: "auto" }}
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/b2b/chart2.png"
+              src="https://gallery.famewheels.com/portfolio/b2b/chart2.png"
             />
           </div>
           <div>
@@ -40,7 +41,7 @@ const B2bPortals = () => {
               style={{ width: "380px", margin: "auto" }}
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/b2b/chart3.webp"
+              src="https://gallery.famewheels.com/portfolio/b2b/chart3.webp"
             />
           </div>
           <div>
@@ -48,7 +49,7 @@ const B2bPortals = () => {
               style={{ width: "380px", margin: "auto" }}
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/b2b/chart4.webp"
+              src="https://gallery.famewheels.com/portfolio/b2b/chart4.webp"
             />
           </div>
         </Slider>
@@ -60,7 +61,7 @@ const B2bPortals = () => {
               style={{ width: "380px", margin: "auto" }}
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/b2b/chart5.png"
+              src="https://gallery.famewheels.com/portfolio/b2b/chart5.png"
             />
           </div>
           <div>
@@ -68,7 +69,7 @@ const B2bPortals = () => {
               style={{ width: "380px", margin: "auto" }}
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/b2b/chart6.webp"
+              src="https://gallery.famewheels.com/portfolio/b2b/chart6.webp"
             />
           </div>
           <div>
@@ -76,7 +77,7 @@ const B2bPortals = () => {
               style={{ width: "380px", margin: "auto" }}
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/b2b/chart7.webp"
+              src="https://gallery.famewheels.com/portfolio/b2b/chart7.webp"
             />
           </div>
           <div>
@@ -84,7 +85,7 @@ const B2bPortals = () => {
               style={{ width: "380px", margin: "auto" }}
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/b2b/chart8.webp"
+              src="https://gallery.famewheels.com/portfolio/b2b/chart8.webp"
             />
           </div>
         </Slider>

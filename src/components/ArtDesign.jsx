@@ -8,7 +8,8 @@ const ArtDesign = () => {
               style={{ width: "100%", margin: "auto" }}
               width={1000}
               height={1000}
-              src="https://fameitech.com/portfolio/artandillustration/artillustration.webp"
+              unoptimized
+              src="https://gallery.famewheels.com/portfolio/artandillustration/artillustration.webp"
             />
         <Image />
     </div>

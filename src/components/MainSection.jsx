@@ -38,22 +38,19 @@ const MainSection = () => {
               {" "}
               <input
                 className="border-2 border-white w-[92%] m-2 py-3 px-6 bg-transparent"
-                placeholder="Full Name"
+                placeholder="Add email"
               />
             </div>
             <div className=" md:col-span-3 col-span-12">
               {" "}
               <input
                 className="border-2 border-white w-[92%] m-2 py-3 px-6 bg-transparent"
-                placeholder="Full Name"
+                placeholder="Phone"
               />
             </div>
-            <div className=" md:col-span-3 col-span-12">
+            <div className=" md:col-span-3 flex justify-center items-center col-span-12">
               {" "}
-              <input
-                className="border-2 border-white w-[92%] m-2 py-3 px-6 bg-transparent"
-                placeholder="Full Name"
-              />
+              <button className="btn w-full m-2 btn-main">Get A Quote</button>
             </div>
           </div>
 

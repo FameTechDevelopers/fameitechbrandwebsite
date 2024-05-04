@@ -22,33 +22,37 @@ const Websites = () => {
         <div>
           <Image
             style={{ width: "380px", margin: "auto" }}
+            unoptimized
             width={1000}
             height={1000}
-            src="https://fameitech.com/portfolio/websites/affordable.webp"
+            src="https://gallery.famewheels.com/portfolio/websites/affordable.webp"
           />
         </div>
         <div>
           <Image
             style={{ width: "380px", margin: "auto" }}
+            unoptimized
             width={1000}
             height={1000}
-            src="https://fameitech.com/portfolio/websites/cleve.webp"
+            src="https://gallery.famewheels.com/portfolio/websites/cleve.webp"
           />
         </div>
         <div>
           <Image
             style={{ width: "380px", margin: "auto" }}
+            unoptimized
             width={1000}
             height={1000}
-            src="https://fameitech.com/portfolio/websites/davis.webp"
+            src="https://gallery.famewheels.com/portfolio/websites/davis.webp"
           />
         </div>
         <div>
           <Image
             style={{ width: "380px", margin: "auto" }}
+            unoptimized
             width={1000}
             height={1000}
-            src="https://fameitech.com/portfolio/websites/maison.webp"
+            src="https://gallery.famewheels.com/portfolio/websites/maison.webp"
           />
         </div>
       </Slider>
@@ -58,33 +62,37 @@ const Websites = () => {
         <div>
           <Image
             style={{ width: "380px", margin: "auto" }}
+            unoptimized
             width={1000}
             height={1000}
-            src="https://fameitech.com/portfolio/websites/market.webp"
+            src="https://gallery.famewheels.com/portfolio/websites/market.webp"
           />
         </div>
         <div>
           <Image
             style={{ width: "380px", margin: "auto" }}
+            unoptimized
             width={1000}
             height={1000}
-            src="https://fameitech.com/portfolio/websites/risk.webp"
+            src="https://gallery.famewheels.com/portfolio/websites/risk.webp"
           />
         </div>
         <div>
           <Image
             style={{ width: "380px", margin: "auto" }}
+            unoptimized
             width={1000}
             height={1000}
-            src="https://fameitech.com/portfolio/websites/sunnyside.webp"
+            src="https://gallery.famewheels.com/portfolio/websites/sunnyside.webp"
           />
         </div>
         <div>
           <Image
             style={{ width: "380px", margin: "auto" }}
+            unoptimized
             width={1000}
             height={1000}
-            src="https://fameitech.com/portfolio/websites/transformation.webp"
+            src="https://gallery.famewheels.com/portfolio/websites/transformation.webp"
           />
         </div>
       </Slider>

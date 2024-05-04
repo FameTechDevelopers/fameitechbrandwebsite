@@ -12,25 +12,25 @@ const nextConfig = {
         remotePatterns: [
           {
             protocol: 'https',
-            hostname: 'fameitech.com',
+            hostname: 'gallery.famewheels.com',
             port: '',
             pathname: '/portfolio/logodesigns/**',
           },
           {
             protocol: 'https',
-            hostname: 'fameitech.com',
+            hostname: 'gallery.famewheels.com',
             port: '',
             pathname: '/portfolio/artandillustration/**',
           },
           {
             protocol: 'https',
-            hostname: 'fameitech.com',
+            hostname: 'gallery.famewheels.com',
             port: '',
             pathname: '/portfolio/b2b/**',
           },
           {
             protocol: 'https',
-            hostname: 'fameitech.com',
+            hostname: 'gallery.famewheels.com',
             port: '',
             pathname: '/portfolio/websites/**',
           },
