@@ -9,7 +9,7 @@ import YouTubeVideos from "./YouTubeVideos";
 const Portfolio = () => {
   return (
     <div className="portfolio">
-      <div className=" max-w-[1600px] pt-28 pb-16 lg:px-14 px-8 mx-auto">
+      <div className=" max-w-[1600px] pt-20 pb-16 lg:px-14 px-8 mx-auto">
         <h2 className="md:text-[46px] text-[36px] mb-2 text-center font-bold service-heading">
           A<span className="italic text-[#060605]"> Collection</span> That Will
           Win Your Heart Over

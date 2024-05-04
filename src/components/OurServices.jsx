@@ -8,7 +8,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const OurServices = () => {
   return (
-    <div className="services py-28 lg:px-14 px-8">
+    <div className="services py-14 lg:px-14 px-8">
       <div className=" max-w-[1600px] mx-auto">
         <div className="grid grid-cols-12">
           <div className=" lg:col-span-4 col-span-12 flex items-center">

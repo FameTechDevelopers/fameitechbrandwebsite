@@ -5,10 +5,11 @@ import charts from "../assets/charts.png";
 import clock from "../assets/clock.png";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+import Link from 'next/link';
 
 const OurServices = () => {
   return (
-    <div className="services py-28 lg:px-14 px-8">
+    <div className="services py-14 lg:px-14 px-8">
       <div className=" max-w-[1600px] mx-auto">
         <div className="grid grid-cols-12">
           <div className=" lg:col-span-4 col-span-12 flex items-center">
@@ -31,14 +32,12 @@ const OurServices = () => {
                 all digital platforms.
               </p>
               <div className=" flex items-center mt-12">
-                <button className=" discover-btn mr-[12px] flex justify-center items-center">
+              
+                <Link href={"/about-us"} className=" discover-btn mr-[12px] flex justify-center items-center">
                   Get A Quote
                   <FaArrowRight className=" ml-2" />
-                </button>
-                <button className=" discover-btn flex justify-center items-center">
-                  Live Chat
-                  <FaArrowRight className=" ml-2" />
-                </button>
+                </Link>
+                Live Chat
               </div>
             </div>
           </div>

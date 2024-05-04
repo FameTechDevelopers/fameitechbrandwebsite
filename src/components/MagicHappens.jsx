@@ -11,7 +11,7 @@ const MagicHappens = () => {
 
         <div className="container">
 <div className='text-center'>
-        <h1 className="lg:text-5xl text-4xl lh font-semibold text-gray-900 ">At <span className="text-primary italic"> Fameitech </span> &We Make Magic Happen!</h1>
+        <h1 className="lg:text-5xl text-4xl lh font-semibold text-gray-900 ">At <span className="text-primary italic"> Fameitech </span>We Make Magic Happen!</h1>
 <p className='mt-2'>We guarantee that you will receive design and development services that focus on generating a high return on investment with our smart web design services. Our web design pricing and combo packages are affordable and customized to match your business goals with a unique approach that maximizes your brand’s revenue.</p>
 </div>
 
@@ -43,7 +43,7 @@ const MagicHappens = () => {
 
 <h4 className='text-2xl font-semibold'>Delivery</h4>
 
-<p className='text-lg'>Punctual delivery is our most exceptional service. Our conducive work environment guarantees prompt delivery of your assignment.</p>
+<p className='text-lg mb-4'>Punctual delivery is our most exceptional service. Our conducive work environment guarantees prompt delivery of your assignment.</p>
 
 </div>
 
