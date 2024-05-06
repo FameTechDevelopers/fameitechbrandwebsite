@@ -9,7 +9,7 @@ const BrandNumbers = () => {
   return (
     <div className="relative z-30">
         <div class="digital-container">
-          <video className=" w-full h-[100%] object-cover" autoPlay muted loop>
+          <video className="absolute top-0 w-full h-[100%] object-cover" autoPlay muted loop>
             <source
               src="https://fameitech.com/portfolio/videos/section1.mp4"
               type="video/mp4"
@@ -17,8 +17,7 @@ const BrandNumbers = () => {
             Your browser does not support the video tag.
           </video>
           <div class="overlay"></div>
-        </div>
-      <div className="digital-madia flex justify-center items-center">
+      <div className="digital-madia flex justify-center items-center p-2">
         <div className="container py-8 z-30">
           <div className="text-white text-lg max-md:text-center max-md:px-4 text-center">
             <h1 className="lg:text-5xl text-4xl lh font-semibold text-white">
@@ -88,6 +87,7 @@ const BrandNumbers = () => {
           </div>
         </div>
       </div>
+        </div>
     </div>
   );
 };

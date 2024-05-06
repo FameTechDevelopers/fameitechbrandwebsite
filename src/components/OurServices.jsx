@@ -5,6 +5,7 @@ import charts from "../assets/charts.png";
 import clock from "../assets/clock.png";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+import DiscoverLiveChat from "./DiscoverLiveChat";
 
 const OurServices = () => {
   return (
@@ -35,10 +36,7 @@ const OurServices = () => {
                   Get A Quote
                   <FaArrowRight className=" ml-2" />
                 </button>
-                <button className=" discover-btn flex justify-center items-center">
-                  Live Chat
-                  <FaArrowRight className=" ml-2" />
-                </button>
+           <DiscoverLiveChat/>
               </div>
             </div>
           </div>

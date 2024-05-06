@@ -21,7 +21,7 @@ const ShadeTabs = ({
   return (
     <>
       <Tabs defaultValue={title1} className="w-[100%] mx-auto pb-20 max-lg:mt-20">
-        <TabsList className="flex flex-col lg:flex-row justify-center items-center">
+        <TabsList className="flex flex-col lg:flex-row justify-center items-center ">
           <TabsTrigger className=" mx-6" value={title1}>
             {" "}
             {/* {serviceTabsData[0].title} */}

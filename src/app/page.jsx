@@ -12,11 +12,15 @@ import cloud from "@/assets/cloud.png";
 import Image from "next/image";
 import DigitalMedia from "@/components/DigitalMedia";
 import Link from "next/link";
+import TechSlider from "@/components/TechSlider";
 
 export default function Home() {
   return (
     <>
       <MainSection />
+
+<TechSlider/>
+
       <OurServices />
       <ContentTabs />
       <Portfolio />
