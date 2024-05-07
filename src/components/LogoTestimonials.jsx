@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import TestImg from "./Sections/images/test-girl.png";
 const LogoTestimonials = () => {
   const sliderRef = useRef(null);
 
@@ -21,12 +22,12 @@ const LogoTestimonials = () => {
     className: "center",
     infinite: true,
     centerPadding: "60px",
-    slidesToShow: 2,
+    slidesToShow: 3,
     speed: 500,
-    rows: 2,
+    // rows: 2,
     arrows: false,
     slidesToScroll: 1,
-    slidesPerRow: 2,
+    slidesPerRow: 1,
     responsive: [
       {
         breakpoint: 1024,
@@ -68,7 +69,7 @@ const LogoTestimonials = () => {
           </p>
         </div>
 
-        <div className=" relative max-w-[1700px] px-12 mx-auto  z-[999]">
+        <div className=" relative max-w-[1700px] pb-14 px-12 mx-auto  z-[999]">
           <div className=" mb-4">
             <button
               onClick={handlePrev}
@@ -84,9 +85,57 @@ const LogoTestimonials = () => {
             </button>
           </div>
           <Slider {...settings} ref={sliderRef}>
-            <div className=" p-2">sa</div>
-            <div className=" p-2">sa</div>
-            <div className=" p-2">sa</div>
+            <div className="lg:col-span-4 col-span-12 ">
+              <div className=" border border-[#073A9C] rounded-lg  py-10 m-3 ">
+                <div className="testiBgQuote w-100 flex flex-col justify-center items-center ">
+                  <Image src={TestImg} className=" w-[60px] h-[60px]" />
+                </div>
+                <h4 className=" text-white pb-5 text-center pt-3 ">
+                  Golette Bowen
+                </h4>
+                <p className=" text-white text-center pb-7 text-[14px] px-10 ">
+                  I am the post-production supervisor for Zach King. We worked
+                  with Remy's company on VFX for a recent brand deal. Fameitech
+                  did a fantastic job. They handled the client notes quickly and
+                  efficiently. I highly recommend them.
+                </p>
+                <h5 className=" text-white text-center pt-3 ">⭐⭐⭐⭐⭐</h5>
+              </div>
+            </div>
+            <div className="lg:col-span-4 col-span-12 ">
+              <div className=" border border-[#073A9C] rounded-lg  py-10 m-3 ">
+                <div className="testiBgQuote w-100 flex flex-col justify-center items-center ">
+                  <Image src={TestImg} className=" w-[60px] h-[60px]" />
+                </div>
+                <h4 className=" text-white pb-5 text-center pt-3 ">
+                  Golette Bowen
+                </h4>
+                <p className=" text-white text-center pb-7 text-[14px] px-10 ">
+                  I am the post-production supervisor for Zach King. We worked
+                  with Remy's company on VFX for a recent brand deal. Fameitech
+                  did a fantastic job. They handled the client notes quickly and
+                  efficiently. I highly recommend them.
+                </p>
+                <h5 className=" text-white text-center pt-3 ">⭐⭐⭐⭐⭐</h5>
+              </div>
+            </div>
+            <div className="lg:col-span-4 col-span-12 ">
+              <div className=" border border-[#073A9C] rounded-lg  py-10 m-3 ">
+                <div className="testiBgQuote w-100 flex flex-col justify-center items-center ">
+                  <Image src={TestImg} className=" w-[60px] h-[60px]" />
+                </div>
+                <h4 className=" text-white pb-5 text-center pt-3 ">
+                  Golette Bowen
+                </h4>
+                <p className=" text-white text-center pb-7 text-[14px] px-10 ">
+                  I am the post-production supervisor for Zach King. We worked
+                  with Remy's company on VFX for a recent brand deal. Fameitech
+                  did a fantastic job. They handled the client notes quickly and
+                  efficiently. I highly recommend them.
+                </p>
+                <h5 className=" text-white text-center pt-3 ">⭐⭐⭐⭐⭐</h5>
+              </div>
+            </div>
           </Slider>
         </div>
       </div>

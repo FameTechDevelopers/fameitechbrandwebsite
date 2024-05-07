@@ -20,6 +20,7 @@ section.main-contact.w-full.rounded-2xl.border-\[\#073A9C\].border-1.p-\[32px\] 
   background-position: center center;
   background-size: 100% 90%;
 }
+
 .clients-serving {
   background-image: url(../components/assets/grad-circle1.png);
 }
@@ -30,6 +31,14 @@ section.main-contact.w-full.rounded-2xl.border-\[\#073A9C\].border-1.p-\[32px\] 
   background-size: 100% 100%;
   background-position: center center;
 
+
+}
+
+.testiBgQuote {
+  background-image: url("../components/Sections/images/quote.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 15%;
 
 }
 
@@ -732,21 +741,21 @@ p.text-\[\#F8B421\].font-\[22px\] {
 
 
 
-.bgConatctOrange{
+.bgConatctOrange {
   background-image: url("../assets/bg-orange-contact.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.comboBgImage{
+.comboBgImage {
   background-image: url("../assets/comboBg.webp");
 }
 
-.customLogoBannerBg{
-  background-image : url("../assets/sec.webp");
+.customLogoBannerBg {
+  background-image: url("../assets/sec.webp");
 }
 
-.bgLogoForm{
-  background-image : url("../assets/form.webp");
+.bgLogoForm {
+  background-image: url("../assets/form.webp");
 }
