@@ -1,11 +1,62 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { IoArrowForwardCircleSharp } from "react-icons/io5";
 import Wrapper from "../common/Wrapper";
 import img1 from "/public/images/slider-logo.webp"
 import Image from "next/image";
-
+import LiveChatBtnLanding from "../livechatBlue";
+import Lottie from "react-lottie"
+import SuccessAnim from "@/lottieAnimation/succesAnimation.json"
+import axios from "axios";
 function HeroSection() {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState("");
+  const [pending, setPending] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("phone", phone);
+    formData.append("message", message);
+    formData.append("web_type", "logo-design-contact");
+    setPending(true)
+    try {
+      const response = await axios.post(
+        "https://portal.famewheels.com/contact-us",
+        formData
+      );
+
+      console.log(response.data);
+
+      setName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
+      setPending(false)
+      setSuccess(true)
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: SuccessAnim,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
   return (
     <section className='flex flex-col justify-center items-center pt-16 pb-32'>
 
@@ -14,7 +65,7 @@ function HeroSection() {
       
       {/* CHAT WITH US FORM  */}
       <div className='rounded-full px-6 w-full md:w-[50%] max-w-[500px] 2xl:max-w-[500px]'>
-        <div className='text-pri_black flex flex-col justify-center items-center bg-pri_yellow rounded-t-3xl p-4 md:p-7 space-y-2'>
+        <div className='text-black flex flex-col justify-center items-center bg-pri_yellow rounded-t-3xl p-4 md:p-7 space-y-2'>
           <p className='font-oswald-bold text-3xl md:text-5xl'>CHAT WITH US</p>
           <p className='text-xl font-oswald font-light leading-6 tracking-wider md:text-3xl'>
             TO AVAIL{" "}
@@ -22,25 +73,31 @@ function HeroSection() {
           </p>
         </div>
         <div className='w-full flex flex-col justify-center bg-white rounded-b-3xl'>
-          <form className='w-full flex flex-col px-12 py-6  '>
-            <div className='*:border-[1px] *:border-black w-full flex flex-col space-y-3 *:bg-slate-100 *:rounded-sm *:font-oswald-thin *:px-4 *:py-4'>
+          <form className='w-full flex flex-col px-12 py-6 text-black ' onSubmit={handleSubmit}>
+            <div className='*text-black *border-[1px] *:border-black w-full flex flex-col space-y-3 *:bg-slate-100 *:rounded-sm *:font-oswald-thin *:px-4 *:py-4'>
               <input
                 required
                 type='text'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 placeholder='Enter Your Name'
-                className=''
+                className='text-black'
               />
               <input
                 required
                 type='email'
                 placeholder='Email Address'
-                className=''
+                className='text-black'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <input
                 required
                 type='tel'
                 placeholder='Phone Number'
-                className=''
+                className='text-black'
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
               />
               <textarea
                 required
@@ -48,11 +105,27 @@ function HeroSection() {
                 id='message'
                 cols='30'
                 rows='3'
+                className="text-black"
                 placeholder='How we can help you'
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
             </div>
-            <button className='bg-pri_blue font-oswald font-bold text-white text-sm letter-space-wide mt-3 px-4 py-2 md:px-8 md:py-4'>
-              RESERVE THIS DISCOUNT
+
+            {success && <p className="text-green-500 mt-2 font-semibold">Successful We Will Get In Touch With You Shortly</p>}
+
+
+            <button type="submit" className='bg-pri_blue font-oswald font-bold text-white text-sm letter-space-wide mt-3 px-4 py-2 md:px-8 md:py-4'>
+
+            {
+        success ?
+        <Lottie options={defaultOptions} height={50} width={50}/>
+: pending === true ? "Submitting...." :
+        "RESERVE THIS DISCOUNT"
+        
+        }
+
+              
             </button>
           </form>
         </div>
@@ -112,9 +185,7 @@ function HeroSection() {
             <p>REQUEST A QUOTE</p>
             <IoArrowForwardCircleSharp className='size-6' />
           </span>
-          <span className="bg-pri_orange w-fit px-6 py-3 font-poppins-semibold">
-            LiveChat
-          </span>
+          <LiveChatBtnLanding />
         </div>
 
         <div>
@@ -123,6 +194,7 @@ function HeroSection() {
       </div>
 
       </Wrapper>
+      
     </section>
   );
 }

@@ -3,6 +3,7 @@ import Wrapper from "../common/Wrapper";
 import Image from "next/image";
 import recognize from "../../../assets/recognize.webp"
 import banner1 from "../../../assets/banner1.webp"
+import LiveChatBtnLanding from "../livechatBlue";
 
 function CustomLogoBanner() {
   return (
@@ -24,9 +25,8 @@ function CustomLogoBanner() {
             </p>
             <div className='flex space-x-2 md:space-x-6 justify-center *:px-4 *:py-2 md:*:px-6 md:*:py-4 *:text-sm md:*:text-lg'>
               <button className=' bg-pri_blue'>Order Now</button>
-              <button className={` bg-pri_orange poppins-bold`}>
-                LiveChat
-              </button>
+              <LiveChatBtnLanding />
+
               <button className=' bg-pri_blue'>Call Now</button>
             </div>
           </div>

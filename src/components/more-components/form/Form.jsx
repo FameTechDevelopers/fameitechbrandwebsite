@@ -1,6 +1,56 @@
+"use client";
+import { useState } from "react";
 import Wrapper from "../common/Wrapper";
-
+import Lottie from "react-lottie"
+import SuccessAnim from "@/lottieAnimation/succesAnimation.json"
+import axios from "axios";
 function Form() {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState("");
+  const [pending, setPending] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("phone", phone);
+    formData.append("message", message);
+    formData.append("web_type", "logo-design-contact");
+    setPending(true)
+    try {
+      const response = await axios.post(
+        "https://portal.famewheels.com/contact-us",
+        formData
+      );
+
+      console.log(response.data);
+
+      setName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
+      setPending(false)
+      setSuccess(true)
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: SuccessAnim,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
   return (
     <section className='bgLogoForm bg-cover bg-center bg-no-repeat size-full flex justify-center items-center text-white py-20 '>
       <Wrapper className={"flex flex-col md:flex-row space-y-10  sm:px-10"}>
@@ -20,13 +70,29 @@ function Form() {
             <p className="font-bold text-4xl md:text-6xl">
             Let{`'`}s Get Started!
             </p>
-            <form action="
-            " className="flex flex-col font-poppins space-y-2 *:p-3 *:rounded-sm ">
-                <input type="text" placeholder="Enter Your Name" />
-                <input type="text" placeholder="Email Address" />
-                <input type="text" placeholder="Phone" />
-                <textarea name="" id="" cols="30" rows="3" placeholder="Message"></textarea>
-                <button className="text-xl py-2 bg-pri_blue px-0 md:!px-20  w-full md:w-fit font-oswald">Submit</button>
+            <form onSubmit={handleSubmit} className="flex flex-col font-poppins space-y-2 *:p-3 *:rounded-sm ">
+                <input type="text" placeholder="Enter Your Name"                 value={name}
+                onChange={(e) => setName(e.target.value)} />
+                <input type="text" placeholder="Email Address"                 value={email}
+                onChange={(e) => setEmail(e.target.value)} />
+                <input type="text" placeholder="Phone"                 value={phone}
+                onChange={(e) => setPhone(e.target.value)} />
+                <textarea name="" id="" cols="30" rows="3" placeholder="Message"         value={message}
+                onChange={(e) => setMessage(e.target.value)}></textarea>
+
+                {success && <p className="text-green-500 mt-2 font-semibold">Successful We Will Get In Touch With You Shortly</p>}
+
+
+                <button className="text-xl py-2 bg-pri_blue px-0 md:!px-20  w-full md:w-fit font-oswald">
+                {
+        success ?
+        <Lottie options={defaultOptions} height={50} width={50}/>
+: pending === true ? "Submitting...." :
+        "Submit"
+        
+        }
+
+                </button>
             </form>
         </div>
       </Wrapper>

@@ -5,6 +5,7 @@ import mockupImage from "@/assets/images/mockup.webp"
 import { FaAngleDoubleRight } from "react-icons/fa";
 import Wrapper from "../common/Wrapper";
 import Image from "next/image";
+import LiveChatBtnLanding from "../livechatBlue";
 
 function ComboPackage() {
   return (
@@ -141,9 +142,8 @@ function ComboPackage() {
                     <button className='bg-pri_yellow px-7 py-2 text-black italic'>
                       Order Now
                     </button>
-                    <button className='bg-pri_orange font-poppins px-4 py-2'>
-                      LiveChat
-                    </button>
+                    <LiveChatBtnLanding />
+
                   </li>
                 </ul>
               </div>

@@ -3,6 +3,7 @@ import { BsTabletLandscape } from "react-icons/bs";
 import { FaPhoneFlip } from "react-icons/fa6";
 import logo from "/public/images/logo.png";
 import Image from "next/image";
+import LiveChatBtnLanding from "../livechatBlue";
 
 function Navbar() {
   return (
@@ -20,9 +21,8 @@ function Navbar() {
             </span>
           </div>
           <div className="flex *:px-4 *:py-2 space-x-2">
-            <button className="bg-pri_orange font-poppins font-bold">
-              Live Chat
-            </button>
+          <LiveChatBtnLanding />
+
             <button className="bg-pri_blue flex items-center justify-center space-x-2">
               <span>
                 <BsTabletLandscape color="white" size={20} />
