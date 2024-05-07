@@ -720,3 +720,11 @@ p.text-\[\#F8B421\].font-\[22px\] {
     padding: 10px 15px;
   }
 }
+
+
+.bgConatctOrange{
+  background-image: url("../assets/bg-orange-contact.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
