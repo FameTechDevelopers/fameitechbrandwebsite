@@ -43,10 +43,10 @@ const Portfolio = () => {
   };
 
   return (
-    <div className=" relative">
-      {/* <Image src={circle1} className=" absolute w-[1100px] z-[99] left-0 top-0" />
-      <Image src={circle2} className=" absolute z-[99] right-0 top-0" /> */}
-      <div className="bg-black px-12 py-32 p-4 relative z-50">
+    <div className=" bg-black relative">
+      <Image src={circle1} className=" absolute w-[1100px] left-0 top-0" />
+      <Image src={circle2} className=" absolute right-0 top-0" />
+      <div className=" px-12 py-32 p-4 relative z-50">
         <div className="size-full max-w-[1700px] px-12 mx-auto">
           <div className="flex justify-between items-center mb-4">
             <div>
@@ -87,7 +87,7 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <div className=" bg-black">
+      <div className=" z-[99]">
         <div className="max-w-[1700px] px-12 mx-auto ">
           <div className=" grid grid-cols-12 py-4 pb-10 ">
             <div className=" col-span-4">

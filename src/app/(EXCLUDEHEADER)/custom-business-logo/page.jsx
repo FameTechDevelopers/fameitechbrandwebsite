@@ -10,6 +10,7 @@ import ServingClients from "../../../components/Sections/ServingClients.jsx";
 import WhyChooseUs from "../../../components/Sections/WhyChooseUs.jsx";
 import PortfolioTabs from "../../../components/portfolio/PortfolioTabs.jsx";
 import CustomLogoBanner from "@/components/CustomLogoBanner.jsx";
+import LogoTestimonials from "@/components/LogoTestimonials.jsx";
 // import circle1 from "@/components/assets/grad-circle1.png"
 // import circle2 from "@/components/assets/grad-circle3.png"
 
@@ -24,6 +25,7 @@ function CustomBusinessLogo() {
       </div>
       {/* <WhyChooseUs /> */}
       <CustomLogoBanner />
+      <LogoTestimonials />
       <CustomLogoPricing />
       <PricingForm />
     </>

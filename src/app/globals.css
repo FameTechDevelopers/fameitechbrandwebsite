@@ -20,6 +20,9 @@ section.main-contact.w-full.rounded-2xl.border-\[\#073A9C\].border-1.p-\[32px\] 
   background-position: center center;
   background-size: 100% 90%;
 }
+.clients-serving {
+  background-image: url(../components/assets/grad-circle1.png);
+}
 
 .priceTabBorder {
   background-image: url("../components/Sections/images/pricetab-border.png");
