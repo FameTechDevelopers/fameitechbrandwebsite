@@ -11,37 +11,37 @@ import CountUp from "react-countup";
 function WhyChooseUs() {
   const sectionData = [
     {
-      iconImg: ic1,
+      iconImg: ic1.src,
       number: "12",
       postfix: "+",
       title: "Years of Experience",
     },
     {
-      iconImg: ic2,
+      iconImg: ic2.src,
       number: "100",
       postfix: "+",
       title: "Employees",
     },
     {
-      iconImg: ic3,
+      iconImg: ic3.src,
       number: "5000",
       postfix: "+",
       title: "Logo Designed",
     },
     {
-      iconImg: ic4,
+      iconImg: ic4.src,
       number: "95",
       postfix: "%",
       title: "Projects Delivered",
     },
     {
-      iconImg: ic5,
+      iconImg: ic5.src,
       number: "10",
       postfix: "+",
       title: "Countries",
     },
     {
-      iconImg: ic6,
+      iconImg: ic6.src,
       number: "75",
       postfix: "%",
       title: "Client Retention Rate",

@@ -1,8 +1,8 @@
 import React from "react";
 import Wrapper from "../common/Wrapper";
 import WhyChooseUs from "../whychooseus/WhyChooseUs";
-import MainSlider from "../atoms/MainSlider";
 import Tabs from "../molecules/LogosTab";
+
 
 function DesignPortfolioSection() {
   return (

@@ -738,3 +738,15 @@ p.text-\[\#F8B421\].font-\[22px\] {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.comboBgImage{
+  background-image: url("../assets/comboBg.webp");
+}
+
+.customLogoBannerBg{
+  background-image : url("../assets/sec.webp");
+}
+
+.bgLogoForm{
+  background-image : url("../assets/form.webp");
+}

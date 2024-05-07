@@ -8,6 +8,9 @@ import { FaPinterestP } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import Wrapper from "./Wrapper";
+import Image from "next/image";
+import paymentImg from "@/assets/images/payment.webp"
+
 const Footer = () => {
   return (
     <>
@@ -16,7 +19,7 @@ const Footer = () => {
         <div className=" max-w-[1600px] mx-auto z-[999]">
           <div className="grid grid-cols-12 pb-10 mb-10 border-b-2 border-[#ffffff6f]">
             <div className=" col-span-4 mb-6 flex items-center">
-              <img src={logo} />
+              <Image src={logo} />
             </div>
             <div className=" lg:col-span-4 mb-6 col-span-12 footer-social-icons flex lg:justify-center items-center">
               <ul className=" flex justify-center items-center *:p-3 *:bg-pri_orange space-x-4">
@@ -49,7 +52,8 @@ const Footer = () => {
                 AI, blockchain, and data analytics to help people and
                 organizations.
               </p>
-              <img src="/public/images/payment.webp" alt="" />
+              <Image  width={1000}
+          height={1000} src={paymentImg} alt="" />
             </div>
             <div className=" lg:col-span-4 col-span-12">
               <h2 className=" text-[26px] font-[800] mb-8">Contact</h2>

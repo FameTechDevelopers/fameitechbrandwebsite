@@ -9,22 +9,22 @@ import WheellifeImg from "../../assets/wheellife.webp";
 const Testimonials = () => {
   const testimonialArr = [
     {
-      img: ZachImg,
+      img: ZachImg.src,
       text: "I am the post-production supervisor for Zach King. We worked with Remy's company on VFX for a recent brand deal. Fame Itech did a fantastic job. They handled the client notes quickly and efficiently. I would recommend them.",
       name: "Colette Brown",
     },
     {
-      img: SydneyImg,
+      img: SydneyImg.src,
       text: "Hakeem did an amazing job with my video even after I had several edits and a lot of the videos quality I had were poor. He made them look super professional with a title page and edit the music. The video definitely exceeded my expectations.",
       name: "Sydney Stewart",
     },
     {
-      img: AmandaImg,
+      img: AmandaImg.src,
       text: "I had an exceptional experience working with Fameitech - a remarkable team of professionals. Austin Weber responsiveness and consistent communication throughout the process were impressive. In the realm of web development and graphic design.",
       name: "Amanda Parker",
     },
     {
-      img: WheellifeImg,
+      img: WheellifeImg.src,
       text: "I really had a great experience working with this team. They understand my vision for my first book and they were great with all my questions and requests. They took the time to really understand what I was wanting and were extremely timely with my deadline.",
       name: "WheelLifeConnections",
     },

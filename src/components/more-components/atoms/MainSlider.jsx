@@ -4,14 +4,15 @@ import React from "react";
 import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
-// import img1 from "/public/images/slider-data/1.png"
-// import img2 from "/public/images/slider-data/2.webp"
-// import img3 from "/public/images/slider-data/3.jpg"
-// import img4 from "/public/images/slider-data/4.webp"
-// import img5 from "/public/images/slider-data/5.webp"
+// import Image1 from "/public/images/slider-data/1.png"
+// import Image2 from "/public/images/slider-data/2.webp"
+// import Image3 from "/public/images/slider-data/3.jpg"
+// import Image4 from "/public/images/slider-data/4.webp"
+// import Image5 from "/public/images/slider-data/5.webp"
+import Image from "next/image";
 
 const MainSlider = ({ imagesArr }) => {
-  const imgsArr = [...imagesArr];
+  const ImagesArr = [...imagesArr];
 
   const settings = {
     // dots: true,
@@ -42,19 +43,19 @@ const MainSlider = ({ imagesArr }) => {
   return (
     <div className="w-full flex flex-col space-y-10 justify-center">
       <Slider {...settings} className="size-full main-slide space-x-2">
-        {imgsArr.slice(0, imagesArr.length / 2).map((imgSrc) => (
-          <img
-            key={imgSrc}
-            src={imgSrc}
+        {ImagesArr.slice(0, imagesArr.length / 2).map((ImageSrc) => (
+          <Image
+            key={ImageSrc}
+            src={ImageSrc}
             className="max-w-[350px] mx-auto rounded-md"
           />
         ))}
       </Slider>
       <Slider {...settings} className="size-full main-slide ">
-        {imgsArr.slice(imagesArr.length / 2, imagesArr.length).map((imgSrc) => (
-          <img
-            key={imgSrc}
-            src={imgSrc}
+        {ImagesArr.slice(imagesArr.length / 2, imagesArr.length).map((ImageSrc) => (
+          <Image
+            key={ImageSrc}
+            src={ImageSrc}
             className="max-w-[350px] mx-auto rounded-md"
           />
         ))}

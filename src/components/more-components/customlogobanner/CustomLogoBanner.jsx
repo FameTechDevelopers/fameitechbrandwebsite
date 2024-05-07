@@ -1,5 +1,8 @@
 import React from "react";
 import Wrapper from "../common/Wrapper";
+import Image from "next/image";
+import recognize from "../../../assets/recognize.webp"
+import banner1 from "../../../assets/banner1.webp"
 
 function CustomLogoBanner() {
   return (
@@ -7,10 +10,12 @@ function CustomLogoBanner() {
       <Wrapper
         className={"size-full items-center justify-center flex-col md:flex-row"}
       >
-        <div className='size-full bg-[url("/public/images/sec.webp")] bg-fixed bg-no-repeat bg-cover bg-center flex flex-col md:flex-row justify-around items-center md:space-x-4 py-8 px-2  md:px-10 rounded-[3rem]   text-white text-center font-bold tracking-widest mb-10'>
-          <img
-            src='/public/images/recognize.webp'
+        <div className='size-full customLogoBannerBg bg-fixed bg-no-repeat bg-cover bg-center flex flex-col md:flex-row justify-around items-center md:space-x-4 py-8 px-2  md:px-10 rounded-[3rem]   text-white text-center font-bold tracking-widest mb-10'>
+          <Image
+            src={recognize}
             alt=''
+            width={1000}
+            height={1000}
             className='w-[150px] lg:w-[300px]'
           />
           <div className='flex flex-col space-y-10'>
@@ -25,8 +30,10 @@ function CustomLogoBanner() {
               <button className=' bg-pri_blue'>Call Now</button>
             </div>
           </div>
-          <img
-            src='/public/images/banner1.webp'
+          <Image
+          width={1000}
+          height={1000}
+            src={banner1}
             alt=''
             className='w-[150px] lg:w-[250px]'
           />

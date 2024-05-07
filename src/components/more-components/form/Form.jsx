@@ -2,7 +2,7 @@ import Wrapper from "../common/Wrapper";
 
 function Form() {
   return (
-    <section className='bg-[url("/public/images/form.webp")] bg-cover bg-center bg-no-repeat size-full flex justify-center items-center text-white py-20 '>
+    <section className='bgLogoForm bg-cover bg-center bg-no-repeat size-full flex justify-center items-center text-white py-20 '>
       <Wrapper className={"flex flex-col md:flex-row space-y-10  sm:px-10"}>
         <div className='w-[50%] flex flex-col space-y-3 '>
           <p className='font-bold text-xl md:text-3xl'>Let{`'`}s get the Ball Rolling</p>

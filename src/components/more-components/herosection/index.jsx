@@ -3,6 +3,7 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { IoArrowForwardCircleSharp } from "react-icons/io5";
 import Wrapper from "../common/Wrapper";
 import img1 from "/public/images/slider-logo.webp"
+import Image from "next/image";
 
 function HeroSection() {
   return (
@@ -117,7 +118,7 @@ function HeroSection() {
         </div>
 
         <div>
-          <img src={img1} alt="images" className="w-[300px] md:w-[350px]" />
+          <Image src={img1} alt="images" className="w-[300px] md:w-[350px]" />
         </div>
       </div>
 
