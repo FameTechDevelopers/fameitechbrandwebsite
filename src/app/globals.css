@@ -10,6 +10,10 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 
 
+section.main-contact.w-full.rounded-2xl.border-\[\#073A9C\].border-1.p-\[32px\] {
+  border: 1px solid #073A9C !important;
+}
+
 .bg-CustomLogo {
   background-image: url("../components/Sections/images/bg-customlogo.png");
   background-repeat: no-repeat;
@@ -709,3 +713,5 @@ p.text-\[\#F8B421\].font-\[22px\] {
     padding: 10px 15px;
   }
 }
+
+

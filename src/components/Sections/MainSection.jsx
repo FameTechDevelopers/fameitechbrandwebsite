@@ -6,15 +6,16 @@ import { FaArrowRight } from "react-icons/fa";
 import arrow from "../../components/assets/arrow-blue.png";
 import circle1 from "../../components/assets/grad-circle1.png";
 import circle2 from "../../components/assets/grad-circle2.png";
+import Image from "next/image";
 
 const MainSection = () => {
   return (
     <div className=" bg-black relative py-32 mt-[-125px]">
-      <img src={circle1} className=" absolute left-0 top-0" />
-      <img src={circle2} className=" absolute right-0 top-0" />
+      <Image src={circle1} className=" absolute left-0 top-0" />
+      <Image src={circle2} className=" absolute right-0 top-0" />
       <div className=" max-w-[1700px] px-12 mx-auto grid grid-cols-12">
         <div className=" col-span-7 flex items-center relative">
-          <img src={arrow} className=" absolute right-28 top-20" />
+          <Image src={arrow} className=" absolute right-28 top-20" />
           <div>
             <h2 className=" text-[3.2rem] font-bold text-white leading-[70px]">
               Logo
