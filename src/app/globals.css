@@ -21,7 +21,18 @@ section.main-contact.w-full.rounded-2xl.border-\[\#073A9C\].border-1.p-\[32px\] 
   background-size: 100% 90%;
 }
 
+.priceTabBorder {
+  background-image: url("../components/Sections/images/pricetab-border.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
 
+
+}
+
+.priceTabli ul li {
+  padding-bottom: 10px;
+}
 
 .hero::before {
   position: absolute;
@@ -715,3 +726,12 @@ p.text-\[\#F8B421\].font-\[22px\] {
 }
 
 
+
+
+
+.bgConatctOrange{
+  background-image: url("../assets/bg-orange-contact.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
