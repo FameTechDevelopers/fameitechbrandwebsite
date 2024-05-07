@@ -102,12 +102,12 @@ const CustomLogoPricing = () => {
                 </div>
                 <div className="flex justify-center ">
                   <div className="pt-10 flex gap-4  ">
-                    <button className=" uppercase text-[#fff] text-[15px]  bg-[#FE7524] px-5 py-2 rounded-full shadow-stone-400 ">
+                    <a href="#last_custom_form" className=" uppercase text-[#fff] text-[15px]  bg-[#FE7524] px-5 py-2 rounded-full shadow-stone-400 ">
                       ORDER NOW
-                    </button>
-                    <button className="uppercase text-[#000000] text-[15px] bg-[#ffffff] px-5 py-2 rounded-full shadow-stone-400 ">
+                    </a>
+                    <a href="tel:+18722333612" className="uppercase text-[#000000] text-[15px] bg-[#ffffff] px-5 py-2 rounded-full shadow-stone-400 ">
                       Call now
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -201,12 +201,12 @@ const CustomLogoPricing = () => {
                 </div>
                 <div className="flex justify-center ">
                   <div className="pt-10 flex gap-4  ">
-                    <button className=" uppercase text-[#fff] text-[15px]  bg-[#FE7524] px-5 py-2 rounded-full shadow-stone-400 ">
+                    <a href="#last_custom_form" className=" uppercase text-[#fff] text-[15px]  bg-[#FE7524] px-5 py-2 rounded-full shadow-stone-400 ">
                       ORDER NOW
-                    </button>
-                    <button className="uppercase text-[#000000] text-[15px] bg-[#ffffff] px-5 py-2 rounded-full shadow-stone-400 ">
+                    </a>
+                    <a href="tel:+18722333612" className="uppercase text-[#000000] text-[15px] bg-[#ffffff] px-5 py-2 rounded-full shadow-stone-400 ">
                       Call now
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -298,12 +298,12 @@ const CustomLogoPricing = () => {
                 </div>
                 <div className="flex justify-center ">
                   <div className="pt-10 flex gap-4  ">
-                    <button className=" uppercase text-[#fff] text-[15px]  bg-[#FE7524] px-5 py-2 rounded-full shadow-stone-400 ">
+                    <a href="#last_custom_form" className=" uppercase text-[#fff] text-[15px]  bg-[#FE7524] px-5 py-2 rounded-full shadow-stone-400 ">
                       ORDER NOW
-                    </button>
-                    <button className="uppercase text-[#000000] text-[15px] bg-[#ffffff] px-5 py-2 rounded-full shadow-stone-400 ">
+                    </a>
+                    <a href="tel:+18722333612" className="uppercase text-[#000000] text-[15px] bg-[#ffffff] px-5 py-2 rounded-full shadow-stone-400 ">
                       Call now
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

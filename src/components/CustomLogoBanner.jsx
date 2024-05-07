@@ -1,8 +1,25 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import logoEg from "../components/Sections/images/image-13.png";
 import Image from "next/image";
+import LiveChat from "./LiveChat";
 
 const CustomLogoBanner = () => {
+
+  const [visibility,setVisibility] = useState("minimized")
+
+  const maximizeChat = async () => {
+      if (visibility === "minimized") {
+          setVisibility("maximized")
+      //   setTimeout(() => {
+      //     setVisibility("minimized")
+          
+      //   }, 1000);
+      }else{   
+          setVisibility("minimized")
+      }
+  };
+
   return (
     <div className=" bg-black">
       <div className="pb-[30px]">
@@ -13,15 +30,16 @@ const CustomLogoBanner = () => {
                 Get Your Custom <br /> Logo Designed in just
               </h2>
               <div className="pt-10 flex gap-4  ">
-                <button className=" uppercase text-[#fff] bg-[#FE7524] px-8 py-2 rounded-full shadow-stone-400 ">
+                <button onClick={maximizeChat} className=" uppercase text-[#fff] bg-[#FE7524] px-8 py-2 rounded-full shadow-stone-400 ">
                   LIVE CHAT
                 </button>
-                <button className="uppercase text-[#000000] bg-[#ffffff] px-8 py-2 rounded-full shadow-stone-400 ">
+                <LiveChat visibility={visibility} setVisibility={setVisibility}  />
+                <a href="tel:tel:+18722333612" className="uppercase text-[#000000] bg-[#ffffff] px-8 py-2 rounded-full shadow-stone-400 ">
                   Call now
-                </button>
-                <button className=" uppercase text-[#fff] bg-[#FE7524] px-8 py-2 rounded-full shadow-stone-400 ">
+                </a>
+                {/* <button className=" uppercase text-[#fff] bg-[#FE7524] px-8 py-2 rounded-full shadow-stone-400 ">
                   LIVE CHAT
-                </button>
+                </button> */}
               </div>
             </div>
             <div className="lg:col-span-7 col-span-12">

@@ -34,9 +34,9 @@ const Portfolio = () => {
           title4Content={<Websites />}
           title5Content={<YouTubeVideos/>}
         />
-        <button className=" discover-btn mx-auto flex justify-center items-center">
+        {/* <button className=" discover-btn mx-auto flex justify-center items-center">
           VIEW OUR PORTFOLIO
-        </button>
+        </button> */}
       </div>
     </div>
   );

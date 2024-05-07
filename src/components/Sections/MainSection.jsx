@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import ContactForm from "../../components/more-components/ContactForm";
 import { FaCheck } from "react-icons/fa6";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
@@ -7,8 +8,23 @@ import arrow from "../../components/assets/arrow-blue.png";
 import circle1 from "../../components/assets/grad-circle1.png";
 import circle2 from "../../components/assets/grad-circle2.png";
 import Image from "next/image";
+import LiveChat from "../LiveChat";
 
 const MainSection = () => {
+  const [visibility,setVisibility] = useState("minimized")
+
+  const maximizeChat = async () => {
+      if (visibility === "minimized") {
+          setVisibility("maximized")
+      //   setTimeout(() => {
+      //     setVisibility("minimized")
+          
+      //   }, 1000);
+      }else{   
+          setVisibility("minimized")
+      }
+  };
+
   return (
     <div className=" bg-black relative py-32 mt-[-125px]">
       <Image src={circle1} className=" absolute left-0 top-0" />
@@ -73,20 +89,22 @@ const MainSection = () => {
               </div>
             </div>
             <div className=" md:flex items-center mt-12">
-              <button
-                type="submit"
+              <a
+              href="#customLogo_topForm"
                 class="py-3 px-6 text-sm md:mb-0 mb-4 flex lg:mr-8 justify-center items-center font-medium text-center text-white bg-[#073A9C] rounded-full"
               >
                 RESERVE THE DISCOUNT
                 <FaArrowRight />
-              </button>
+              </a>
               <button
-                type="submit"
+              onClick={maximizeChat}
                 class="py-3 px-12 text-sm font-medium flex justify-center items-center text-center text-white bg-[#FE7524] rounded-full"
               >
                 <IoChatbubbleEllipsesOutline className=" mr-3 text-[25px]" />
                 LIVE CHAT
               </button>
+              <LiveChat visibility={visibility} setVisibility={setVisibility} />
+
             </div>
           </div>
         </div>

@@ -10,6 +10,11 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 
 
+* {
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+}
+
 section.main-contact.w-full.rounded-2xl.border-\[\#073A9C\].border-1.p-\[32px\] {
   border: 1px solid #073A9C !important;
 }

@@ -66,10 +66,7 @@ const OurServices = () => {
                       your expectations with exceptional quality that sets us
                       apart from others, being pioneers in the digital realm.s
                     </p>
-                    <button className=" discover-btn mt-[24px] flex justify-center items-center">
-                      Discover More
-                      <FaArrowRight className=" ml-2" />
-                    </button>
+                    
                   </div>
                 </div>
               </div>
@@ -88,10 +85,7 @@ const OurServices = () => {
                       wealth of knowledge to the table, and the sum of their
                       individual contributions yields remarkable outcomes.
                     </p>
-                    <button className=" discover-btn mt-[24px] flex justify-center items-center">
-                      Discover More
-                      <FaArrowRight className=" ml-2" />
-                    </button>
+                    
                   </div>
                 </div>
               </div>
@@ -107,10 +101,7 @@ const OurServices = () => {
                       be both effective and cost-effective, ensuring that every
                       campaign contributes to increased earnings.
                     </p>
-                    <button className=" discover-btn mt-[24px] flex justify-center items-center">
-                      Discover More
-                      <FaArrowRight className=" ml-2" />
-                    </button>
+                  
                   </div>
                 </div>
               </div>
@@ -127,10 +118,7 @@ const OurServices = () => {
                       projects, ensuring quality and your pleasure throughout
                       the process.
                     </p>
-                    <button className=" discover-btn mt-[24px] flex justify-center items-center">
-                      Discover More
-                      <FaArrowRight className=" ml-2" />
-                    </button>
+                    
                   </div>
                 </div>
               </div>

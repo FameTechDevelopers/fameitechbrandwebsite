@@ -48,7 +48,7 @@ useEffect(() => {
                   <Link href={"/about-us"} onClick={()=>setShow(false)} className="text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out">
                     ABOUT US{" "}
                   </Link>
-                  <Link href={"/logo-design"} onClick={()=>setShow(false)} className="text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out">
+                  <Link href={"/logo-designs"} onClick={()=>setShow(false)} className="text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out">
                     LOGO DESIGN
                   </Link>
                   <Link href={"/website-design"} onClick={()=>setShow(false)} className="text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out">
@@ -77,7 +77,7 @@ useEffect(() => {
 
 <ul className='flex lg:gap-6 gap-2 font-semibold xl:text-lg text-base text-slate-200 max-lg:hidden'>
     <Link href={"/about-us"} className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>ABOUT US </Link>
-    <Link href={"/logo-design"} className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>LOGO DESIGN</Link>
+    <Link href={"/logo-designs"} className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>LOGO DESIGN</Link>
     <Link href={"/website-design"} className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>WEBSITE DESIGN</Link>
     <Link href={"/video-animation"} className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>VIDEO ANIMATION</Link>
     <Link href={"/our-packages"} className='hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out'>OUR PACKAGES</Link>

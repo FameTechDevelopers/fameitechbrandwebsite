@@ -24,10 +24,10 @@ function CustomLogoBanner() {
               Get Your Custom Logo Designed in just $19
             </p>
             <div className='flex space-x-2 md:space-x-6 justify-center *:px-4 *:py-2 md:*:px-6 md:*:py-4 *:text-sm md:*:text-lg'>
-              <button className=' bg-pri_blue'>Order Now</button>
+              <a href="#logoDesign_ContactForm" className=' bg-pri_blue'>Order Now</a>
               <LiveChatBtnLanding />
 
-              <button className=' bg-pri_blue'>Call Now</button>
+              <a className=' bg-pri_blue' href="tel:+18722333612">Call Now</a>
             </div>
           </div>
           <Image

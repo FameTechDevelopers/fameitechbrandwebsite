@@ -81,6 +81,10 @@ const Footer = () => {
             </div>
             <div className=" lg:col-span-2 col-span-12">
               <h2 className=" text-[26px] font-[800] mb-8">Location</h2>
+              <div className="">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d99001.35564669345!2d-75.524212!3d39.156704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7657e0f270c79%3A0x3cc77cd9d14827e8!2s8%20The%20Green%2C%20Dover%2C%20DE%2019901!5e0!3m2!1sen!2sus!4v1714793425856!5m2!1sen!2sus" width="250" height="170" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+
             </div>
           </div>
         </div>

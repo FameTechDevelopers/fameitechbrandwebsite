@@ -9,9 +9,9 @@ function Navbar() {
   return (
     <section className="flex justify-center items-center font-oswald  pt-2 px-5">
       <Wrapper className="flex flex-col space-y-3 space-x-3 sm:flex-row sm:justify-between sm:items-center sm:px-4">
-        <Image src={logo} alt="logo fameitech" className="w-[150px]" />
-        <div className="flex flex-col text-white space-y-2 sm:flex-row sm:px-8 sm:py-1 sm:bg-white sm:rounded-full sm:justify-center sm:items-center sm:gap-4">
-          <div className="flex justify-center space-x-2">
+       <a href="/"> <Image src={logo} alt="logo fameitech" className="w-[150px]" /></a>
+        <div className="flex items-center flex-col text-white space-y-2 sm:flex-row sm:px-8 sm:py-1 sm:bg-white sm:rounded-full sm:justify-center sm:items-center sm:gap-4">
+          <div className="flex items-center justify-center space-x-2">
             {" "}
             <span>
               <FaPhoneFlip color="gray" />
@@ -20,15 +20,15 @@ function Navbar() {
               +1 (872) 233 - 3612
             </span>
           </div>
-          <div className="flex *:px-4 *:py-2 space-x-2">
+          <div style={{  margin: '0px !important'}} className="flex *:px-4 *:py-2 m-0 ">
           <LiveChatBtnLanding />
 
-            <button className="bg-pri_blue flex items-center justify-center space-x-2">
+            {/* <button className="bg-pri_blue flex items-center justify-center space-x-2">
               <span>
                 <BsTabletLandscape color="white" size={20} />
               </span>{" "}
               <span className="text-sm font-oswald"> GET A FREE QUOTE</span>
-            </button>
+            </button> */}
           </div>
         </div>
       </Wrapper>

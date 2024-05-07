@@ -52,7 +52,7 @@ function Pricing() {
   return (
     <section className='flex flex-col justify-center items-center px-4'>
       <Wrapper className={" flex-col  space-y-20 py-20"}>
-        <h4 className='text-4xl text-center  md:text-7xl font-bold tracking-wider'>
+        <h4 className='text-4xl text-center  md:text-5xl font-bold tracking-wider'>
           CHOOSE A <span className='text-pri_purple'>PACKAGE</span> THAT SUITS
           YOU
         </h4>
@@ -88,12 +88,12 @@ function Pricing() {
                 </div>
 
                 <div className='flex space-x-20  *:font-bold *:text-sm '>
-                  <button className='bg-gradient-to-t  transition-all duration-300 font-poppins  from-dark_blue to-sec_blue hover:bg-gradient-to-t hover:from-cyan-900 hover:to-cyan-600 shadow-[2px_2px_40px_1px_rgba(230,81,108,0.5)] hover:shadow-[2px_2px_40px_20px_rgba(3,167,211,0.2)]  px-6 py-3 rounded-full '>
+                  <a href="#logoDesign_ContactForm" className='bg-gradient-to-t  transition-all duration-300 font-poppins  from-dark_blue to-sec_blue hover:bg-gradient-to-t hover:from-cyan-900 hover:to-cyan-600 shadow-[2px_2px_40px_1px_rgba(230,81,108,0.5)] hover:shadow-[2px_2px_40px_20px_rgba(3,167,211,0.2)]  px-6 py-3 rounded-full '>
                     Order Now
-                  </button>
-                  <button className='bg-gradient-to-t  transition-all duration-300 font-poppins  from-dark_blue to-sec_blue hover:bg-gradient-to-t hover:from-cyan-900 hover:to-cyan-600 shadow-[2px_2px_40px_1px_rgba(230,81,108,0.5)] hover:shadow-[2px_2px_40px_20px_rgba(3,167,211,0.2)]  px-6 py-3 rounded-full '>
+                  </a>
+                  <a href="tel:+18722333612" className='bg-gradient-to-t  transition-all duration-300 font-poppins  from-dark_blue to-sec_blue hover:bg-gradient-to-t hover:from-cyan-900 hover:to-cyan-600 shadow-[2px_2px_40px_1px_rgba(230,81,108,0.5)] hover:shadow-[2px_2px_40px_20px_rgba(3,167,211,0.2)]  px-6 py-3 rounded-full '>
                     Call Now
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

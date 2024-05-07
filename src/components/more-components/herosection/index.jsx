@@ -73,7 +73,7 @@ function HeroSection() {
           </p>
         </div>
         <div className='w-full flex flex-col justify-center bg-white rounded-b-3xl'>
-          <form className='w-full flex flex-col px-12 py-6 text-black ' onSubmit={handleSubmit}>
+          <form id="top_contactForm" className='w-full flex flex-col px-12 py-6 text-black ' onSubmit={handleSubmit}>
             <div className='*text-black *border-[1px] *:border-black w-full flex flex-col space-y-3 *:bg-slate-100 *:rounded-sm *:font-oswald-thin *:px-4 *:py-4'>
               <input
                 required
@@ -181,10 +181,10 @@ function HeroSection() {
         </div>
 
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-5">
-          <span className='flex items-center space-x-2 bg-pri_blue w-fit px-4 py-2 font-bold text-lg'>
+          <a href="#top_contactForm" className='flex items-center space-x-2 bg-pri_blue w-fit px-4 py-2 font-bold text-lg'>
             <p>REQUEST A QUOTE</p>
             <IoArrowForwardCircleSharp className='size-6' />
-          </span>
+          </a>
           <LiveChatBtnLanding />
         </div>
 

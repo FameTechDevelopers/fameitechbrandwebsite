@@ -139,9 +139,9 @@ function ComboPackage() {
                     <span>Complete Deployment</span>
                   </li>
                   <li className='flex  space-x-5 items-center py-10'>
-                    <button className='bg-pri_yellow px-7 py-2 text-black italic'>
+                    <a href="#logoDesign_ContactForm" className='bg-pri_yellow px-7 py-2 text-black italic'>
                       Order Now
-                    </button>
+                    </a>
                     <LiveChatBtnLanding />
 
                   </li>

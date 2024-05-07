@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { LuMessagesSquare } from "react-icons/lu";
+import WantToDiscussBtn from "./WantToDiscussBtn";
 
 const ServiceCard = ({ service }) => {
   return (
@@ -20,13 +21,11 @@ const ServiceCard = ({ service }) => {
             <p className=" text-[16px]">{service?.description}</p>
 
             <div className=" flex items-center mt-4">
-              <button className=" flex justify-center mr-6 text-[#ff7400] font-medium items-center">
+              {/* <button className=" flex justify-center mr-6 text-[#ff7400] font-medium items-center">
                 <LuMessagesSquare className=" text-[18px] font-bold" />
                 WANT TO DISCUSS?
-              </button>
-              <button className=" discover-btn flex justify-center items-center">
-                Lets Start
-              </button>
+              </button> */}
+              <WantToDiscussBtn />
             </div>
           </div>
         </div>
