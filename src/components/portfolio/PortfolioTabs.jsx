@@ -102,7 +102,7 @@ const Portfolio = () => {
             </div>
             <div className=" lg:col-span-8 col-span-12">
               <div className=" grid grid-cols-12">
-                <div className=" col-span-12 lg:col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={experience} className=" w-[80px] h-[80px]" />
                   </div>
@@ -113,7 +113,7 @@ const Portfolio = () => {
                     Year Of Experience
                   </h6>
                 </div>
-                <div className=" col-span-12 lg:col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-12  lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={emp} className=" w-[80px] h-[80px]" />
                   </div>
@@ -124,7 +124,7 @@ const Portfolio = () => {
                     Employees
                   </h6>
                 </div>
-                <div className=" col-span-12 lg:col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-12  lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={logo} className=" w-[80px] h-[80px]" />
                   </div>
@@ -138,7 +138,7 @@ const Portfolio = () => {
               </div>
 
               <div className=" grid grid-cols-12">
-                <div className=" col-span-12 lg:col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-12  lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={project} className=" w-[80px] h-[80px]" />
                   </div>
@@ -149,7 +149,7 @@ const Portfolio = () => {
                     Project Delivery
                   </h6>
                 </div>
-                <div className=" col-span-12 lg:col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-12  lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={count} className=" w-[80px] h-[80px]" />
                   </div>
@@ -160,7 +160,7 @@ const Portfolio = () => {
                     Countries
                   </h6>
                 </div>
-                <div className=" col-span-12 lg:col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-12  lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={client} className=" w-[80px] h-[80px]" />
                   </div>

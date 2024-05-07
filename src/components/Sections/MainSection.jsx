@@ -15,11 +15,15 @@ const MainSection = () => {
       <Image src={circle2} className=" absolute right-0 top-0" />
       <div className=" max-w-[1700px] px-12 mx-auto grid grid-cols-12">
         <div className=" lg:col-span-7 col-span-12 flex items-center relative">
-          <Image src={arrow} className=" absolute hidden lg:block right-28 top-20" />
+          <Image
+            src={arrow}
+            className=" absolute hidden lg:block right-28 top-20"
+          />
           <div className=" mt-12 lg:mt-0">
             <h2 className=" text-[3.2rem] font-bold text-white leading-[70px]">
               Logo
-              <br /> <span className=" text-[7rem]">Design </span>
+              <br />{" "}
+              <span className=" md:text-[7rem] text-[6rem]">Design </span>
               <br />
               <span className="border-text text-[4rem]">Starting</span>{" "}
               <span className=" text-[4.2rem]">From</span>{" "}
@@ -34,7 +38,7 @@ const MainSection = () => {
               </p>
             </div>
 
-            <div className="flex justify-start text-white mt-12">
+            <div className="md:flex justify-start text-white mt-12">
               <div className=" col-span-6 lg:mr-6">
                 <ul>
                   <li className=" flex items-center mb-2">
@@ -68,10 +72,10 @@ const MainSection = () => {
                 </ul>
               </div>
             </div>
-            <div className=" flex items-center mt-12">
+            <div className=" md:flex items-center mt-12">
               <button
                 type="submit"
-                class="py-3 px-6 text-sm flex lg:mr-8 justify-center items-center font-medium text-center text-white bg-[#073A9C] rounded-full"
+                class="py-3 px-6 text-sm md:mb-0 mb-4 flex lg:mr-8 justify-center items-center font-medium text-center text-white bg-[#073A9C] rounded-full"
               >
                 RESERVE THE DISCOUNT
                 <FaArrowRight />
