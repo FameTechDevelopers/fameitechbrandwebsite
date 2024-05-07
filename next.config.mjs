@@ -9,12 +9,19 @@ const nextConfig = {
     return config
 },
     images: {
+      domains:['cdn-ikpnlcj.nitrocdn.com'],
         remotePatterns: [
           {
             protocol: 'https',
             hostname: 'gallery.famewheels.com',
             port: '',
             pathname: '/portfolio/logodesigns/**',
+          },
+          {
+            protocol: 'https',
+            hostname: 'cdn-ikpnlcj.nitrocdn.com',
+            port: '',
+            pathname: '/about-us/**',
           },
           {
             protocol: 'https',

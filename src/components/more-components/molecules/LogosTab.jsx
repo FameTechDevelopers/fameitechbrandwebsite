@@ -73,7 +73,7 @@ import minimal12 from "/public/images/slider-data/minimal/i (12).webp";
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
 
-  const allImgsArr = [
+  const allImagesArr = [
     all1,
     all2,
     all3,
@@ -93,7 +93,7 @@ const Tabs = () => {
     all17,
     all18,
   ];
-  const abstractImgsArr = [
+  const abstractImagesArr = [
     abstract1,
     abstract2,
     abstract3,
@@ -104,7 +104,7 @@ const Tabs = () => {
     abstract8,
   ];
 
-  const creativeImgsArr = [
+  const creativeImagesArr = [
     creative1,
     creative2,
     creative3,
@@ -123,7 +123,7 @@ const Tabs = () => {
     creative16,
   ];
 
-  const mascotImgsArr = [
+  const mascotImagesArr = [
     mascot1,
     mascot2,
     mascot3,
@@ -134,7 +134,7 @@ const Tabs = () => {
     mascot8,
   ];
 
-  const minimalImgsArr = [
+  const minimalImagesArr = [
     minimal1,
     minimal2,
     minimal3,
@@ -150,11 +150,11 @@ const Tabs = () => {
   ];
 
   const tabs = [
-    { title: "ALL", content: <MainSlider imagesArr={allImgsArr} /> },
-    { title: "ABSTRACT", content: <MainSlider imagesArr={abstractImgsArr} /> },
-    { title: "MINIMAL", content: <MainSlider imagesArr={minimalImgsArr} /> },
-    { title: "CREATIVE", content: <MainSlider imagesArr={creativeImgsArr} /> },
-    { title: "MASCOT", content: <MainSlider imagesArr={mascotImgsArr} /> },
+    { title: "ALL", content: <MainSlider imagesArr={allImagesArr} /> },
+    { title: "ABSTRACT", content: <MainSlider imagesArr={abstractImagesArr} /> },
+    { title: "MINIMAL", content: <MainSlider imagesArr={minimalImagesArr} /> },
+    { title: "CREATIVE", content: <MainSlider imagesArr={creativeImagesArr} /> },
+    { title: "MASCOT", content: <MainSlider imagesArr={mascotImagesArr} /> },
   ];
 
   return (
