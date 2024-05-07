@@ -8,6 +8,7 @@ import client from "./images/image-12.png";
 import ArrowD from "./images/arrow-down.png";
 import Image from "next/image";
 
+
 const WhyChooseUs = () => {
   return (
     <div className=" bg-black">

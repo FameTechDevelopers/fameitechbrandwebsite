@@ -19,12 +19,10 @@ function CustomBusinessLogo() {
       <Navbar />
       <MainSection />
       <div className=" relative">
-      {/* <Image src={circle1} className=" absolute left-0 top-0" />
-      <Image src={circle2} className=" absolute right-0 top-0" /> */}
         <ServingClients />
         <PortfolioTabs />
       </div>
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       <CustomLogoBanner />
       <CustomLogoPricing />
       <PricingForm />
