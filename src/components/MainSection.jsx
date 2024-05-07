@@ -1,6 +1,57 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
+import LiveChatButton from "./LiveChatButton";
+import axios from "axios";
+import Lottie from "react-lottie";
+import SuccessAnim from "@/lottieAnimation/succesAnimation.json"
 
 const MainSection = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState('');
+  const [pending, setPending] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = async () => {
+
+    const formData = new FormData();
+
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("phone", phone);
+    formData.append("web_type", "fameitech-contact");
+    setPending(true)
+    try {
+      const response = await axios.post(
+        "https://portal.famewheels.com/contact-us",
+        formData
+      );
+
+      console.log(response.data);
+
+      setName("");
+      setEmail("");
+      setPhone("");
+      setPending(false)
+      setSuccess(true)
+
+      setTimeout(() => {
+        setSuccess(false)
+      }, 3000);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: SuccessAnim,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
   return (
     <>
       <div className=" main-section">
@@ -14,8 +65,8 @@ const MainSection = () => {
           </video>
           <div class="overlay"></div>
         </div>
-        <div className=" main-content px-14">
-          <h1 className=" lg:text-6xl text-4xl">
+        <div className=" main-content sm:px-14 px-2">
+          <h1 className=" lg:text-6xl sm:text-4xl text-3xl">
             Creating
             <span className="text-primary font-bold italic">
               {" "}
@@ -23,7 +74,7 @@ const MainSection = () => {
             </span>{" "}
             Digital Experience
           </h1>
-          <p className=" text-[28px] font-medium mt-3">
+          <p className=" sm:text-4xl text-2xl font-medium mt-5">
             CUSTOM WEBSITES, BRANDING & DIGITAL MARKETING SOLUTIONS
           </p>
 
@@ -32,6 +83,8 @@ const MainSection = () => {
               <input
                 className="border-2 border-white w-[92%] m-2 py-3 px-6 bg-transparent"
                 placeholder="Full Name"
+                value={name}
+                onChange={(e)=>setName(e.target.value)}
               />
             </div>
             <div className=" md:col-span-3 col-span-12">
@@ -39,6 +92,8 @@ const MainSection = () => {
               <input
                 className="border-2 border-white w-[92%] m-2 py-3 px-6 bg-transparent"
                 placeholder="Add email"
+                value={email}
+                onChange={(e)=>setEmail(e.target.value)}
               />
             </div>
             <div className=" md:col-span-3 col-span-12">
@@ -46,18 +101,34 @@ const MainSection = () => {
               <input
                 className="border-2 border-white w-[92%] m-2 py-3 px-6 bg-transparent"
                 placeholder="Phone"
+                value={phone}
+                onChange={(e)=>setPhone(e.target.value)}
               />
             </div>
             <div className=" md:col-span-3 flex justify-center items-center col-span-12">
               {" "}
-              <button className="btn w-full m-2 btn-main">Get A Quote</button>
+              <button className="btn w-full m-2 btn-main" onClick={handleSubmit}>
+                
+              {
+        success ?
+        <Lottie options={defaultOptions} height={35} width={35}/>
+: pending === true ? "Submitting...." :
+               "Get A Quote"
+              }
+                </button>
+
+
+
             </div>
+        {success && <p className="text-green-500 mt-2 font-semibold col-span-12">Successful We Will Get In Touch With You Shortly</p>}
           </div>
 
-          <div className="flex justify-center items-center lg:mt-12 mt-6">
+          <div className="flex justify-center items-center lg:mt-12 sm:mt-6 mt-3">
             <button className="btn mr-6">Get A Quote</button>
-            <button className="btn">Live Chat</button>
+            <LiveChatButton />
           </div>
+
+
         </div>
       </div>
     </>

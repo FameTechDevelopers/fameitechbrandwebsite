@@ -2,12 +2,10 @@ import React from 'react'
 
 const PricingCard = ({pricing}) => {
 
-console.log(pricing)
-
   return (
-    <div className='grid grid-cols-12 gap-4'>
-  {pricing?.map((price)=>(
-    <div className="pricingCard col-span-12 sm:col-span-6 xl:col-span-3 pl-4 bg-white rounded-2xl border-[1px] border-gray-200 w-full pb-4 pt-12">
+    <div className='grid grid-cols-12 gap-4 z-50'>
+  {pricing?.map((price,index)=>(
+    <div className="pricingCard col-span-12 sm:col-span-6 xl:col-span-3 pl-4 bg-white rounded-2xl border-[1px] border-gray-200 w-full pb-4 pt-12" key={index}>
         
         <h4 className=" mb-8 text-2xl font-medium text-center">{price?.title}</h4>
 
@@ -19,7 +17,7 @@ console.log(pricing)
 
     <ul className="flex flex-col mt-4 text-center gap-6  md:h-96 h-72 overflow-y-scroll scrollbar-hidden">
        {price.list.map((p)=>(
-         <li>{p}</li>
+         <li key={p}>{p}</li>
         )) 
       }
         

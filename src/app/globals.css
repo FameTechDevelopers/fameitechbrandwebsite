@@ -550,28 +550,28 @@ p.text-\[\#F8B421\].font-\[22px\] {
 }
 
 .digital-madia {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   color: white;
   text-align: center;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
 }
 
 .digital-container {
-  position: relative;
+  /* position: relative; */
   width: 100%;
-  height: 82vh;
+  /* height: 82vh; */
   overflow: hidden;
 }
 
 .tailored-packages {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   color: white;
   text-align: center;
   z-index: 1;
