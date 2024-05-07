@@ -6,9 +6,9 @@ const CustomLogoBanner = () => {
   return (
     <div className=" bg-black">
       <div className="pb-[30px]">
-        <div className="bg-CustomLogo">
+        <div className="bg-CustomLogo py-12">
           <div className="grid grid-cols-12 px-10 py-10">
-            <div className=" col-span-5 pl-[30px] pt-10 ml-10 ">
+            <div className=" lg:col-span-5 col-span-12 lg:pl-[30px] pt-10 lg:ml-10 ">
               <h2 className=" text-[#fff] font-bold text-[60px] leading-[70px] capitalize ">
                 Get Your Custom <br /> Logo Designed in just
               </h2>
@@ -24,7 +24,7 @@ const CustomLogoBanner = () => {
                 </button>
               </div>
             </div>
-            <div className="col-span-7">
+            <div className="lg:col-span-7 col-span-12">
               <Image
                 src={logoEg}
                 className=" w-[100%] h-[400px] object-contain"

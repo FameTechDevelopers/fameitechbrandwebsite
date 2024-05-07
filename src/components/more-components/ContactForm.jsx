@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <section class="main-contact w-full rounded-2xl border-[#073A9C] border-1 p-[32px]">
+    <section class="main-contact relative z-[999] w-full mt-12 lg:mt-0 rounded-2xl border-[#073A9C] border-1 p-[32px]">
       <div class=" mx-auto">
         <h2 class="mb-4 text-4xl text-white tracking-tight font-extrabold text-center  ">
           CHAT WITH US
