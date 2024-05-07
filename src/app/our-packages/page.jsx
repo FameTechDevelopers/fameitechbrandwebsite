@@ -39,7 +39,7 @@ const page = () => {
       <div class="tailored-container">
           <video className="absolute -z-10 w-full h-[100%] object-cover" autoPlay muted loop>
             <source
-              src="https://fameitech.com/portfolio/videos/section2.mp4"
+              src="https://gallery.famewheels.com/portfolio/videos/section2.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.

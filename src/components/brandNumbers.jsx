@@ -11,7 +11,7 @@ const BrandNumbers = () => {
         <div class="digital-container">
           <video className="absolute top-0 w-full h-[100%] object-cover" autoPlay muted loop>
             <source
-              src="https://fameitech.com/portfolio/videos/section1.mp4"
+              src="https://gallery.famewheels.com/portfolio/videos/section1.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.

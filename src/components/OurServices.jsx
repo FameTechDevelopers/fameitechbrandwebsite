@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import starIcon from "../assets/star.png";
 import handShake from "../assets/handshake.png";
@@ -8,6 +9,14 @@ import { FaArrowRight } from "react-icons/fa";
 import DiscoverLiveChat from "./DiscoverLiveChat";
 
 const OurServices = () => {
+
+  const handleClick = () => {
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    });
+  }
+
   return (
     <div className="services py-14 lg:px-14 px-8">
       <div className=" max-w-[1600px] mx-auto">
@@ -32,7 +41,7 @@ const OurServices = () => {
                 all digital platforms.
               </p>
               <div className=" flex items-center mt-12">
-                <button className=" discover-btn mr-[12px] flex justify-center items-center">
+                <button className=" discover-btn mr-[12px] flex justify-center items-center" onClick={handleClick}>
                   Get A Quote
                   <FaArrowRight className=" ml-2" />
                 </button>
