@@ -7,7 +7,7 @@ const CustomLogoPricing = () => {
     <div className="bg-black">
       <div className="  bg-[#073A9C] py-16 px-2 rounded-bl-[100px] rounded-br-[100px] ">
         <div className="max-w-[1700px] px-12 mx-auto ">
-          <h2 className=" text-[#fff] text-[60px] leading-[70px] font-bold ">
+          <h2 className=" text-[#fff] text-[45px] leading-[70px] font-bold ">
             <span className=" text-[45px] font-bold ">CHOOSE</span> <br /> A{" "}
             <span className="text-[#FE7524]">PACKAGE</span> THAT SUITS YOU
           </h2>

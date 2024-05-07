@@ -73,8 +73,8 @@ const PricingForm = () => {
 
   return (
     <div className='bg-black flex justify-center items-center pt-16 pb-5 '>
-      <div className='container'>
-        <div className='grid grid-cols-12 gap-8 jus'>
+      <div className='max-w-[1700px]  mx-auto'>
+        <div className='grid sm:grid-cols-12 grid-cols-12 gap-8 jus'>
           <div className='lg:col-span-4 sm:col-span-6 col-span-12 px-2'>
             <h4 className='text-[#FE7524] md:text-xl text-base font-medium'>
               Ultimate Value For Start-Ups And Businesses
@@ -83,36 +83,36 @@ const PricingForm = () => {
               All In One Combo
             </h1>
 
-            <p className='text-white text-sm'>
+            <p className='text-white sm:text-sm'>
               This logo design package offers remarkable value for companies
               looking to establish their online presence and increase their
               market reach with innovative digital solutions. Benefit from our
               power- packed combo package, custom made to suit your needs.
             </p>
 
-            <div className='relative border border-white mt-10 h-36'>
-              <p className='absolute -top-8 left-0 w-fit z-10 bg-black xl:text-2xl text-xl text-center font-light text-gray-300 mx-14'>
+            <div className='relative border border-white mt-10 sm:h-36 h-60'>
+              <p className='absolute -top-8 left-0 w-fit z-10 bg-black xl:text-2xl text-xl text-center font-light text-gray-300 sm:mx-14 max-sm:w-[50%]'>
                 Combo Package Complete Branding Solution
               </p>
 
-              <div className='mt-16 text-white text-center xl:text-4xl lg:text-3xl sm:text-3xl text-2xl font-bold flex gap-4 items-center justify-center px-4'>
-                <span className='text-[#FE7524]'>$999</span>
+              <div className='mt-16 text-white text-center xl:text-4xl lg:text-3xl sm:text-3xl text-2xl font-bold flex max-sm:flex-col gap-4 items-center justify-center px-4'>
+                <div className='text-[#FE7524]'>$999</div>
                 <div className='relative'>
                   <div className='absolute p-0.5 top-5 w-full bg-[#FE7524]'></div>
                   $3,330
                 </div>
 
-                <span className='font-medium text-4xl'>Only</span>
+                <div className='font-medium text-4xl'>Only</div>
               </div>
             </div>
 
-            <div className='pt-10 flex gap-4  '>
-              <button onClick={maximizeChat} className=' uppercase text-[#fff] bg-[#FE7524] px-8 py-2 rounded-full shadow-stone-400 font-bold text-sm'>
+            <div className='sm:pt-10 mt-4 flex max-sm:flex-col gap-4  '>
+              <button onClick={maximizeChat} className='w-1/2  uppercase text-[#fff] bg-[#FE7524] px-8 py-2 rounded-full shadow-stone-400 font-bold sm:text-sm'>
                 Live Chat{" "}
               </button>
               <LiveChat visibility={visibility} setVisibility={setVisibility}  />
 
-              <a href="#last_custom_form" className='uppercase text-[#000000] bg-[#ffffff] px-8 py-2 rounded-full shadow-stone-400 font-bold text-sm'>
+              <a href="#last_custom_form" className='w-1/2 uppercase text-[#000000] bg-[#ffffff] px-8 py-2 rounded-full shadow-stone-400 font-bold sm:text-sm'>
                 Order now
               </a>
             </div>
@@ -363,18 +363,18 @@ const PricingForm = () => {
               </p>
 
               <div className='flex gap-3 flex-col'>
-                <div className='flex gap-4 mt-6 text-2xl font-bold'>
+                <div className='flex gap-4 mt-6 sm:text-2xl text-base font-bold'>
                   <Image src={call} className='w-6 object-contain' /> +1
                   302-501-7152
                 </div>
-                <div className='flex gap-4 text-2xl font-bold'>
+                <div className='flex gap-4 sm:text-2xl text-base font-bold'>
                   <Image src={mail} className='w-6 object-contain' />
                   info@fameitech.com
                 </div>
               </div>
 
               <div className='mt-8'>
-                <a href="#last_custom_form"n className='uppercase text-[#000000] bg-[#ffffff] px-8 py-2 rounded-full shadow-stone-400 font-bold text-sm'>
+                <a href="#last_custom_form"n className='uppercase text-[#000000] bg-[#ffffff] px-8 py-2 rounded-full shadow-stone-400 font-bold sm:text-sm'>
                   Order now
                 </a>
               </div>
@@ -431,7 +431,7 @@ const PricingForm = () => {
                     </p>
                   )}
 
-                  <button className='uppercase text-[#000000] bg-[#ffffff] px-8 py-2 rounded-full shadow-stone-400 font-bold text-sm'>
+                  <button className='uppercase text-[#000000] bg-[#ffffff] px-8 py-2 rounded-full shadow-stone-400 font-bold sm:text-sm'>
                     {success ? (
                       <Lottie options={defaultOptions} height={50} width={50} />
                     ) : pending === true ? (

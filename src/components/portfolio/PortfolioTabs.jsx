@@ -93,8 +93,8 @@ const Portfolio = () => {
             <div className=" lg:col-span-4 col-span-12">
               <h2 className=" text-[3.2rem] font-bold text-white leading-[70px] ">
                 <span className=" text-[45px] font-bold ">WHY</span> <br />{" "}
-                <span className="text-[4.5rem]">CHOOSE</span>{" "}
-                <span className="text-[4.5rem] text-[#FE7524]">US?</span>
+                <span className="text-[3.2rem]">CHOOSE</span>{" "}
+                <span className="text-[3.2rem] text-[#FE7524]">US?</span>
               </h2>
               <div className=" w-full flex justify-center ">
                 <Image src={ArrowD} className=" w-[200px] h-[200px] mt-12" />

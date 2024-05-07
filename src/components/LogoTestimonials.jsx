@@ -59,7 +59,7 @@ const LogoTestimonials = () => {
     <>
       <div className=" bg-black">
         <div className="max-w-[1700px] px-12 mx-auto ">
-          <h2 className=" text-[#fff] md:text-[60px] text-[50px] leading-[70px] font-bold ">
+          <h2 className=" text-[#fff] md:text-[60px] text-[40px] leading-[70px] font-bold ">
             <span className=" text-[45px] font-bold ">OUR SERVICES</span> <br />{" "}
             ARE CHERISHED BY <span className="text-[#FE7524]">ALL!</span>
           </h2>

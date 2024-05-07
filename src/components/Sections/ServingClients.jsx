@@ -7,7 +7,7 @@ const ServingClients = () => {
         <div className=" col-span-8">
           <h2 className="  text-[3.2rem] font-bold text-white leading-[70px]">
             WE ARE <br />
-            <span className=" text-[4rem]">
+            <span className=" text-[2.5rem]">
               {" "}
               SERVING <span className="text-[#FE7524]">
                 {" "}

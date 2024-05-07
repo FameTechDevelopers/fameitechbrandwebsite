@@ -168,7 +168,7 @@ const Tabs = () => {
               activeTab === index
                 ? "bg-pri_blue  text-gray-100"
                 : "bg-black text-white "
-            }  block border-b-2 border-transparent font-semibold text-sm px-8 py-4 `}
+            }  block border-b-2 border-transparent font-semibold text-sm px-8 m-2 py-4 `}
           >
             {tab.title}
           </button>

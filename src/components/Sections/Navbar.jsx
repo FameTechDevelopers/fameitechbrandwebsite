@@ -22,7 +22,7 @@ function Navbar() {
   };
 
   return (
-    <section className="flex relative z-10 justify-center items-center font-oswald  pt-2 px-5">
+    <section className="bg-[#001130] flex relative z-10 justify-center items-center font-oswald  pt-2 px-5">
       <Wrapper className="flex flex-col py-6 space-y-3 space-x-3 sm:flex-row sm:justify-between sm:items-center sm:px-4">
         <a href="/">
         <Image

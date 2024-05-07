@@ -26,7 +26,7 @@ const MainSection = () => {
   };
 
   return (
-    <div className=" bg-black relative py-32 mt-[-125px]">
+    <div className=" bg-black relative sm:py-32 py-5 ">
       <Image src={circle1} className=" absolute left-0 top-0" />
       <Image src={circle2} className=" absolute right-0 top-0" />
       <div className=" max-w-[1700px] px-12 mx-auto grid grid-cols-12">
@@ -39,9 +39,9 @@ const MainSection = () => {
             <h2 className=" text-[3.2rem] font-bold text-white leading-[70px]">
               Logo
               <br />{" "}
-              <span className=" md:text-[7rem] text-[6rem]">Design </span>
+              <span className=" md:text-[7rem] sm:text-[6rem] text-6xl">Design </span>
               <br />
-              <span className="border-text text-[4rem]">Starting</span>{" "}
+              <span className="border-text text-[3rem]">Starting</span>{" "}
               <span className=" text-[4.2rem]">From</span>{" "}
               <span className="text-[#FE7524] font-[800]">$19</span>{" "}
               <span className=" text-[2.8rem] line-through">$45</span>
@@ -91,7 +91,7 @@ const MainSection = () => {
             <div className=" md:flex items-center mt-12">
               <a
               href="#customLogo_topForm"
-                class="py-3 px-6 text-sm md:mb-0 mb-4 flex lg:mr-8 justify-center items-center font-medium text-center text-white bg-[#073A9C] rounded-full"
+                class=" w-[60%] py-3 px-3 text-sm md:mb-0 mb-4 flex lg:mr-8 justify-center items-center font-medium text-center text-white bg-[#073A9C] rounded-full"
               >
                 RESERVE THE DISCOUNT
                 <FaArrowRight />
