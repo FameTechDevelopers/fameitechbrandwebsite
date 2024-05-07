@@ -14,9 +14,9 @@ const MainSection = () => {
       <Image src={circle1} className=" absolute left-0 top-0" />
       <Image src={circle2} className=" absolute right-0 top-0" />
       <div className=" max-w-[1700px] px-12 mx-auto grid grid-cols-12">
-        <div className=" col-span-7 flex items-center relative">
-          <Image src={arrow} className=" absolute right-28 top-20" />
-          <div>
+        <div className=" lg:col-span-7 col-span-12 flex items-center relative">
+          <Image src={arrow} className=" absolute hidden lg:block right-28 top-20" />
+          <div className=" mt-12 lg:mt-0">
             <h2 className=" text-[3.2rem] font-bold text-white leading-[70px]">
               Logo
               <br /> <span className=" text-[7rem]">Design </span>
@@ -86,7 +86,7 @@ const MainSection = () => {
             </div>
           </div>
         </div>
-        <div className=" col-span-5 flex justify-end items-end pl-24 py-4">
+        <div className=" lg:col-span-5 col-span-12 flex justify-end items-end lg:pl-24 py-4">
           <ContactForm />
         </div>
       </div>

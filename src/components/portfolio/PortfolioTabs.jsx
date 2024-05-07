@@ -46,8 +46,8 @@ const Portfolio = () => {
     <div className=" bg-black relative">
       <Image src={circle1} className=" absolute w-[1100px] left-0 top-0" />
       <Image src={circle2} className=" absolute right-0 top-0" />
-      <div className=" px-12 py-32 p-4 relative z-50">
-        <div className="size-full max-w-[1700px] px-12 mx-auto">
+      <div className=" lg:px-12 px-6 py-32 p-4 relative z-50">
+        <div className="size-full max-w-[1700px] lg:px-12 mx-auto">
           <div className="flex justify-between items-center mb-4">
             <div>
               {/* <button
@@ -64,14 +64,14 @@ const Portfolio = () => {
             </button> */}
             </div>
 
-            <div className="flex border-2 border-[#073A9C] p-3 rounded-full items-center space-x-4">
+            <div className="flex flex-wrap border-2 border-[#073A9C] lg:p-3 rounded-full items-center lg:space-x-4">
               {tabs.map((tab, index) => (
                 <button
                   key={index}
                   onClick={() => changeTab(index)}
-                  className={`px-4 rounded-[300px] text-[17px] w-[120px] py-3 ${
+                  className={`px-4 rounded-full text-[17px] w-[120px] py-2 ${
                     index === activeTab
-                      ? "bg-white rounded-[300px] font-[500] text-[#FE7524]"
+                      ? "bg-white rounded-[100px] font-[500] text-[#FE7524]"
                       : "bg-transparent text-white"
                   } rounded-md`}
                 >
@@ -90,7 +90,7 @@ const Portfolio = () => {
       <div className=" z-[99]">
         <div className="max-w-[1700px] px-12 mx-auto ">
           <div className=" grid grid-cols-12 py-4 pb-10 ">
-            <div className=" col-span-4">
+            <div className=" lg:col-span-4 col-span-12">
               <h2 className=" text-[3.2rem] font-bold text-white leading-[70px] ">
                 <span className=" text-[45px] font-bold ">WHY</span> <br />{" "}
                 <span className="text-[4.5rem]">CHOOSE</span>{" "}
@@ -100,9 +100,9 @@ const Portfolio = () => {
                 <Image src={ArrowD} className=" w-[200px] h-[200px] mt-12" />
               </div>
             </div>
-            <div className=" col-span-8">
+            <div className=" lg:col-span-8 col-span-12">
               <div className=" grid grid-cols-12">
-                <div className=" col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-12 lg:col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={experience} className=" w-[80px] h-[80px]" />
                   </div>
@@ -113,7 +113,7 @@ const Portfolio = () => {
                     Year Of Experience
                   </h6>
                 </div>
-                <div className=" col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-12 lg:col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={emp} className=" w-[80px] h-[80px]" />
                   </div>
@@ -124,7 +124,7 @@ const Portfolio = () => {
                     Employees
                   </h6>
                 </div>
-                <div className=" col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-12 lg:col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={logo} className=" w-[80px] h-[80px]" />
                   </div>
@@ -138,7 +138,7 @@ const Portfolio = () => {
               </div>
 
               <div className=" grid grid-cols-12">
-                <div className=" col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-12 lg:col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={project} className=" w-[80px] h-[80px]" />
                   </div>
@@ -149,7 +149,7 @@ const Portfolio = () => {
                     Project Delivery
                   </h6>
                 </div>
-                <div className=" col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-12 lg:col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={count} className=" w-[80px] h-[80px]" />
                   </div>
@@ -160,7 +160,7 @@ const Portfolio = () => {
                     Countries
                   </h6>
                 </div>
-                <div className=" col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-12 lg:col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={client} className=" w-[80px] h-[80px]" />
                   </div>
