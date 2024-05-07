@@ -17,7 +17,18 @@ body {
   background-size: 100% 90%;
 }
 
+.priceTabBorder {
+  background-image: url("../components/Sections/images/pricetab-border.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
 
+
+}
+
+.priceTabli ul li {
+  padding-bottom: 10px;
+}
 
 .hero::before {
   position: absolute;

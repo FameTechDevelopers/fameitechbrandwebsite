@@ -1,5 +1,6 @@
 "use client";
 
+import CustomLogoPricing from "@/components/Sections/pricing.jsx";
 // import { useState } from "react";
 // import "./App.css";
 import MainSection from "../../../components/Sections/MainSection.jsx";
@@ -18,6 +19,7 @@ function CustomBusinessLogo() {
       <ServingClients />
       <PortfolioTabs />
       <WhyChooseUs />
+      <CustomLogoPricing />
     </>
   );
 }
