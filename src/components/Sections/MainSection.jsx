@@ -68,7 +68,7 @@ const MainSection = () => {
               <span className="text-[#f2d119]  text-[3rem]">Starting</span>{" "}
               <span className=" md:text-[4.2rem] text-[3.5rem]">From</span>{" "}
               <span className="text-[#f2d119] font-[800]">$19</span>{" "}
-              <span className=" md:text-[2.8rem] text-[2.4rem] line-through">
+              <span className=" md:text-[1.8rem] text-[1.4rem] line-through">
                 $45
               </span>
             </h2>
