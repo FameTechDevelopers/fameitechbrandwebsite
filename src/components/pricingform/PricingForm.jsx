@@ -332,12 +332,12 @@ const PricingForm = () => {
           </div>
 
           <div className="lg:col-span-5 col-span-12">
-            <div className="relative border border-white mt-10 sm:h-36 md:h-60 h-80 max-sm:pt-20">
+            <div className="relative border border-white mt-6 sm:h-36 md:h-60 h-64 max-sm:pt-20">
               <p className="absolute -top-8 left-0 z-10 bg-black xl:text-2xl text-xl text-center font-light text-gray-300 sm:mx-14 md:w-[50%] mt-4 w-full ">
                 Combo Package Complete Branding Solution
               </p>
 
-              <div className=" md:mt-24 mt-16 text-white text-center xl:text-4xl lg:text-3xl sm:text-3xl text-2xl font-bold flex max-sm:flex-col gap-4 items-center justify-center px-4">
+              <div className=" md:mt-24  text-white text-center xl:text-4xl lg:text-3xl sm:text-3xl text-2xl font-bold flex max-sm:flex-col gap-4 items-center justify-center px-4">
                 <div className="text-[#FE7524]">$999</div>
                 <div className="relative">
                   <div className="absolute p-0.5 top-5 w-full bg-[#FE7524]"></div>

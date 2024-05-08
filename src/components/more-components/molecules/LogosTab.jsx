@@ -159,7 +159,7 @@ const Tabs = () => {
 
   return (
     <div className="w-full  mx-auto mt-10">
-      <div className="flex justify-center flex-wrap md:flex-nowrap border-b border-gray-200 space-x-5 *:text-lg *:tracking-wider">
+      <div className="flex justify-center flex-wrap md:flex-nowrap border-b border-gray-200 space-x-5 *:text-base md:*:text-lg *:tracking-wider">
         {tabs.map((tab, index) => (
           <button
             key={index}
@@ -168,7 +168,7 @@ const Tabs = () => {
               activeTab === index
                 ? "bg-pri_blue  text-gray-100"
                 : "bg-black text-white "
-            }  block border-b-2 border-transparent font-semibold text-sm px-8 m-2 py-4 `}
+            }  block border-b-2 border-transparent font-semibold md:text-sm py-2 px-4 md:px-8 m-2 md:py-4 `}
           >
             {tab.title}
           </button>

@@ -9,25 +9,25 @@ import LiveChatBtnLanding from "../livechatBlue";
 
 function ComboPackage() {
   return (
-    <section className='size-full flex justify-center comboBgImage text-white'>
+    <section className='size-full flex justify-center comboBgImage text-white '>
       <Wrapper>
-        <div className='size-full flex flex-col '>
-          <div className='size-full flex flex-col items-center md:flex-row justify-between md:justify-center px-4 py-6'>
-            <div className='w-full md:w-[50%] flex flex-col justify-center  space-y-4'>
+        <div className='size-full flex flex-col justify-center items-center px-5 xl:px-0 py-10 '>
+          <div className='size-full flex flex-col  md:flex-row  md:justify-center space-x-10  py-6'>
+            <div className='w-full md:w-[55%] xl:w-[45%] flex flex-col justify-center  space-y-4'>
               <p className='font-oswald-bold font-bold'>
                 ULTIMATE VALUE FOR START-UPS AND BUSINESSES
               </p>
               <h6
                 style={{ textShadow: "1px 1px 10px #00000" }}
-                className='italic text-6xl flex flex-col font-bold space-y-4'
+                className='italic  text-4xl  xl:text-6xl flex flex-col font-bold space-y-4'
               >
-                <span className='text-[#B82929] '>ALL IN ONE</span>
+                <span className='text-[#B82929]  '>ALL IN ONE</span>
                 <span className='text-pri_yellow flex flex-col sm:flex-row space-y-4 sm:space-x-6 sm:items-center'>
                   <span>COMBO</span>{" "}
                   <div className='h-[6px] w-20 bg-pri_yellow' />
                 </span>
               </h6>
-              <p className='text-pretty max-w-[450px] text-lg leading-[33px]'>
+              <p className='text-pretty max-w-[550px]  md:text-base xl:text-lg leading-[33px]'>
                 This logo design package offers remarkable value for companies
                 looking to establish their online presence and increase their
                 market reach with innovative digital solutions. Benefit from our
@@ -35,20 +35,20 @@ function ComboPackage() {
               </p>
             </div>
 
-            <div className='w-full md:w-[50%]  flex justify-center items-center'>
-              <div className='flex justify-between border p-2 md:p-10 space-x-10'>
+            <div className='w-full md:w-[45%] xl:w-[55%] !mr-10 flex justify-center items-center'>
+              <div className='flex justify-between items-center border p-2 md:p-6 xl:p-10 space-x-10'>
                 <div className='flex flex-col md:justify-center'>
-                  <p className='text-xl md:text-2xl font-bold'>COMBO PACKAGE</p>
-                  <p className='text-xs md:text-lg text-pri_yellow font-bold'>
+                  <p className='text-xl md:text-2xl xl:text-4xl font-bold flex-nowrap'>COMBO PACKAGE</p>
+                  <p className='text-xs md:text-xl text-pri_yellow font-bold'>
                     COMPLETE BRANDING SOLUTION
                   </p>
                 </div>
                 <div className='flex flex-col space-y-3'>
                   <p>
-                    <sub className='text-2xl md:text-5xl font-bold'>$</sub>
-                    <span className='text-4xl md:text-8xl font-bold'>999</span>
+                    <sub className='text-2xl md:text-4xl xl:text-5xl font-bold'>$</sub>
+                    <span className='text-4xl  xl:text-9xl font-bold'>999</span>
                   </p>
-                  <p className='text-lg md:text-2xl font-bold flex space-x-2 self-end'>
+                  <p className='text-lg md:text-2xl xl:text-3xl font-bold flex space-x-2 self-end'>
                     <span className='line-through'>$3,330</span>
                     <span>ONLY</span>
                   </p>
@@ -57,10 +57,10 @@ function ComboPackage() {
             </div>
           </div>
 
-          <div className='size-full flex flex-col md:flex-row justify-between  px-5'>
+          <div className='size-full flex flex-col md:flex-row justify-between  '>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-10'>
               <div className='flex flex-col space-y-4'>
-                <p className='text-3xl font-bold'>Logo Design</p>
+                <p className='text-xl md:text-3xl font-bold'>Logo Design</p>
                 <ul className=''>
                   <li className='flex space-x-2 items-center'>
                     <span>
@@ -89,7 +89,7 @@ function ComboPackage() {
                 </ul>
               </div>
               <div className='flex flex-col space-y-4'>
-                <p className='text-3xl font-bold'>Stationary Design</p>
+                <p className='text-xl md:text-3xl font-bold'>Stationary Design</p>
                 <ul className=''>
                   <li className='flex space-x-2 items-center'>
                     <span>
@@ -118,7 +118,7 @@ function ComboPackage() {
                 </ul>
               </div>
               <div className='flex flex-col space-y-4'>
-                <p className='text-3xl font-bold'>Value Added Services</p>
+                <p className='text-xl md:text-3xl font-bold'>Value Added Services</p>
                 <ul className=''>
                   <li className='flex space-x-2 items-center'>
                     <span>
@@ -139,7 +139,7 @@ function ComboPackage() {
                     <span>Complete Deployment</span>
                   </li>
                   <li className='flex  space-x-5 items-center py-10'>
-                    <a href="#logoDesign_ContactForm" className='bg-pri_yellow px-7 py-2 text-black italic'>
+                    <a href="#name_field" className='bg-pri_yellow px-7 py-2 text-black italic'>
                       Order Now
                     </a>
                     <LiveChatBtnLanding />
@@ -148,7 +148,7 @@ function ComboPackage() {
                 </ul>
               </div>
               <div className='flex flex-col space-y-4'>
-                <p className='text-3xl font-bold'>Website Design</p>
+                <p className='text-xl md:text-3xl font-bold'>Website Design</p>
                 <ul className=''>
                   <li className='flex space-x-2 items-center'>
                     <span>
@@ -194,7 +194,7 @@ function ComboPackage() {
             <div className='w-[50%] flex items-center space-x-4 justify-center'>
           
                   <Image  width={1000}
-          height={1000} src={mockupImage} alt="" />
+          height={1000} src={mockupImage} alt="" className="md:max-w-[300px] xl:max-w-none" />
             </div>
           </div>
         </div>

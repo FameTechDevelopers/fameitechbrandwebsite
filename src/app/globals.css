@@ -11,6 +11,33 @@ body {
 
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 
+
+
+@font-face {
+  font-family: 'Oswald';
+  src:  url('../assets/fonts/oswald/Oswald-Regular.ttf') format('truetype'),
+}
+@font-face {
+  font-family: 'Oswald Light';
+  src:  url('../assets/fonts/oswald/Oswald-Light.ttf') format('truetype'),
+      
+}
+@font-face {
+  font-family: 'Oswald Bold';
+  src:  url('../assets/fonts/oswald/Oswald-Bold.ttf') format('truetype'),
+
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/poppins/Poppins-Regular.ttf') format('truetype'),
+
+}
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url('../assets/fonts/poppins/Poppins-SemiBold.ttf') format('truetype'),
+}
+
 @font-face {
   font-family: 'Oswald';
   src:  url('../assets/fonts/oswald/Oswald-Regular.ttf') format('truetype'),
@@ -815,4 +842,36 @@ p.text-\[\#F8B421\].font-\[22px\] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+
+
+
+
+.font-oswald{
+  font-family: 'Oswald', sans-serif;
+}
+.font-oswald-light{
+  font-family: 'Oswald Light', sans-serif;
+}
+.font-oswald-bold{
+  font-family: 'Oswald Bold', sans-serif;
+}
+
+.font-poppins{
+  font-family: 'Poppins', sans-serif;
+}
+.font-poppins-semibold{
+  font-family: 'Poppins SemiBold', sans-serif;
+}
+
+
+.text-stroke{
+  -webkit-text-stroke: 1px white;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; */
+    /* -webkit-text-fill-color: white !important; 
+    -webkit-text-stroke-width: 2px !important;
+    -webkit-text-stroke-color: white !important; */
 }

@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import ic1 from "../../assets/whychooseusicons/1.webp";
 import ic2 from "../../assets/whychooseusicons/2.webp";
 import ic3 from "../../assets/whychooseusicons/3.webp";
@@ -49,17 +48,17 @@ function WhyChooseUs() {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
+    <div className='size-full grid grid-cols-2    xl:grid-cols-3 gap-2  place-items-center'>
       {sectionData.map((item, i) => (
         <div
           key={item.title}
-          className={`w-[300px] max-w-[400px] flex flex-col bg-pri_purple  text-center space-y-8 justify-center text-white items-center px-[4.5rem] py-8  from-[#00000A] to-[#0F07DA] ${
+          className={`w-[130px]  h-[130px] max-w-[300px] md:h-[300px] md:w-[300px] md:max-w-[full] flex flex-col bg-pri_purple  text-center space-y-4 md:space-y-8 justify-center text-white items-center md:px-[4.5rem]  md:py-8  from-[#00000A] to-[#0F07DA] ${
             i === 1 || i === 4 ? "bg-gradient-to-t" : "bg-gradient-to-r"
           }`}
         >
-          <img src={item.iconImg} alt="icon" className="w-[4.5rem]" />
+          <img src={item.iconImg} alt='icon' className='w-[40px] md:w-[4.5rem]' />
 
-          <div className="flex flex-col space-y-2 w-full">
+          <div className='flex flex-col space-y-2 w-full'>
             <CountUp
               scrollSpyOnce={true}
               enableScrollSpy
@@ -68,14 +67,14 @@ function WhyChooseUs() {
               end={item.number}
             >
               {({ countUpRef, start }) => (
-                <div className="text-6xl tracking-wider font-bold">
+                <div className='text-2xl md:text-3xl 2xl:text-6xl tracking-wider font-bold'>
                   <span ref={countUpRef} />
                   <span>{item.postfix}</span>
                 </div>
               )}
             </CountUp>
 
-            <p className="text-lg">{item.title}</p>
+            <p className='text-xs text-center md:text-lg'>{item.title}</p>
           </div>
         </div>
       ))}

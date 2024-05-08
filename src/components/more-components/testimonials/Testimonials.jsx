@@ -32,7 +32,7 @@ const Testimonials = () => {
   return (
     <div className="py-10 flex justify-center items-center flex-col bg-gray-100 h-full w-full bg-gradient-to-b from-[#060551] from-60% to-100% to-white ">
       <div className="text-center flex flex-col space-y-4 px-4 md:px-0">
-        <h1 className="text-4xl md:text-6xl tracking-widest text-white font-semibold">
+        <h1 className="text-4xl md:text-6xl leading-[50px] tracking-widest text-white font-semibold">
           OUR SERVICES ARE CHERISHED BY ALL!
         </h1>
         <p className="w-full font-medium text-xl text-white">
@@ -45,9 +45,9 @@ const Testimonials = () => {
           {testimonialArr?.map((test, index) => (
             <div
               key={test.name}
-              className="group md:col-span-6 lg:col-span-3 col-span-12 relative py-10 "
+              className="group md:col-span-6 lg:col-span-3 col-span-12 relative py-10 px-4 md:px-0 "
             >
-              <div className="group-hover:bg-testimonial-hover size-full group-hover:text-white bg-white pt-4 pb-12 px-8 rounded-2xl flex items-center flex-col border  border-white transition-all duration-300">
+              <div className="group-hover:bg-testimonial-hover-blue size-full group-hover:text-white bg-white pt-4 pb-12 px-8 rounded-2xl flex items-center flex-col border  border-white transition-all duration-300">
                 {/* {changeQuoteIndex === index ? (
                   changeQuote && (
                     <Image
@@ -112,7 +112,7 @@ const Testimonials = () => {
                   src={test.img}
                   className="w-20 rounded-full p-1 bg-white"
                 />
-                <p className="font-semibold">{test.name}</p>
+                <p style={{ textShadow: "1px 1px 1px black" }} className="font-semibold text-primary  font-poppins">{test.name}</p>
               </div>
             </div>
           ))}

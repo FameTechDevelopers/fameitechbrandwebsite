@@ -26,6 +26,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "testimonial-hover": "linear-gradient(126deg, #ff7400 0%, #fc9f57 100%)", // Add hover variant
+        "testimonial-hover-blue": "linear-gradient(180deg,#020ce7 0%,#222 100%)", // Add hover variant
         "pricing-gradient":"linear-gradient(126deg,#ffca59 0%, #fc9f57 50%, #ff7400 100%)"
       },
       animation: {

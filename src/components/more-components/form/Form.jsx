@@ -35,7 +35,7 @@ function Form() {
     formData.append("email", email);
     formData.append("phone", phone);
     formData.append("message", message);
-    formData.append("web_type", "logo-design-contact");
+    formData.append("web_type", window.location.pathname);
     setPending(true);
     try {
       const response = await axios.post(
@@ -57,7 +57,7 @@ function Form() {
   };
 
   const defaultOptions = {
-    loop: true,
+    loop: false,
     autoplay: true,
     animationData: SuccessAnim,
     rendererSettings: {
@@ -66,9 +66,9 @@ function Form() {
   };
 
   return (
-    <section className='bgLogoForm bg-cover bg-center bg-no-repeat size-full flex justify-center items-center text-white py-20 '>
-      <Wrapper className={"flex flex-col md:flex-row space-y-10  sm:px-10"}>
-        <div className='w-[50%] flex flex-col space-y-3 '>
+    <section className='bgLogoForm bg-cover bg-center bg-no-repeat size-full flex justify-center items-center text-white py-20 px-4'>
+      <Wrapper className={"flex flex-col md:flex-row space-y-10  "}>
+        <div className='w-full md:w-[50%] flex flex-col space-y-3 '>
           <p className='font-bold text-xl md:text-3xl'>
             Let{`'`}s get the Ball Rolling
           </p>
@@ -89,34 +89,39 @@ function Form() {
           </button>
           <LiveChat visibility={visibility} setVisibility={setVisibility} />
         </div>
-        <div className='w-[50%] flex space-y-5 flex-col'>
+        <div className='w-full md:w-[50%] flex space-y-5 flex-col'>
           <p className='font-bold text-4xl md:text-6xl'>
             Let{`'`}s Get Started!
           </p>
           <form
             onSubmit={handleSubmit}
-            className='flex flex-col font-poppins space-y-2 *:p-3 *:rounded-sm '
+            className='size-full flex flex-col font-poppins space-y-2 *:text-sm md:*:text-base *:p-2 md:*:p-3 *:rounded-sm  text-black'
             id="logoDesign_ContactForm"
           >
             <input
+            required
+            id="name_field"
               type='text'
               placeholder='Enter Your Name'
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
             <input
+            required
               type='text'
               placeholder='Email Address'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
+            required
               type='text'
               placeholder='Phone'
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
             <textarea
+            required
               name=''
               id=''
               cols='30'
@@ -132,7 +137,7 @@ function Form() {
               </p>
             )}
 
-            <button className='text-xl py-2 bg-pri_blue px-0 md:!px-20  w-full md:w-fit font-oswald'>
+            <button className='text-xl py-2 bg-pri_blue px-0 md:!px-20 text-white  w-full md:w-fit font-oswald'>
               {success ? (
                 <Lottie options={defaultOptions} height={50} width={50} />
               ) : pending === true ? (

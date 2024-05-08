@@ -16,18 +16,22 @@ const MainSlider = ({ imagesArr }) => {
 
   const settings = {
     // dots: true,
-    // infinite: true,
     arrows: false,
     navigator: false,
+    rows: 2,
+    infinite: true,
+    autoplay: true,
     speed: 500,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     slidesToShow: 4,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToScroll: 1,
           initialSlide: 4,
         },
       },
@@ -41,25 +45,25 @@ const MainSlider = ({ imagesArr }) => {
     ],
   };
   return (
-    <div className="w-full flex flex-col space-y-10 justify-center">
-      <Slider {...settings} className="size-full main-slide space-x-2">
-        {ImagesArr.slice(0, imagesArr.length / 2).map((ImageSrc) => (
+    <div className="w-full flex flex-col space-y-9 ">
+      <Slider {...settings} className="size-full main-slide ">
+        {ImagesArr.map((ImageSrc) => (
           <Image
             key={ImageSrc}
             src={ImageSrc}
-            className="max-w-[350px] mx-auto rounded-md"
+            className="max-w-full sm:pr-6 pt-6"
           />
         ))}
       </Slider>
-      <Slider {...settings} className="size-full main-slide ">
+      {/* <Slider {...settings} className="size-full main-slide">
         {ImagesArr.slice(imagesArr.length / 2, imagesArr.length).map((ImageSrc) => (
           <Image
             key={ImageSrc}
             src={ImageSrc}
-            className="max-w-[350px] mx-auto rounded-md"
+            className="max-w-full pr-6"
           />
         ))}
-      </Slider>
+      </Slider> */}
     </div>
   );
 };

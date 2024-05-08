@@ -68,17 +68,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className=" lg:col-span-3 col-span-12">
-              <h2 className=" text-[26px] font-[800] mb-8">Quick Links</h2>
-              <ul>
-                <li>About Us</li>
-                <li>Logo Design</li>
-                <li>Website Design</li>
-                <li>Video Animation</li>
-                <li>Video Our Package</li>
-                <li>Contact</li>
-              </ul>
-            </div>
+         
             <div className=" lg:col-span-2 col-span-12">
               <h2 className=" text-[26px] font-[800] mb-8">Location</h2>
               <div className="">
