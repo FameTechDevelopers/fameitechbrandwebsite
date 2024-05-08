@@ -54,7 +54,7 @@ const MainSection = () => {
                   Call Us Now
                 </span>
                 <span className="text-white font-bold text-[0.8rem]">
-                  +1 (872) 233 - 3612
+                  +1 (302) 501 - 7152
                 </span>
               </div>
             </div>

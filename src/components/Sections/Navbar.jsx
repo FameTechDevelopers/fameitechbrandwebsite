@@ -60,7 +60,7 @@ function Navbar() {
             <div className="flex flex-col sm:text-sm">
               <span className=" font-thin">Call Us Now</span>
               <span className="text-white font-normal">
-                +1 (872) 233 - 3612
+                +1 (302) 501 - 7152
               </span>
             </div>
           </div>
