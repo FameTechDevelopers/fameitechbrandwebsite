@@ -316,7 +316,7 @@ const PricingForm = () => {
             <div className="sm:pt-4 mt-4 flex max-sm:flex-col gap-4  ">
               <button
                 onClick={maximizeChat}
-                className="w-1/2  uppercase text-[#fff] bg-[#FE7524] px-8 py-4 rounded-full shadow-stone-400 font-bold sm:text-sm"
+                className="md:w-1/2  uppercase text-[#fff] bg-[#FE7524] px-8 py-4 rounded-full shadow-stone-400 font-bold sm:text-sm"
               >
                 Live Chat{" "}
               </button>
@@ -324,7 +324,7 @@ const PricingForm = () => {
 
               <a
                 href="#last_custom_form"
-                className="w-1/2 uppercase text-[#000000] bg-[#ffffff] text-center px-8 py-4 rounded-full shadow-stone-400 font-bold sm:text-sm"
+                className="md:w-1/2 uppercase text-[#000000] bg-[#ffffff] text-center px-8 py-4 rounded-full shadow-stone-400 font-bold sm:text-sm"
               >
                 Order now
               </a>
@@ -332,12 +332,12 @@ const PricingForm = () => {
           </div>
 
           <div className="lg:col-span-5 col-span-12">
-            <div className="relative border border-white mt-10 sm:h-36 h-60">
-              <p className="absolute -top-8 left-0 w-fit z-10 bg-black xl:text-2xl text-xl text-center font-light text-gray-300 sm:mx-14 max-sm:w-[50%]">
+            <div className="relative border border-white mt-10 sm:h-36 md:h-60 h-80 max-sm:pt-20">
+              <p className="absolute -top-8 left-0 z-10 bg-black xl:text-2xl text-xl text-center font-light text-gray-300 sm:mx-14 md:w-[50%] mt-4 w-full ">
                 Combo Package Complete Branding Solution
               </p>
 
-              <div className="mt-16 text-white text-center xl:text-4xl lg:text-3xl sm:text-3xl text-2xl font-bold flex max-sm:flex-col gap-4 items-center justify-center px-4">
+              <div className=" md:mt-24 mt-16 text-white text-center xl:text-4xl lg:text-3xl sm:text-3xl text-2xl font-bold flex max-sm:flex-col gap-4 items-center justify-center px-4">
                 <div className="text-[#FE7524]">$999</div>
                 <div className="relative">
                   <div className="absolute p-0.5 top-5 w-full bg-[#FE7524]"></div>
