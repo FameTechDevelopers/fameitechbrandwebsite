@@ -93,43 +93,43 @@ const AbstractLogo = () => {
             className="border-2 border-[#073A9C] rounded-[20px] "
           />
         </div>
-        <div>
+        <div className=" p-2">
           <Image
             src={image3}
             className="border-2 border-[#073A9C] rounded-[20px] "
           />
         </div>
-        <div>
+        <div className=" p-2">
           <Image
             src={image3}
             className="border-2 border-[#073A9C] rounded-[20px] "
           />
         </div>
-        <div>
+        <div className=" p-2">
           <Image
             src={image4}
             className="border-2 border-[#073A9C] rounded-[20px] "
           />
         </div>
-        <div>
+        <div className=" p-2">
           <Image
             src={image5}
             className="border-2 border-[#073A9C] rounded-[20px] "
           />
         </div>
-        <div>
+        <div className=" p-2">
           <Image
             src={image6}
             className="border-2 border-[#073A9C] rounded-[20px] "
           />
         </div>
-        <div>
+        <div className=" p-2">
           <Image
             src={image7}
             className="border-2 border-[#073A9C] rounded-[20px] "
           />
         </div>
-        <div>
+        <div className=" p-2">
           <Image
             src={image8}
             className="border-2 border-[#073A9C] rounded-[20px] "
