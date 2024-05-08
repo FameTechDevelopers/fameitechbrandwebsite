@@ -24,12 +24,12 @@ const CustomLogoBanner = () => {
     <div className=" bg-black">
       <div className="pb-[30px]">
         <div className="bg-CustomLogo py-12">
-          <div className="grid grid-cols-12 px-10 py-10">
-            <div className=" lg:col-span-5 col-span-12 lg:pl-[30px] pt-10 lg:ml-10 ">
-              <h2 className=" text-[#fff] font-bold text-[46px] leading-[70px] capitalize ">
-                Get Your Custom <br /> Logo Designed in just
+          <div className="max-w-[1300px] mt-6 px-12 mx-auto py-10">
+            <div className="lg:pl-[30px] pt-10 lg:ml-10 ">
+              <h2 className=" text-[#fff] text-center font-bold text-[3.6rem] leading-[70px] capitalize ">
+                Get Your Custom Logo Designed in just
               </h2>
-              <div className="pt-10 flex gap-4  ">
+              <div className="pt-10 flex justify-center items-center gap-4  ">
                 <button onClick={maximizeChat} className=" uppercase text-[#fff] bg-[#FE7524] px-8 py-2 rounded-full shadow-stone-400 ">
                   LIVE CHAT
                 </button>
@@ -42,10 +42,10 @@ const CustomLogoBanner = () => {
                 </button> */}
               </div>
             </div>
-            <div className="lg:col-span-7 col-span-12">
+            <div className="">
               <Image
                 src={logoEg}
-                className=" w-[100%] h-[400px] object-contain"
+                className=" w-[100%] hidden h-[400px] object-contain"
               />
             </div>
           </div>

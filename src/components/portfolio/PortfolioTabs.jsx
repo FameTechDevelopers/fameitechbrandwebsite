@@ -46,8 +46,8 @@ const Portfolio = () => {
     <div className=" bg-black relative">
       <Image src={circle1} className=" absolute w-[1100px] left-0 top-0" />
       <Image src={circle2} className=" absolute right-0 top-0" />
-      <div className=" lg:px-12 px-6 py-32 p-4 relative z-50">
-        <div className="size-full max-w-[1700px] lg:px-12 mx-auto">
+      <div className=" py-12 relative z-50">
+        <div className="size-full mx-auto">
           <div className="flex justify-between items-center mb-4">
             <div>
               {/* <button
@@ -64,12 +64,12 @@ const Portfolio = () => {
             </button> */}
             </div>
 
-            <div className="flex flex-wrap border-2 border-[#073A9C] lg:p-3 rounded-full items-center lg:space-x-4">
+            <div className="flex flex-wrap lg:p-3 rounded-full items-center lg:space-x-4">
               {tabs.map((tab, index) => (
                 <button
                   key={index}
                   onClick={() => changeTab(index)}
-                  className={`px-4 rounded-full text-[17px] w-[120px] py-2 ${
+                  className={`px-6 rounded-full border-2 text-[20px] w-[150px] py-4 ${
                     index === activeTab
                       ? "bg-white rounded-[100px] font-[500] text-[#FE7524]"
                       : "bg-transparent text-white"
@@ -81,26 +81,25 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <div className="p-4 rounded-md">
+          <div className="rounded-md">
             <p>{tabs[activeTab].content}</p>
           </div>
         </div>
       </div>
 
       <div className=" z-[99]">
-        <div className="max-w-[1700px] px-12 mx-auto ">
-          <div className=" grid grid-cols-12 py-4 pb-10 ">
-            <div className=" lg:col-span-4 col-span-12">
-              <h2 className=" text-[3.2rem] font-bold text-white leading-[70px] ">
-                <span className=" text-[45px] font-bold ">WHY</span> <br />{" "}
-                <span className="text-[3.2rem]">CHOOSE</span>{" "}
-                <span className="text-[3.2rem] text-[#FE7524]">US?</span>
+        <div className="max-w-[1300px] mt-6 px-12 mx-auto ">
+          <div className="  py-4 pb-10 ">
+            <div className="">
+              <h2 className="   text-[4rem] mt-6 font-[Oswald]-700 text-center font-bold text-white leading-[70px]">
+                WHY CHOOSE
+                <span className="text-[4rem] text-[#FE7524]"> US?</span>
               </h2>
               <div className=" w-full flex justify-center ">
-                <Image src={ArrowD} className=" w-[200px] h-[200px] mt-12" />
+                {/* <Image src={ArrowD} className=" w-[200px] h-[200px] mt-12" /> */}
               </div>
             </div>
-            <div className=" lg:col-span-8 col-span-12">
+            <div className="">
               <div className=" grid grid-cols-12">
                 <div className=" col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>

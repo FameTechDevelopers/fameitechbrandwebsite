@@ -1,3 +1,5 @@
+const { Oswald } = require('next/font/google');
+
  /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -17,7 +19,9 @@ module.exports = {
         pri_orange:"#FFA500",
         dark_blue: "#010246",
       },
-
+    fontFamily: {
+       custom: ['Oswald', 'sans-serif'],
+    },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

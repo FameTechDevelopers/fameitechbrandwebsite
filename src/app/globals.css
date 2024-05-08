@@ -3,6 +3,8 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 body {
   overflow-x: hidden;
 }
@@ -22,7 +24,7 @@ section.main-contact.w-full.rounded-2xl.border-\[\#073A9C\].border-1.p-\[32px\] 
 .bg-CustomLogo {
   background-image: url("../components/Sections/images/bg-customlogo.png");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: 100% 90%;
 }
 
@@ -763,4 +765,10 @@ p.text-\[\#F8B421\].font-\[22px\] {
 
 .bgLogoForm {
   background-image: url("../assets/form.webp");
+}
+
+
+
+.flex.justify-between.items-center.mb-4 {
+  justify-content: center;
 }

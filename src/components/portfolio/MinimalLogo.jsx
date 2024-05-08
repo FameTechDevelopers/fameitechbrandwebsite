@@ -69,7 +69,7 @@ const AbstractLogo = () => {
   };
   return (
     <div className=" p-2">
-      <div className=" mb-4">
+      <div className=" mb-4 flex justify-center items-center">
         <button
           onClick={handlePrev}
           className="px-4 py-4 rounded-full lg:mr-12 border-2 border-[#073A9C] hover:bg-[#073A9C] text-white"

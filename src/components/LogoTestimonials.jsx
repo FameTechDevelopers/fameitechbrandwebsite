@@ -58,7 +58,7 @@ const LogoTestimonials = () => {
   return (
     <>
       <div className=" bg-black">
-        <div className="max-w-[1700px] px-12 mx-auto ">
+        <div className="max-w-[1300px] px-12 py-4 mx-auto">
           <h2 className=" text-[#fff] md:text-[60px] text-[40px] leading-[70px] font-bold ">
             <span className=" text-[45px] font-bold ">OUR SERVICES</span> <br />{" "}
             ARE CHERISHED BY <span className="text-[#FE7524]">ALL!</span>
@@ -69,7 +69,7 @@ const LogoTestimonials = () => {
           </p>
         </div>
 
-        <div className=" relative max-w-[1700px] pb-14 px-12 mx-auto  z-[999]">
+        <div className=" relative max-w-[1300px] pb-24 px-12 mx-auto  z-[999]">
           <div className=" mb-4">
             <button
               onClick={handlePrev}

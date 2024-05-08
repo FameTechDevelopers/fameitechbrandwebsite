@@ -6,13 +6,13 @@ const CustomLogoPricing = () => {
   return (
     <div className="bg-black">
       <div className="  bg-[#073A9C] py-16 px-2 rounded-bl-[100px] rounded-br-[100px] ">
-        <div className="max-w-[1700px] px-12 mx-auto ">
+        <div className="max-w-[1300px] px-12 mx-auto ">
           <h2 className=" text-[#fff] text-[45px] leading-[70px] font-bold ">
             <span className=" text-[45px] font-bold ">CHOOSE</span> <br /> A{" "}
             <span className="text-[#FE7524]">PACKAGE</span> THAT SUITS YOU
           </h2>
         </div>
-        <div className=" max-w-[1700px]  mx-auto">
+        <div className=" max-w-[1300px]  mx-auto">
           <div className=" grid grid-cols-12 py-4 pb-10 ">
             {/* <div className="col-span-1  "></div> */}
             <div className="lg:col-span-4 col-span-12 ">

@@ -26,10 +26,10 @@ const MainSection = () => {
   };
 
   return (
-    <div className=" bg-black relative sm:py-32 py-5 ">
+    <div className=" bg-black relative mt-[-130px] sm:py-32 py-5 ">
       <Image src={circle1} className=" absolute left-0 top-0" />
       <Image src={circle2} className=" absolute right-0 top-0" />
-      <div className=" max-w-[1700px] px-12 mx-auto grid grid-cols-12">
+      <div className=" max-w-[1300px] mt-6 px-12 mx-auto grid grid-cols-12">
         <div className=" lg:col-span-7 col-span-12 flex items-center relative">
           <Image
             src={arrow}
@@ -39,7 +39,7 @@ const MainSection = () => {
             <h2 className=" text-[3.2rem] font-bold text-white leading-[70px]">
               Logo
               <br />{" "}
-              <span className=" md:text-[7rem] sm:text-[6rem] text-6xl">Design </span>
+              <span className=" md:text-[5rem] sm:text-[6rem] text-6xl">Design </span>
               <br />
               <span className="border-text text-[3rem]">Starting</span>{" "}
               <span className=" text-[4.2rem]">From</span>{" "}
