@@ -1,13 +1,12 @@
-"use client"
+"use client";
 import React, { useState } from "react";
-import Lottie from "react-lottie"
-import SuccessAnim from "@/lottieAnimation/succesAnimation.json"
+import Lottie from "react-lottie";
+import SuccessAnim from "@/lottieAnimation/succesAnimation.json";
 import axios from "axios";
 const ContactForm = () => {
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState('');
+  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [pending, setPending] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -21,8 +20,8 @@ const ContactForm = () => {
     formData.append("email", email);
     formData.append("phone", phone);
     formData.append("message", message);
-    formData.append("web_type", "fameitech-contact");
-    setPending(true)
+    formData.append("web_type", "custom-business-logo");
+    setPending(true);
     try {
       const response = await axios.post(
         "https://portal.famewheels.com/contact-us",
@@ -35,8 +34,8 @@ const ContactForm = () => {
       setEmail("");
       setPhone("");
       setMessage("");
-      setPending(false)
-      setSuccess(true)
+      setPending(false);
+      setSuccess(true);
     } catch (error) {
       console.log(error);
     }
@@ -47,23 +46,26 @@ const ContactForm = () => {
     autoplay: true,
     animationData: SuccessAnim,
     rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
+      preserveAspectRatio: "xMidYMid slice",
+    },
   };
 
-
   return (
-    <section class="main-contact w-full z-30 rounded-2xl border-[#073A9C] border-1 p-[32px]">
+    <section class="main-contact md:mt-0 mt-5 w-full z-30 rounded-2xl border-[#073A9C] border-1 p-[32px]">
       <div class=" mx-auto">
-        <h2 class="mb-4 text-4xl text-white tracking-tight font-extrabold text-center  ">
+        <h2 class="mb-4 md:text-4xl text-2xl text-white tracking-tight font-extrabold text-center  ">
           CHAT WITH US
         </h2>
-        <p className=" text-center text-white text-[1.4rem] font-medium">
+        <p className=" text-center text-white text-[1rem] mb-4 font-medium">
           TO AVAIL{" "}
-          <span className="text-[#FE7524] font-bold text-[1.8rem]">70%</span>{" "}
+          <span className="text-[#FE7524] font-bold text-[1.2rem]">70%</span>{" "}
           DISCOUNT
         </p>
-        <form id="customLogo_topForm" className="space-y-8 px-4 text-white" onSubmit={handleSubmit}>
+        <form
+          id="customLogo_topForm"
+          className="space-y-8 px-4 text-white"
+          onSubmit={handleSubmit}
+        >
           <div>
             <input
               type="text"
@@ -107,23 +109,24 @@ const ContactForm = () => {
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
-          {success && <p className="text-green-500 mt-2 font-semibold">Successful We Will Get In Touch With You Shortly</p>}
+          {success && (
+            <p className="text-green-500 mt-2 font-semibold">
+              Successful We Will Get In Touch With You Shortly
+            </p>
+          )}
 
           <div className=" flex justify-center items-center">
             <button
               type="submit"
-              class="py-3 px-12 text-sm font-medium text-center text-white bg-[#073A9C] rounded-full"
+              class="py-3 md:px-12 px-6 text-sm font-medium text-center text-white bg-[#073A9C] rounded-full"
             >
-
-{
-        success ?
-        <Lottie options={defaultOptions} height={50} width={50}/>
-: pending === true ? "Submitting...." :
-        "RESERVE THE DISCOUNT"
-        
-        }
-
-              
+              {success ? (
+                <Lottie options={defaultOptions} height={50} width={50} />
+              ) : pending === true ? (
+                "Submitting...."
+              ) : (
+                "RESERVE THE DISCOUNT"
+              )}
             </button>
           </div>
         </form>

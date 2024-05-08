@@ -19,7 +19,7 @@ const MainSection = () => {
     formData.append("name", name);
     formData.append("email", email);
     formData.append("phone", phone);
-    formData.append("web_type", "fameitech-contact");
+    formData.append("web_type", "fameitech.com");
     setPending(true)
     try {
       const response = await axios.post(

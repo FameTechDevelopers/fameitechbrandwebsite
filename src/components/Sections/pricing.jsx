@@ -7,9 +7,9 @@ const CustomLogoPricing = () => {
     <div className="bg-black">
       <div className="  bg-[#073A9C] py-16 px-2 rounded-bl-[100px] rounded-br-[100px] ">
         <div className="max-w-[1300px] px-12 mx-auto ">
-          <h2 className=" text-[#fff] text-[45px] leading-[70px] font-bold ">
-            <span className=" text-[45px] font-bold ">CHOOSE</span> <br /> A{" "}
-            <span className="text-[#FE7524]">PACKAGE</span> THAT SUITS YOU
+          <h2 className=" text-[#fff] font-oswald-light text-[2.2rem] md:text-[3.2rem] md:leading-[70px] leading-[50px] font-bold ">
+            <span className=" text-[2.2rem] md:text-[3.2rem] md:leading-[70px] leading-[50px] font-bold ">CHOOSE</span> <br /> A{" "}
+            <span className="text-[#FE7524] text-[2.2rem] md:text-[3.2rem] md:leading-[70px] leading-[50px]">PACKAGE</span> THAT SUITS YOU
           </h2>
         </div>
         <div className=" max-w-[1300px]  mx-auto">
@@ -27,9 +27,9 @@ const CustomLogoPricing = () => {
                       <div className="flex items-center justify-start ">
                         <Image
                           src={ListIcon}
-                          className=" w-[16px] h-[16px] mr-3"
+                          className="w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className="text-[#fff] md:text-[16px] text-[13px] ">
                           1 logo concept
                         </h5>
                       </div>
@@ -40,7 +40,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           By 1 Designer
                         </h5>
                       </div>
@@ -51,7 +51,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           2 Rounds of Revisions
                         </h5>
                       </div>
@@ -62,7 +62,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           Final Files Included:
                         </h5>
                       </div>
@@ -73,7 +73,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">JPEG</h5>
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">JPEG</h5>
                       </div>
                     </li>
                     <li>
@@ -82,7 +82,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           100% Unique Design Guarantee
                         </h5>
                       </div>
@@ -93,7 +93,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           100% Satisfaction Guarantee
                         </h5>
                       </div>
@@ -126,7 +126,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           3 logo concept
                         </h5>
                       </div>
@@ -137,7 +137,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           By 1 Designer
                         </h5>
                       </div>
@@ -148,7 +148,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           4 Rounds of Revisions
                         </h5>
                       </div>
@@ -159,7 +159,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           Final Files Included:
                         </h5>
                       </div>
@@ -170,7 +170,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           JPEG, PNG, PDF
                         </h5>
                       </div>
@@ -181,7 +181,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           100% Unique Design Guarantee
                         </h5>
                       </div>
@@ -192,7 +192,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           100% Satisfaction Guarantee
                         </h5>
                       </div>
@@ -225,7 +225,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           6 logo concept
                         </h5>
                       </div>
@@ -236,7 +236,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           By 2 Designer
                         </h5>
                       </div>
@@ -247,7 +247,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           6 Rounds of Revisions
                         </h5>
                       </div>
@@ -258,7 +258,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           Final Files Included:
                         </h5>
                       </div>
@@ -269,7 +269,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">JPEG</h5>
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">JPEG</h5>
                       </div>
                     </li>
                     <li>
@@ -278,7 +278,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           100% Unique Design Guarantee
                         </h5>
                       </div>
@@ -289,7 +289,7 @@ const CustomLogoPricing = () => {
                           src={ListIcon}
                           className=" w-[16px] h-[16px] mr-3"
                         />
-                        <h5 className=" text-[#fff] text-[16px] ">
+                        <h5 className=" text-[#fff] md:text-[16px] text-[13px] ">
                           100% Satisfaction Guarantee
                         </h5>
                       </div>

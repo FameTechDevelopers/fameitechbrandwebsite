@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import ContactForm from "../../components/more-components/ContactForm";
 import { FaCheck } from "react-icons/fa6";
@@ -11,40 +11,44 @@ import Image from "next/image";
 import LiveChat from "../LiveChat";
 
 const MainSection = () => {
-  const [visibility,setVisibility] = useState("minimized")
+  const [visibility, setVisibility] = useState("minimized");
 
   const maximizeChat = async () => {
-      if (visibility === "minimized") {
-          setVisibility("maximized")
+    if (visibility === "minimized") {
+      setVisibility("maximized");
       //   setTimeout(() => {
       //     setVisibility("minimized")
-          
+
       //   }, 1000);
-      }else{   
-          setVisibility("minimized")
-      }
+    } else {
+      setVisibility("minimized");
+    }
   };
 
   return (
     <div className=" bg-black relative mt-[-130px] sm:py-32 py-5 ">
       <Image src={circle1} className=" absolute left-0 top-0" />
       <Image src={circle2} className=" absolute right-0 top-0" />
-      <div className=" max-w-[1300px] mt-6 px-12 mx-auto grid grid-cols-12">
+      <div className=" max-w-[1300px] mt-6 md:px-12 px-6 mx-auto grid grid-cols-12">
         <div className=" lg:col-span-7 col-span-12 flex items-center relative">
           <Image
             src={arrow}
             className=" absolute hidden lg:block right-28 top-20"
           />
-          <div className=" mt-12 lg:mt-0">
-            <h2 className=" text-[3.2rem] font-bold text-white leading-[70px]">
+          <div className=" mt-12 font-oswald-light lg:mt-0">
+            <h2 className="text-[2.2rem] md:text-[3.2rem] mt-24 md:mt-0 font-bold text-white md:leading-[70px] leading-[50px]">
               Logo
               <br />{" "}
-              <span className=" md:text-[5rem] sm:text-[6rem] text-6xl">Design </span>
+              <span className=" md:text-[5rem] sm:text-[6rem] text-[3rem]">
+                Design{" "}
+              </span>
               <br />
               <span className="border-text text-[3rem]">Starting</span>{" "}
-              <span className=" text-[4.2rem]">From</span>{" "}
+              <span className=" md:text-[4.2rem] text-[3.5rem]">From</span>{" "}
               <span className="text-[#FE7524] font-[800]">$19</span>{" "}
-              <span className=" text-[2.8rem] line-through">$45</span>
+              <span className=" md:text-[2.8rem] text-[2.4rem] line-through">
+                $45
+              </span>
             </h2>
             <div className=" lg:w-[55%]">
               <p className=" text-white mt-6">
@@ -89,22 +93,25 @@ const MainSection = () => {
               </div>
             </div>
             <div className=" md:flex items-center mt-12">
-              <a
-              href="#customLogo_topForm"
-                class=" w-[60%] py-3 px-3 text-sm md:mb-0 mb-4 flex lg:mr-8 justify-center items-center font-medium text-center text-white bg-[#073A9C] rounded-full"
-              >
-                RESERVE THE DISCOUNT
-                <FaArrowRight />
-              </a>
-              <button
-              onClick={maximizeChat}
-                class="py-3 px-12 text-sm font-medium flex justify-center items-center text-center text-white bg-[#FE7524] rounded-full"
-              >
-                <IoChatbubbleEllipsesOutline className=" mr-3 text-[25px]" />
-                LIVE CHAT
-              </button>
+              <div>
+                <a
+                  href="#customLogo_topForm"
+                  class=" md:w-auto w-[250px]  py-3 px-3 text-sm md:mb-0 mb-4 flex lg:mr-8 justify-center items-center font-medium text-center text-white bg-[#073A9C] rounded-full"
+                >
+                  RESERVE THE DISCOUNT
+                  <FaArrowRight />
+                </a>
+              </div>
+              <div>
+                <button
+                  onClick={maximizeChat}
+                  class="py-3 md:w-auto w-[250px] px-12 text-sm font-medium flex justify-center items-center text-center text-white bg-[#FE7524] rounded-full"
+                >
+                  <IoChatbubbleEllipsesOutline className=" mr-3 text-[18px]" />
+                  LIVE CHAT
+                </button>
+              </div>
               <LiveChat visibility={visibility} setVisibility={setVisibility} />
-
             </div>
           </div>
         </div>

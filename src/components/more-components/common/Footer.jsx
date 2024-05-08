@@ -9,7 +9,7 @@ import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import Wrapper from "./Wrapper";
 import Image from "next/image";
-import paymentImg from "@/assets/images/payment.webp"
+import paymentImg from "@/assets/images/payment.webp";
 
 const Footer = () => {
   return (
@@ -52,8 +52,7 @@ const Footer = () => {
                 AI, blockchain, and data analytics to help people and
                 organizations.
               </p>
-              <Image  width={1000}
-          height={1000} src={paymentImg} alt="" />
+              <Image width={1000} height={1000} src={paymentImg} alt="" />
             </div>
             <div className=" lg:col-span-4 col-span-12">
               <h2 className=" text-[26px] font-[800] mb-8">Contact</h2>
@@ -85,34 +84,47 @@ const Footer = () => {
             </div>
             <div className=" lg:col-span-2 col-span-12">
               <h2 className=" text-[26px] font-[800] mb-8">Location</h2>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d99001.35564669345!2d-75.524212!3d39.156704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7657e0f270c79%3A0x3cc77cd9d14827e8!2s8%20The%20Green%2C%20Dover%2C%20DE%2019901!5e0!3m2!1sen!2sus!4v1714793425856!5m2!1sen!2sus" width="250" height="170" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d99001.35564669345!2d-75.524212!3d39.156704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7657e0f270c79%3A0x3cc77cd9d14827e8!2s8%20The%20Green%2C%20Dover%2C%20DE%2019901!5e0!3m2!1sen!2sus!4v1714793425856!5m2!1sen!2sus"
+                width="250"
+                height="170"
+                style={{ border: "0" }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
+
       <div className="flex flex-col justify-center items-center bg-dark_blue text-white font-poppins pt-12 px-8">
         <Wrapper className={"flex-col space-y-5"}>
-
-        <div className="flex flex-col space-y-4 px-3 md:px-0">
-          <p className="font-bold text-xl">Disclaimer:</p>
-          <p className="text-sm leading-10">The logo, name and graphics of Fameitech and its products & services are the trademarks of Fameitech. All other company names, brand names, trademarks and logos mentioned on this website are the property of their respective owners and do not constitute or imply endorsement, sponsorship or recommendation thereof by Fameitech and do not constitute or imply endorsement, sponsorship or recommendation of Fameitech by the respective trademark owner.</p>
-        </div>
-        <div className="size-full flex flex-col md:flex-row items-center md:items-center space-y-5 justify-center md:justify-between">
-          <div className="flex  space-x-4">
-          <FaInstagram size={20}  />
-          <FaLinkedinIn size={20}  />
-          <FaFacebookF size={20}  />
-          <FaTwitter  size={20} />
-
-
-
-
+          <div className="flex flex-col space-y-4 px-3 md:px-0">
+            <p className="font-bold text-xl">Disclaimer:</p>
+            <p className="text-sm leading-10">
+              The logo, name and graphics of Fameitech and its products &
+              services are the trademarks of Fameitech. All other company names,
+              brand names, trademarks and logos mentioned on this website are
+              the property of their respective owners and do not constitute or
+              imply endorsement, sponsorship or recommendation thereof by
+              Fameitech and do not constitute or imply endorsement, sponsorship
+              or recommendation of Fameitech by the respective trademark owner.
+            </p>
           </div>
-          <div className="">
-            <p className="font-bold">©2024, Fameitech LLC. All Rights Reserved.</p>
+          <div className="size-full flex flex-col md:flex-row items-center md:items-center space-y-5 justify-center md:justify-between">
+            <div className="flex  space-x-4">
+              <FaInstagram size={20} />
+              <FaLinkedinIn size={20} />
+              <FaFacebookF size={20} />
+              <FaTwitter size={20} />
+            </div>
+            <div className="">
+              <p className="font-bold">
+                ©2024, Fameitech LLC. All Rights Reserved.
+              </p>
+            </div>
           </div>
-
-        </div>
         </Wrapper>
       </div>
     </>

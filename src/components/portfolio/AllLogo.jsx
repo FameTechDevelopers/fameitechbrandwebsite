@@ -46,6 +46,9 @@ const AllLogo = () => {
     arrows: false,
     slidesToScroll: 1,
     slidesPerRow: 2,
+    autoplay: true,
+    autoplaySpeed: 2000,
+
     responsive: [
       {
         breakpoint: 1024,

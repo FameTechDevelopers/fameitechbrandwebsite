@@ -21,7 +21,7 @@ const ContactForm = () => {
     formData.append("email", email);
     formData.append("phone", phone);
     formData.append("message", message);
-    formData.append("web_type", "fameitech-contact");
+    formData.append("web_type", "contact-us");
     setPending(true)
     try {
       const response = await axios.post(

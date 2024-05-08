@@ -54,22 +54,22 @@ const Portfolio = () => {
               onClick={goToPrevTab}
               className="px-4 py-4 rounded-full lg:mr-12 border-2 border-[#073A9C] hover:bg-[#073A9C] text-white"
             >
-              <FaArrowLeft className=" text-[21px]" />
+              <FaArrowLeft className=" md:text-[21px] text-[16px]" />
             </button>
             <button
               onClick={goToNextTab}
               className="px-4 py-4 rounded-full border-2 border-[#073A9C] hover:bg-[#073A9C] text-white"
             >
-              <FaArrowRight className="text-[21px]" />
+              <FaArrowRight className="md:text-[21px] text-[16px]" />
             </button> */}
             </div>
 
-            <div className="flex flex-wrap lg:p-3 rounded-full items-center lg:space-x-4">
+            <div className="flex flex-wrap justify-center lg:p-3 rounded-full items-center lg:space-x-4">
               {tabs.map((tab, index) => (
                 <button
                   key={index}
                   onClick={() => changeTab(index)}
-                  className={`px-6 rounded-full border-2 text-[20px] w-[150px] py-4 ${
+                  className={`md:px-6 px-2 rounded-full font-oswald-light m-2 border-2 md:text-[20px] text-[14px] md:w-[150px] w-[100px] md:py-4 py-2 ${
                     index === activeTab
                       ? "bg-white rounded-[100px] font-[500] text-[#FE7524]"
                       : "bg-transparent text-white"
@@ -88,12 +88,12 @@ const Portfolio = () => {
       </div>
 
       <div className=" z-[99]">
-        <div className="max-w-[1300px] mt-6 px-12 mx-auto ">
+        <div className="max-w-[1300px] mt-6 md:px-12 px-4 mx-auto ">
           <div className="  py-4 pb-10 ">
             <div className="">
-              <h2 className="   text-[4rem] mt-6 font-[Oswald]-700 text-center font-bold text-white leading-[70px]">
+              <h2 className=" font-oswald-light  text-[2.2rem] md:text-[3.2rem] mt-6 font-[Oswald]-700 text-center font-bold text-white md:leading-[70px] leading-[50px]">
                 WHY CHOOSE
-                <span className="text-[4rem] text-[#FE7524]"> US?</span>
+                <span className="text-[2.2rem] md:text-[3.2rem] text-[#FE7524]"> US?</span>
               </h2>
               <div className=" w-full flex justify-center ">
                 {/* <Image src={ArrowD} className=" w-[200px] h-[200px] mt-12" /> */}
@@ -101,76 +101,74 @@ const Portfolio = () => {
             </div>
             <div className="">
               <div className=" grid grid-cols-12">
-                <div className=" col-span-12 lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-6 lg:col-span-4 rounded m-1 md:m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={experience} className=" w-[80px] h-[80px]" />
                   </div>
-                  <h4 className="text-[3.2rem] font-bold text-[#fff] pt-2 ">
+                  <h4 className="md:text-[3.2rem] text-[2.2rem] font-bold text-[#fff] pt-2 ">
                     12+
                   </h4>
-                  <h6 className="text-[21px] font-light text-[#fff] pt-1 ">
+                  <h6 className="md:text-[21px] text-[16px] font-light text-[#fff] pt-1 ">
                     Year Of Experience
                   </h6>
                 </div>
-                <div className=" col-span-12  lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-6  lg:col-span-4 rounded m-1 md:m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={emp} className=" w-[80px] h-[80px]" />
                   </div>
-                  <h4 className="text-[3.2rem] font-bold text-[#fff] pt-2 ">
+                  <h4 className="md:text-[3.2rem] text-[2.2rem] font-bold text-[#fff] pt-2 ">
                     100+
                   </h4>
-                  <h6 className="text-[21px] font-light text-[#fff] pt-1 ">
+                  <h6 className="md:text-[21px] text-[16px] font-light text-[#fff] pt-1 ">
                     Employees
                   </h6>
                 </div>
-                <div className=" col-span-12  lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-6  lg:col-span-4 rounded m-1 md:m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={logo} className=" w-[80px] h-[80px]" />
                   </div>
-                  <h4 className="text-[3.2rem] font-bold text-[#fff] pt-2 ">
+                  <h4 className="md:text-[3.2rem] text-[2.2rem] font-bold text-[#fff] pt-2 ">
                     5000+
                   </h4>
-                  <h6 className="text-[21px] font-light text-[#fff] pt-1 ">
+                  <h6 className="md:text-[21px] text-[16px] font-light text-[#fff] pt-1 ">
                     Logo Designs
                   </h6>
                 </div>
-              </div>
-
-              <div className=" grid grid-cols-12">
-                <div className=" col-span-12  lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-6  lg:col-span-4 rounded m-1 md:m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={project} className=" w-[80px] h-[80px]" />
                   </div>
-                  <h4 className="text-[3.2rem] font-bold text-[#fff] pt-2 ">
+                  <h4 className="md:text-[3.2rem] text-[2.2rem] font-bold text-[#fff] pt-2 ">
                     95%
                   </h4>
-                  <h6 className="text-[21px] font-light text-[#fff] pt-1 ">
+                  <h6 className="md:text-[21px] text-[16px] font-light text-[#fff] pt-1 ">
                     Project Delivery
                   </h6>
                 </div>
-                <div className=" col-span-12  lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-6  lg:col-span-4 rounded m-1 md:m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={count} className=" w-[80px] h-[80px]" />
                   </div>
-                  <h4 className="text-[3.2rem] font-bold text-[#fff] pt-2 ">
+                  <h4 className="md:text-[3.2rem] text-[2.2rem] font-bold text-[#fff] pt-2 ">
                     10+
                   </h4>
-                  <h6 className="text-[21px] font-light text-[#fff] pt-1 ">
+                  <h6 className="md:text-[21px] text-[16px] font-light text-[#fff] pt-1 ">
                     Countries
                   </h6>
                 </div>
-                <div className=" col-span-12  lg:col-span-4 rounded m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
+                <div className=" col-span-6  lg:col-span-4 rounded m-1 md:m-3 px-4 py-8 border border-[#073A9C] text-center flex justify-center flex-col items-center">
                   <div>
                     <Image src={client} className=" w-[80px] h-[80px]" />
                   </div>
-                  <h4 className="text-[3.2rem] font-bold text-[#fff] pt-2 ">
+                  <h4 className="md:text-[3.2rem] text-[2.2rem] font-bold text-[#fff] pt-2 ">
                     75%
                   </h4>
-                  <h6 className="text-[21px] font-light text-[#fff] pt-1 ">
+                  <h6 className="md:text-[21px] text-[16px] font-light text-[#fff] pt-1 ">
                     Client Retention Rate
                   </h6>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

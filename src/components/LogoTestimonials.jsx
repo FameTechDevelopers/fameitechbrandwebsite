@@ -58,18 +58,18 @@ const LogoTestimonials = () => {
   return (
     <>
       <div className=" bg-black">
-        <div className="max-w-[1300px] px-12 py-4 mx-auto">
-          <h2 className=" text-[#fff] md:text-[60px] text-[40px] leading-[70px] font-bold ">
+        <div className="max-w-[1300px] md:px-12 px-6 py-4 mx-auto">
+          <h2 className=" text-[#fff] text-[2.2rem] font-oswald-light md:text-[3.2rem] md:leading-[70px] leading-[50px] font-bold ">
             <span className=" text-[45px] font-bold ">OUR SERVICES</span> <br />{" "}
             ARE CHERISHED BY <span className="text-[#FE7524]">ALL!</span>
           </h2>
-          <p className=" text-[#fff] text-[21px] font-light pt-3 pb-5 ">
+          <p className=" text-[#fff] font-oswald-light text-[21px] font-light pt-3 pb-5 ">
             We have served hundreds of brands, and look at what they have to say
             for us.
           </p>
         </div>
 
-        <div className=" relative max-w-[1300px] pb-24 px-12 mx-auto  z-[999]">
+        <div className=" relative max-w-[1300px] pb-24 md:px-12 px-6 mx-auto  z-[999]">
           <div className=" mb-4">
             <button
               onClick={handlePrev}

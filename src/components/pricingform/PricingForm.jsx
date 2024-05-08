@@ -41,7 +41,7 @@ const PricingForm = () => {
     formData.append("email", email);
     formData.append("phone", phone);
     formData.append("message", message);
-    formData.append("web_type", "custom-business-contact");
+    formData.append("web_type", "custom-business-logo");
     setPending(true);
     try {
       const response = await axios.post(
@@ -72,14 +72,14 @@ const PricingForm = () => {
   };
 
   return (
-    <div className="bg-black flex justify-center items-center py-24 pb-5 ">
-      <div className="max-w-[1300px]  mx-auto">
-        <div className="grid sm:grid-cols-12 grid-cols-12 gap-8 jus">
+    <div className="bg-black block md:flex justify-center items-center py-24 pb-5 ">
+      <div className="max-w-[1300px]  mx-auto px-6 md:px-12">
+        <div className="md:grid block sm:grid-cols-12 grid-cols-12 gap-8 jus">
           <div className="lg:col-span-7  col-span-12 mr-8 px-2">
-            <h4 className="text-[#FE7524] md:text-xl text-base font-medium">
+            <h4 className="text-[#FE7524]  md:text-xl text-base font-medium">
               Ultimate Value For Start-Ups And Businesses
             </h4>
-            <h1 className="text-[4.2rem] my-4 leading-[66px] font-bold text-white">
+            <h1 className="text-[4.2rem] font-oswald-light my-4 leading-[66px] font-bold text-white">
               All In One Combo
             </h1>
 
@@ -89,7 +89,7 @@ const PricingForm = () => {
               market reach with innovative digital solutions. Benefit from our
               power- packed combo package, custom made to suit your needs.
             </p>
-            <div className=" flex mt-4">
+            <div className=" md:flex block mt-4">
               <div>
                 <div className=" mr-6">
                   <div>
@@ -358,8 +358,8 @@ const PricingForm = () => {
           </div>
         </div>
 
-        <div className="bgConatctOrange mt-28 rounded-3xl">
-          <div className="grid grid-cols-12 gap-6 p-12">
+        <div className="bgConatctOrange px-2 md:mb-[-160px] py-2 mt-14 rounded-3xl">
+          <div className="grid grid-cols-12 gap-6 md:p-12">
             <div className="md:col-span-5 col-span-12 text-white">
               <p className="text-lg mt-4 pr-12 font-bold">
                 Ask us anything; our customer carerepresentatives are the most
@@ -389,7 +389,7 @@ const PricingForm = () => {
             </div>
 
             <div className="md:col-span-7 col-span-12 lg:pl-14">
-              <h1 className="text-[4rem] font-bold">Let’s Get Started</h1>
+              <h1 className="text-[2.2rem] md:text-[3.2rem] mt-24 md:mt-0 font-bold text-white md:leading-[70px] leading-[50px]">Let’s Get Started</h1>
 
               <form
                 id="last_custom_form"
@@ -455,6 +455,7 @@ const PricingForm = () => {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );

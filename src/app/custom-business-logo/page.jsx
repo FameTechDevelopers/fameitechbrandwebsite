@@ -11,6 +11,7 @@ import WhyChooseUs from "@/components/Sections/WhyChooseUs.jsx";
 import PortfolioTabs from "@/components/portfolio/PortfolioTabs.jsx";
 import CustomLogoBanner from "@/components/CustomLogoBanner.jsx";
 import LogoTestimonials from "@/components/LogoTestimonials.jsx";
+import FooterLogo from "@/components/FooterLogo";
 // import circle1 from "@/components/assets/grad-circle1.png"
 // import circle2 from "@/components/assets/grad-circle3.png"
 
@@ -28,6 +29,7 @@ function CustomBusinessLogo() {
       <LogoTestimonials />
       <CustomLogoPricing />
       <PricingForm />
+      <FooterLogo />
     </>
   );
 }

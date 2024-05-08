@@ -32,72 +32,64 @@ const page = () => {
         </div>
       </div>
 
-      <div className="relative" >
+      <div className="relative">
+        <div className="w-full contact-form flex py-8 justify-center  px-4">
+          <div className="container z-30 w-full h-full">
+            <div className="grid grid-cols-12 md:gap-16 w-full">
+              <section className="text-white col-span-12 md:col-span-6 h-auto w-full">
+                <p className="uppercase mb-6 font-medium">Contact Us</p>
 
-      <div className="w-full contact-form flex py-8 justify-center  px-4">
-        <div className="container z-30 w-full h-full">
+                <h1 className="text-6xl my-6 font-bold">Get In Touch</h1>
 
+                <div className="w-36 bg-primary p-[1.5px] rounded"></div>
 
-<div className="grid grid-cols-12 md:gap-16 w-full">
+                <p className="mt-6 font-medium">
+                  Ready to elevate your brand with Fameitech? Contact us today
+                  to explore our digital marketing and web development
+                  solutions.
+                </p>
+                <p className="font-medium">
+                  Let's create something extraordinary together. Get in touch
+                  now!
+                </p>
 
+                <div className="md:mt-24 mt-8 flex flex-col gap-8 font-semibold text-lg">
+                  <div className="flex gap-8 items-center">
+                    <FaMapMarkedAlt size={30} color="#ff7400" />{" "}
+                    <p>8 The Green #14675; Dover, DE 19901</p>
+                  </div>
 
-          <section className="text-white col-span-12 md:col-span-6 h-auto w-full">
-            <p className="uppercase mb-6 font-medium">Contact Us</p>
+                  <div className="flex gap-8 items-center">
+                    <IoMailSharp size={30} color="#ff7400" />{" "}
+                    <p>info@fameitech.com</p>
+                  </div>
 
-            <h1 className="text-6xl my-6 font-bold">Get In Touch</h1>
+                  <div className="flex gap-8 items-center">
+                    <IoCall size={30} color="#ff7400" /> <p>+1 302-501-7152</p>
+                  </div>
+                </div>
+              </section>
 
-            <div className="w-36 bg-primary p-[1.5px] rounded"></div>
+              <section className="col-span-12 md:col-span-6 max-md:mt-10 text-white h-auto w-full ">
+                <p className="font-bold text-2xl">Your Details</p>
+                <p className="font-medium mt-3 mb-6">
+                  Let us know how to get back to you.
+                </p>
 
-            <p className="mt-6 font-medium">
-              Ready to elevate your brand with Fameitech? Contact us today to
-              explore our digital marketing and web development solutions.
-            </p>
-            <p className="font-medium">
-              Let's create something extraordinary together. Get in touch now!
-            </p>
+                <div className="p-[1px] w-full bg-white "></div>
 
-            <div className="md:mt-24 mt-8 flex flex-col gap-8 font-semibold text-lg">
-              <div className="flex gap-8 items-center">
-                <FaMapMarkedAlt size={30} color="#ff7400" />{" "}
-                <p>8 The Green #14675; Dover, DE 19901</p>
-              </div>
-
-              <div className="flex gap-8 items-center">
-                <IoMailSharp size={30} color="#ff7400" />{" "}
-                <p>info@fameitech.com</p>
-              </div>
-
-              <div className="flex gap-8 items-center">
-                <IoCall size={30} color="#ff7400" /> <p>+1 302-501-7152</p>
-              </div>
+                <ContactForm />
+              </section>
             </div>
-          </section>
-
-          <section className="col-span-12 md:col-span-6 max-md:mt-10 text-white h-auto w-full ">
-            <p className="font-bold text-2xl">Your Details</p>
-            <p className="font-medium mt-3 mb-6">
-              Let us know how to get back to you.
-            </p>
-
-            <div className="p-[1px] w-full bg-white "></div>
-
-            <ContactForm/>
-          </section>
-
-</div>
-
+          </div>
         </div>
       </div>
 
-      </div>
-
-
-{/* <div className="grid grid-cols-12 bg-gray-100 gap-4 p-3">
+      {/* <div className="grid grid-cols-12 bg-gray-100 gap-4 p-3">
 
       <PricingCard/>
 
 </div> */}
-
     </div>
   );
 };
