@@ -46,7 +46,7 @@ const Portfolio = () => {
     <div className=" bg-black relative">
       <Image src={circle1} className=" absolute w-[1100px] left-0 top-0" />
       <Image src={circle2} className=" absolute right-0 top-0" />
-      <div className=" py-12 relative z-50">
+      <div className=" pt-12 relative z-50">
         <div className="size-full mx-auto">
           <div className="flex justify-between items-center mb-4">
             <div>
@@ -71,7 +71,7 @@ const Portfolio = () => {
                   onClick={() => changeTab(index)}
                   className={`md:px-6 px-2 rounded-full font-oswald-light m-2 border-2 md:text-[20px] text-[14px] md:w-[150px] w-[100px] md:py-4 py-2 ${
                     index === activeTab
-                      ? "bg-white rounded-[100px] font-[500] text-[#FE7524]"
+                      ? "bg-white rounded-[100px] font-[500] text-[#f2d119]"
                       : "bg-transparent text-white"
                   } rounded-md`}
                 >
@@ -89,11 +89,14 @@ const Portfolio = () => {
 
       <div className=" z-[99]">
         <div className="max-w-[1300px] mt-6 md:px-12 px-4 mx-auto ">
-          <div className="  py-4 pb-10 ">
+          <div className="   pb-10 ">
             <div className="">
-              <h2 className=" font-oswald-light  text-[2.2rem] md:text-[3.2rem] mt-6 font-[Oswald]-700 text-center font-bold text-white md:leading-[70px] leading-[50px]">
+              <h2 className=" font-oswald-bold  text-[2.2rem] md:text-[3.2rem] mt-6 font-[Oswald]-700 text-center font-bold text-white md:leading-[70px] leading-[50px]">
                 WHY CHOOSE
-                <span className="text-[2.2rem] md:text-[3.2rem] text-[#FE7524]"> US?</span>
+                <span className="text-[2.2rem] md:text-[3.2rem] text-[#f2d119]">
+                  {" "}
+                  US?
+                </span>
               </h2>
               <div className=" w-full flex justify-center ">
                 {/* <Image src={ArrowD} className=" w-[200px] h-[200px] mt-12" /> */}
@@ -168,7 +171,6 @@ const Portfolio = () => {
                   </h6>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

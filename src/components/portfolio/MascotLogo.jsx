@@ -7,6 +7,12 @@ import mascot5 from "../../assets/slider-data/mascot/i (4).webp";
 import mascot6 from "../../assets/slider-data/mascot/i (5).webp";
 import mascot7 from "../../assets/slider-data/mascot/i (6).webp";
 import mascot8 from "../../assets/slider-data/mascot/i (1).png";
+import mascot9 from "../../assets/slider-data/mascot/i (7).webp";
+import mascot10 from "../../assets/slider-data/mascot/i (8).webp";
+import mascot11 from "../../assets/slider-data/mascot/i (9).webp";
+import mascot12 from "../../assets/slider-data/mascot/i (10).webp";
+import mascot13 from "../../assets/slider-data/mascot/i (11).webp";
+
 import Image from "next/image";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -32,7 +38,7 @@ const MascotLogo = () => {
     centerPadding: "60px",
     slidesToShow: 2,
     speed: 500,
-    rows: 2,
+    rows: 3,
     arrows: false,
     slidesToScroll: 1,
     slidesPerRow: 2,
@@ -120,6 +126,36 @@ const MascotLogo = () => {
         <div className=" p-2">
           <Image
             src={mascot8}
+            className="border-2 border-[#073A9C] rounded-[20px] "
+          />
+        </div>
+        <div className=" p-2">
+          <Image
+            src={mascot9}
+            className="border-2 border-[#073A9C] rounded-[20px] "
+          />
+        </div>
+        <div className=" p-2">
+          <Image
+            src={mascot10}
+            className="border-2 border-[#073A9C] rounded-[20px] "
+          />
+        </div>
+        <div className=" p-2">
+          <Image
+            src={mascot11}
+            className="border-2 border-[#073A9C] rounded-[20px] "
+          />
+        </div>
+        <div className=" p-2">
+          <Image
+            src={mascot12}
+            className="border-2 border-[#073A9C] rounded-[20px] "
+          />
+        </div>
+        <div className=" p-2">
+          <Image
+            src={mascot13}
             className="border-2 border-[#073A9C] rounded-[20px] "
           />
         </div>

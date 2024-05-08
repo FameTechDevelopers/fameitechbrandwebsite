@@ -1,5 +1,5 @@
-"use client"
-import React, {useRef} from "react";
+"use client";
+import React, { useRef } from "react";
 import image1 from "../../assets/slider-data/abstract/i (1).png";
 import image2 from "../../assets/slider-data/abstract/i (2).png";
 import image3 from "../../assets/slider-data/abstract/i (3).png";
@@ -8,6 +8,10 @@ import image5 from "../../assets/slider-data/abstract/i (5).png";
 import image6 from "../../assets/slider-data/abstract/i (6).png";
 import image7 from "../../assets/slider-data/abstract/i (7).png";
 import image8 from "../../assets/slider-data/abstract/i (8).png";
+import image9 from "../../assets/slider-data/abstract/i (9).png";
+import image10 from "../../assets/slider-data/abstract/i (10).png";
+import image11 from "../../assets/slider-data/abstract/i (11).png";
+import image12 from "../../assets/slider-data/abstract/i (12).png";
 import Image from "next/image";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -33,7 +37,7 @@ const AbstractLogo = () => {
     centerPadding: "60px",
     slidesToShow: 2,
     speed: 500,
-    rows: 2,
+    rows: 3,
     arrows: false,
     slidesToScroll: 1,
     slidesPerRow: 2,
@@ -101,12 +105,6 @@ const AbstractLogo = () => {
         </div>
         <div className=" p-2">
           <Image
-            src={image3}
-            className="border-2 border-[#073A9C] rounded-[20px] "
-          />
-        </div>
-        <div className=" p-2">
-          <Image
             src={image4}
             className="border-2 border-[#073A9C] rounded-[20px] "
           />
@@ -132,6 +130,30 @@ const AbstractLogo = () => {
         <div className=" p-2">
           <Image
             src={image8}
+            className="border-2 border-[#073A9C] rounded-[20px] "
+          />
+        </div>
+        <div className=" p-2">
+          <Image
+            src={image9}
+            className="border-2 border-[#073A9C] rounded-[20px] "
+          />
+        </div>
+        <div className=" p-2">
+          <Image
+            src={image10}
+            className="border-2 border-[#073A9C] rounded-[20px] "
+          />
+        </div>
+        <div className=" p-2">
+          <Image
+            src={image11}
+            className="border-2 border-[#073A9C] rounded-[20px] "
+          />
+        </div>
+        <div className=" p-2">
+          <Image
+            src={image12}
             className="border-2 border-[#073A9C] rounded-[20px] "
           />
         </div>

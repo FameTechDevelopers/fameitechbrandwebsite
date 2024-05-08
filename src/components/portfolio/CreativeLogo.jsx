@@ -40,7 +40,7 @@ const CreativeLogo = () => {
     centerPadding: "60px",
     slidesToShow: 2,
     speed: 500,
-    rows: 2,
+    rows: 3,
     arrows: false,
     slidesToScroll: 1,
     slidesPerRow: 2,
@@ -161,7 +161,7 @@ const CreativeLogo = () => {
             className="border-2 border-[#073A9C] rounded-[20px] "
           />
         </div>
-        <div className=" p-2">
+        {/* <div className=" p-2">
           <Image
             src={creative13}
             className="border-2 border-[#073A9C] rounded-[20px] "
@@ -184,7 +184,7 @@ const CreativeLogo = () => {
             src={creative16}
             className="border-2 border-[#073A9C] rounded-[20px] "
           />
-        </div>
+        </div> */}
       </Slider>
     </div>
   );

@@ -36,7 +36,7 @@ const AbstractLogo = () => {
     centerPadding: "60px",
     slidesToShow: 2,
     speed: 500,
-    rows: 2,
+    rows: 3,
     arrows: false,
     slidesToScroll: 1,
     slidesPerRow: 2,

@@ -3,6 +3,10 @@ import Image from "next/image";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import TestImg from "./Sections/images/test-girl.png";
+import ZachImg from "../assets/zach.webp";
+import SydneyImg from "../assets/sydney.webp";
+import AmandaImg from "../assets/amanda.webp";
+import WheellifeImg from "../assets/wheellife.webp";
 const LogoTestimonials = () => {
   const sliderRef = useRef(null);
 
@@ -24,6 +28,7 @@ const LogoTestimonials = () => {
     centerPadding: "60px",
     slidesToShow: 3,
     speed: 500,
+    autoplay: true,
     // rows: 2,
     arrows: false,
     slidesToScroll: 1,
@@ -58,10 +63,10 @@ const LogoTestimonials = () => {
   return (
     <>
       <div className=" bg-black">
-        <div className="max-w-[1300px] md:px-12 px-6 py-4 mx-auto">
-          <h2 className=" text-[#fff] text-[2.2rem] font-oswald-light md:text-[3.2rem] md:leading-[70px] leading-[50px] font-bold ">
-            <span className=" text-[45px] font-bold ">OUR SERVICES</span> <br />{" "}
-            ARE CHERISHED BY <span className="text-[#FE7524]">ALL!</span>
+        <div className="max-w-[1300px] md:px-12 px-6 py-4 mx-auto text-center">
+          <h2 className=" text-[#fff] text-[2.2rem] font-oswald-bold md:text-[3.2rem] md:leading-[70px] leading-[50px] font-bold ">
+            <span className=" text-[45px] font-bold ">OUR SERVICES</span> ARE
+            CHERISHED BY <span className="text-[#f2d119]">ALL!</span>
           </h2>
           <p className=" text-[#fff] font-oswald-light text-[21px] font-light pt-3 pb-5 ">
             We have served hundreds of brands, and look at what they have to say
@@ -69,7 +74,7 @@ const LogoTestimonials = () => {
           </p>
         </div>
 
-        <div className=" relative max-w-[1300px] pb-24 md:px-12 px-6 mx-auto  z-[999]">
+        <div className="text-center relative max-w-[1300px] pb-14 md:px-12 px-6 mx-auto  z-[999]">
           <div className=" mb-4">
             <button
               onClick={handlePrev}
@@ -88,16 +93,16 @@ const LogoTestimonials = () => {
             <div className="lg:col-span-4 col-span-12 ">
               <div className=" border border-[#073A9C] rounded-lg  py-10 m-3 ">
                 <div className="testiBgQuote w-100 flex flex-col justify-center items-center ">
-                  <Image src={TestImg} className=" w-[60px] h-[60px]" />
+                  <Image src={ZachImg} className=" w-[60px] h-[60px]" />
                 </div>
                 <h4 className=" text-white pb-5 text-center pt-3 ">
-                  Golette Bowen
+                  Colette Brown
                 </h4>
                 <p className=" text-white text-center pb-7 text-[14px] px-10 ">
                   I am the post-production supervisor for Zach King. We worked
-                  with Remy's company on VFX for a recent brand deal. Fameitech
+                  with Remy's company on VFX for a recent brand deal. Fame Itech
                   did a fantastic job. They handled the client notes quickly and
-                  efficiently. I highly recommend them.
+                  efficiently. I would recommend them.
                 </p>
                 <h5 className=" text-white text-center pt-3 ">⭐⭐⭐⭐⭐</h5>
               </div>
@@ -105,16 +110,16 @@ const LogoTestimonials = () => {
             <div className="lg:col-span-4 col-span-12 ">
               <div className=" border border-[#073A9C] rounded-lg  py-10 m-3 ">
                 <div className="testiBgQuote w-100 flex flex-col justify-center items-center ">
-                  <Image src={TestImg} className=" w-[60px] h-[60px]" />
+                  <Image src={SydneyImg} className=" w-[60px] h-[60px]" />
                 </div>
                 <h4 className=" text-white pb-5 text-center pt-3 ">
-                  Golette Bowen
+                  Sydney Stewart
                 </h4>
                 <p className=" text-white text-center pb-7 text-[14px] px-10 ">
-                  I am the post-production supervisor for Zach King. We worked
-                  with Remy's company on VFX for a recent brand deal. Fameitech
-                  did a fantastic job. They handled the client notes quickly and
-                  efficiently. I highly recommend them.
+                  Hakeem did an amazing job with my video even after I had
+                  several edits and a lot of the videos quality I had were poor.
+                  He made them look super professional with a title page and
+                  edit the music. The video definitely exceeded my expectations.
                 </p>
                 <h5 className=" text-white text-center pt-3 ">⭐⭐⭐⭐⭐</h5>
               </div>
@@ -122,16 +127,36 @@ const LogoTestimonials = () => {
             <div className="lg:col-span-4 col-span-12 ">
               <div className=" border border-[#073A9C] rounded-lg  py-10 m-3 ">
                 <div className="testiBgQuote w-100 flex flex-col justify-center items-center ">
-                  <Image src={TestImg} className=" w-[60px] h-[60px]" />
+                  <Image src={AmandaImg} className=" w-[60px] h-[60px]" />
                 </div>
                 <h4 className=" text-white pb-5 text-center pt-3 ">
-                  Golette Bowen
+                  Amanda Parker
                 </h4>
                 <p className=" text-white text-center pb-7 text-[14px] px-10 ">
-                  I am the post-production supervisor for Zach King. We worked
-                  with Remy's company on VFX for a recent brand deal. Fameitech
-                  did a fantastic job. They handled the client notes quickly and
-                  efficiently. I highly recommend them.
+                  I had an exceptional experience working with Fameitech - a
+                  remarkable team of professionals. Austin Weber responsiveness
+                  and consistent communication throughout the process were
+                  impressive. In the realm of web development and graphic
+                  design.
+                </p>
+                <h5 className=" text-white text-center pt-3 ">⭐⭐⭐⭐⭐</h5>
+              </div>
+            </div>
+
+            <div className="lg:col-span-4 col-span-12 ">
+              <div className=" border border-[#073A9C] rounded-lg  py-10 m-3 ">
+                <div className="testiBgQuote w-100 flex flex-col justify-center items-center ">
+                  <Image src={WheellifeImg} className=" w-[60px] h-[60px]" />
+                </div>
+                <h4 className=" text-white pb-5 text-center pt-3 ">
+                  WheelLifeConnections
+                </h4>
+                <p className=" text-white text-center pb-7 text-[14px] px-10 ">
+                  I really had a great experience working with this team. They
+                  understand my vision for my first book and they were great
+                  with all my questions and requests. They took the time to
+                  really understand what I was wanting and were extremely timely
+                  with my deadline.{" "}
                 </p>
                 <h5 className=" text-white text-center pt-3 ">⭐⭐⭐⭐⭐</h5>
               </div>

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import tick from "../../assets/tick.png";
-import walmar from "../../assets/walmar.png";
+import walmar from "../../assets/banner1.webp";
 import call from "../../assets/call-vector.png";
 import mail from "../../assets/envolep.png";
 import Lottie from "react-lottie";
@@ -76,10 +76,10 @@ const PricingForm = () => {
       <div className="max-w-[1300px]  mx-auto px-6 md:px-12">
         <div className="md:grid block sm:grid-cols-12 grid-cols-12 gap-8 jus">
           <div className="lg:col-span-7  col-span-12 mr-8 px-2">
-            <h4 className="text-[#FE7524]  md:text-xl text-base font-medium">
+            <h4 className="text-[#f2d119]  md:text-xl text-base font-medium">
               Ultimate Value For Start-Ups And Businesses
             </h4>
-            <h1 className="text-[4.2rem] font-oswald-light my-4 leading-[66px] font-bold text-white">
+            <h1 className="text-[4.2rem] font-oswald-bold my-4 leading-[66px] font-bold text-white">
               All In One Combo
             </h1>
 
@@ -93,7 +93,7 @@ const PricingForm = () => {
               <div>
                 <div className=" mr-6">
                   <div>
-                    <h4 className="font-bold text-2xl text-[#FE7524]">
+                    <h4 className="font-bold text-2xl text-[#f2d119]">
                       Website Design
                     </h4>
 
@@ -174,7 +174,7 @@ const PricingForm = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-bold text-2xl text-[#FE7524]">
+                  <h4 className="font-bold text-2xl text-[#f2d119]">
                     Logo Design
                   </h4>
 
@@ -234,7 +234,7 @@ const PricingForm = () => {
               <div>
                 <div className="">
                   <div className="">
-                    <h4 className="font-bold text-2xl text-[#FE7524]">
+                    <h4 className="font-bold text-2xl text-[#f2d119]">
                       Stationary Design
                     </h4>
 
@@ -267,7 +267,7 @@ const PricingForm = () => {
                   </div>
 
                   <div className="mt-8">
-                    <h4 className="font-bold text-2xl text-[#FE7524]">
+                    <h4 className="font-bold text-2xl text-[#f2d119]">
                       Value Added Services
                     </h4>
 
@@ -316,7 +316,7 @@ const PricingForm = () => {
             <div className="sm:pt-4 mt-4 flex max-sm:flex-col gap-4  ">
               <button
                 onClick={maximizeChat}
-                className="md:w-1/2  uppercase text-[#fff] bg-[#FE7524] px-8 py-4 rounded-full shadow-stone-400 font-bold sm:text-sm"
+                className="md:w-1/2  uppercase text-black bg-[#f2d119] px-8 py-4 rounded-full shadow-stone-400 font-bold sm:text-sm"
               >
                 Live Chat{" "}
               </button>
@@ -338,9 +338,9 @@ const PricingForm = () => {
               </p>
 
               <div className=" md:mt-24  text-white text-center xl:text-4xl lg:text-3xl sm:text-3xl text-2xl font-bold flex max-sm:flex-col gap-4 items-center justify-center px-4">
-                <div className="text-[#FE7524]">$999</div>
+                <div className="text-[#f2d119]">$999</div>
                 <div className="relative">
-                  <div className="absolute p-0.5 top-5 w-full bg-[#FE7524]"></div>
+                  <div className="absolute p-0.5 top-5 w-full bg-[#f2d119] "></div>
                   $3,330
                 </div>
 
@@ -389,7 +389,9 @@ const PricingForm = () => {
             </div>
 
             <div className="md:col-span-7 col-span-12 lg:pl-14">
-              <h1 className="text-[2.2rem] md:text-[3.2rem] mt-24 md:mt-0 font-bold text-white md:leading-[70px] leading-[50px]">Let’s Get Started</h1>
+              <h1 className="text-[2.2rem] md:text-[3.2rem] mt-2 md:mt-0 font-bold text-white md:leading-[70px] leading-[50px]">
+                Let’s Get Started
+              </h1>
 
               <form
                 id="last_custom_form"
@@ -455,7 +457,6 @@ const PricingForm = () => {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

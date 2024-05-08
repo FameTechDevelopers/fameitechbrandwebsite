@@ -9,6 +9,7 @@ import circle1 from "../../components/assets/grad-circle1.png";
 import circle2 from "../../components/assets/grad-circle2.png";
 import Image from "next/image";
 import LiveChat from "../LiveChat";
+import logo from "../assets/main-logo.png";
 
 const MainSection = () => {
   const [visibility, setVisibility] = useState("minimized");
@@ -26,26 +27,47 @@ const MainSection = () => {
   };
 
   return (
-    <div className=" bg-black relative mt-[-130px] sm:py-32 py-5 ">
+    <div className=" bg-black relative mt-[-130px] sm:pt-32 pt-5 ">
       <Image src={circle1} className=" absolute left-0 top-0" />
       <Image src={circle2} className=" absolute right-0 top-0" />
+
       <div className=" max-w-[1300px] mt-6 md:px-12 px-6 mx-auto grid grid-cols-12">
         <div className=" lg:col-span-7 col-span-12 flex items-center relative">
           <Image
             src={arrow}
             className=" absolute hidden lg:block right-28 top-20"
           />
+
           <div className=" mt-12 font-oswald-light lg:mt-0">
-            <h2 className="text-[2.2rem] md:text-[3.2rem] mt-24 md:mt-0 font-bold text-white md:leading-[70px] leading-[50px]">
+            <div className="flex lg:hidden sm:hidden mt-14 justify-between">
+              <a href="/">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={logo}
+                  alt="logo fameitech"
+                  className="w-[100px]   "
+                />
+              </a>
+              <div className="flex flex-col sm:text-sm">
+                <span className="text-white font-thin text-[0.8rem]">
+                  Call Us Now
+                </span>
+                <span className="text-white font-bold text-[0.8rem]">
+                  +1 (872) 233 - 3612
+                </span>
+              </div>
+            </div>
+            <h2 className="font-oswald-bold text-[2.2rem] md:text-[3.2rem]  md:mt-0 font-bold text-white md:leading-[70px] leading-[50px]">
               Logo
               <br />{" "}
               <span className=" md:text-[5rem] sm:text-[6rem] text-[3rem]">
                 Design{" "}
               </span>
               <br />
-              <span className="border-text text-[3rem]">Starting</span>{" "}
+              <span className="text-[#f2d119]  text-[3rem]">Starting</span>{" "}
               <span className=" md:text-[4.2rem] text-[3.5rem]">From</span>{" "}
-              <span className="text-[#FE7524] font-[800]">$19</span>{" "}
+              <span className="text-[#f2d119] font-[800]">$19</span>{" "}
               <span className=" md:text-[2.8rem] text-[2.4rem] line-through">
                 $45
               </span>
@@ -62,15 +84,15 @@ const MainSection = () => {
               <div className=" col-span-6 lg:mr-6">
                 <ul>
                   <li className=" flex items-center mb-2">
-                    <FaCheck className=" mr-2 bg-white text-[#FE7524] h-5 w-5 p-1 rounded-full" />
+                    <FaCheck className=" mr-2 bg-white text-[#f2d119] h-5 w-5 p-1 rounded-full" />
                     Custom Logo Concept
                   </li>
                   <li className=" flex items-center mb-2">
-                    <FaCheck className="  mr-2 bg-white text-[#FE7524] h-5 w-5 p-1 rounded-full" />
+                    <FaCheck className="  mr-2 bg-white text-[#f2d119] h-5 w-5 p-1 rounded-full" />
                     Dedicated Designer
                   </li>
                   <li className=" flex items-center mb-2">
-                    <FaCheck className="  mr-2 bg-white text-[#FE7524] h-5 w-5 p-1 rounded-full" />
+                    <FaCheck className="  mr-2 bg-white text-[#f2d119] h-5 w-5 p-1 rounded-full" />
                     Quick Turnaround Time
                   </li>
                 </ul>
@@ -78,15 +100,15 @@ const MainSection = () => {
               <div className=" col-span-6">
                 <ul>
                   <li className=" flex items-center mb-2">
-                    <FaCheck className="  mr-2 bg-white text-[#FE7524] h-5 w-5 p-1 rounded-full" />
+                    <FaCheck className="  mr-2 bg-white text-[#f2d119] h-5 w-5 p-1 rounded-full" />
                     Attractuve modern logo design
                   </li>
                   <li className=" flex items-center mb-2">
-                    <FaCheck className="  mr-2 bg-white text-[#FE7524] h-5 w-5 p-1 rounded-full" />
+                    <FaCheck className="  mr-2 bg-white text-[#f2d119] h-5 w-5 p-1 rounded-full" />
                     100% Ownership Rights
                   </li>
                   <li className=" flex items-center mb-2">
-                    <FaCheck className="  mr-2 bg-white text-[#FE7524] h-5 w-5 p-1 rounded-full" />
+                    <FaCheck className="  mr-2 bg-white text-[#f2d119] h-5 w-5 p-1 rounded-full" />
                     Attractive modern logo design
                   </li>
                 </ul>
@@ -105,9 +127,9 @@ const MainSection = () => {
               <div>
                 <button
                   onClick={maximizeChat}
-                  class="py-3 md:w-auto w-[250px] px-12 text-sm font-medium flex justify-center items-center text-center text-white bg-[#FE7524] rounded-full"
+                  class="py-3 md:w-auto w-[250px] font-bold px-12 text-sm  flex justify-center items-center text-center text-black bg-[#f2d119] rounded-full"
                 >
-                  <IoChatbubbleEllipsesOutline className=" mr-3 text-[18px]" />
+                  <IoChatbubbleEllipsesOutline className=" mr-3 text-[18px] " />
                   LIVE CHAT
                 </button>
               </div>

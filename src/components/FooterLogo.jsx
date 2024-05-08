@@ -22,53 +22,21 @@ const FooterLogo = () => {
             </p>
             <Image width={1000} height={1000} src={paymentImg} alt="" />
           </div>
-          <div className=" lg:col-span-2 col-span-12">
-            <h2 className=" text-[26px] font-[800] mb-8">Links</h2>
-            <ul>
-              <li className=" flex items-center mb-3">
-                <IoIosArrowForward className=" text-[#FE7524] mr-1 text-[20px]" />
-                About Us
-              </li>
-              <li className=" flex items-center mb-3">
-                <IoIosArrowForward className=" text-[#FE7524] mr-1 text-[20px]" />
-                Logo Design
-              </li>
-              <li className=" flex items-center mb-3">
-                {" "}
-                <IoIosArrowForward className=" text-[#FE7524] mr-1 text-[20px]" />
-                Website Design
-              </li>
-              <li className=" flex items-center mb-3">
-                {" "}
-                <IoIosArrowForward className=" text-[#FE7524] mr-1 text-[20px]" />
-                Video Animation
-              </li>
-              <li className=" flex items-center mb-3">
-                {" "}
-                <IoIosArrowForward className=" text-[#FE7524] mr-1 text-[20px]" />
-                Video Our Package
-              </li>
-              <li className=" flex items-center mb-3">
-                {" "}
-                <IoIosArrowForward className=" text-[#FE7524] mr-1 text-[20px]" />
-                Contact
-              </li>
-            </ul>
-          </div>
+
           <div className=" lg:col-span-4 col-span-12">
-            <h2 className=" text-[26px] font-[800] mb-8">Quick Links</h2>
+            <h2 className=" text-[26px] font-[800] mb-8">Contact</h2>
 
             <ul>
               <li className=" flex items-center mb-6">
-                <FaMapMarked className=" mr-3 text-[#F58020] text-[22px]" /> 8
+                <FaMapMarked className=" mr-3 text-[#f2d119] text-[22px]" /> 8
                 The Green #14675; Dover, DE 19901
               </li>
               <li className=" flex items-center mb-6">
-                <IoMdMail className=" mr-3 text-[#F58020] text-[22px]" />{" "}
+                <IoMdMail className=" mr-3 text-[#f2d119] text-[22px]" />{" "}
                 info@fameitech.com
               </li>
               <li className=" flex items-center">
-                <FaPhoneAlt className=" mr-3 text-[#F58020] text-[22px]" /> +1
+                <FaPhoneAlt className=" mr-3 text-[#f2d119] text-[22px]" /> +1
                 302-501-7152
               </li>
             </ul>

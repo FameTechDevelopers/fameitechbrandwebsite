@@ -22,7 +22,7 @@ function Navbar() {
   };
 
   return (
-    <section className="lg:bg-[#00113000] bg-[#001130] flex relative z-10 justify-center items-center font-oswald  pt-2 px-5">
+    <section className="lg:bg-[#00113000] bg-[#001130] flex relative z-10 justify-center items-center font-oswald pt-2 px-5 lg:block md:block sm:block hidden">
       <Wrapper className="flex flex-col py-6 space-y-3 space-x-3 sm:flex-row sm:justify-between sm:items-center">
         <a href="/">
           <Image
@@ -37,7 +37,7 @@ function Navbar() {
           <div className="flex justify-center items-center *:px-4 *:py-2 space-x-2">
             <button
               onClick={maximizeChat}
-              className="bg-transparent mr-6 font-poppins border border-[#FE7524] rounded-full flex justify-center items-center"
+              className="bg-transparent mr-6 font-poppins border border-[#f2d119] rounded-full flex justify-center items-center"
             >
               {" "}
               <span>
@@ -48,18 +48,20 @@ function Navbar() {
                   alt=""
                 />
               </span>
-              <span className=" text-[#FE7524] text-[20px]">Live Chat</span>
+              <span className=" text-[#f2d119] text-[20px]">Live Chat</span>
             </button>
             <LiveChat visibility={visibility} setVisibility={setVisibility} />
           </div>
           <div className="flex items-center justify-center space-x-2">
             {" "}
-            <span className="p-3 bg-pri_orange rounded-full bg-[#073A9C]">
+            <span className="p-3 bg-[#f2d119] rounded-full bg-[#073A9C]">
               <FaPhoneVolume className=" text-white " />
             </span>{" "}
             <div className="flex flex-col sm:text-sm">
               <span className=" font-thin">Call Us Now</span>
-              <span className="text-white font-bold">+1 (872) 233 - 3612</span>
+              <span className="text-white font-normal">
+                +1 (872) 233 - 3612
+              </span>
             </div>
           </div>
         </div>
