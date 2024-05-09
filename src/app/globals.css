@@ -867,11 +867,6 @@ p.text-\[\#F8B421\].font-\[22px\] {
 }
 
 
-/* .text-stroke{ */
-  /* -webkit-text-stroke: 1px white; */
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white; */
-    /* -webkit-text-fill-color: white !important; 
-    -webkit-text-stroke-width: 2px !important;
-    -webkit-text-stroke-color: white !important; */
-/* } */
+p.text-\[\#92929272\].mx-4 {
+  color: #888888;
+}
