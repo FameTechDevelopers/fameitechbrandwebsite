@@ -10,6 +10,7 @@ import { BsTwitterX } from "react-icons/bs";
 import Wrapper from "./Wrapper";
 import Image from "next/image";
 import paymentImg from "@/assets/images/payment.webp";
+import Link from "next/link";
 
 const Footer = () => {
   return (<>
@@ -22,7 +23,7 @@ const Footer = () => {
                 <Image src={logo} />
               </div>
               <div className=" lg:col-span-4 mb-6 col-span-12 footer-social-icons flex lg:justify-center items-center">
-                <ul className=" flex justify-center items-center *:p-3 *:bg-pri_orange space-x-4">
+                <ul className=" flex justify-center items-center *:p-3  space-x-4">
                   <li className=" bg-primary rounded-full mx-1 p-4 flex justify-center items-center">
                     <FaFacebookF className=" text-[20px] text-white" />
                   </li>
@@ -39,22 +40,39 @@ const Footer = () => {
               </div>
               <div className=" lg:col-span-4 mb-6 col-span-12 flex lg:justify-end items-center">
                 <div className="">
-                  <p className=" text-[#F8B421] font-[22px]">GIVE US A CALL</p>
-                  <h2 className=" text-xl md:text-[28px] font-bold">+1 302-501-7152</h2>
+                  <p className=" text-[#F8B421] font-[22px] lg:font-3xl">GIVE US A CALL</p>
+                  <h2 className=" text-xl md:text-[28px] font-bold lg:tracking-wider">+1 302-501-7152</h2>
                 </div>
               </div>
             </div>
             <div className=" grid grid-cols-12">
-              <div className=" lg:col-span-3 col-span-12 mr-8">
+              <div className=" lg:col-span-4 col-span-12 mr-8">
                 <p>
                   Fameitech is an innovative tech company that wants to change
                   online technology. Fameitech provides creative solutions using
                   AI, blockchain, and data analytics to help people and
                   organizations.
                 </p>
+                <div className=" mt-20 flex h-fit">
+                <Link
+                  href={"/terms-conditions"}
+                  className="text-white text-[14px] border-b-[2px] hover:border-white border-transparent cursor-pointer  transition-all ease-in-out"
+                >
+                  Terms and Conditions {" "}
+                </Link>
+              <p className=" text-[#92929272] mx-4">|</p>
+                <Link
+                  href={"/privacy-policy"}
+                  className="text-white text-[14px] border-b-[2px] hover:border-white border-transparent cursor-pointer  transition-all ease-in-out"
+                >
+                  {" "}
+                  Privacy Policy{" "}
+                </Link>
+              </div>
+                
               
               </div>
-              <div className=" lg:col-span-4 col-span-12">
+              <div className=" lg:col-span-4 sm:col-span-6 col-span-12">
                 <h2 className=" text-[26px] font-[800] mb-8">Contact</h2>
                 <ul>
                   <li className=" flex items-center">
@@ -66,13 +84,13 @@ const Footer = () => {
                     info@fameitech.com
                   </li>
                   <li className=" flex items-center">
-                    <FaPhoneAlt className=" mr-3 text-[#F58020] text-[22px]" /> +1
-                    302-501-7152
+                    <FaPhoneAlt className=" mr-3 text-[#F58020] text-[22px] " /> 
+                    +1 302-501-7152
                   </li>
                 </ul>
               </div>
             
-              <div className=" lg:col-span-2 col-span-12">
+              <div className=" lg:col-span-4 sm:col-span-6 col-span-12">
                 <h2 className=" text-[26px] font-[800] mb-8">Location</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d99001.35564669345!2d-75.524212!3d39.156704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7657e0f270c79%3A0x3cc77cd9d14827e8!2s8%20The%20Green%2C%20Dover%2C%20DE%2019901!5e0!3m2!1sen!2sus!4v1714793425856!5m2!1sen!2sus" width="250" height="170" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               </div>

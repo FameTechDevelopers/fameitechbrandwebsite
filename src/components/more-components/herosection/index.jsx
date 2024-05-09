@@ -59,7 +59,7 @@ function HeroSection() {
   return (
     <section className='size-full flex flex-col  justify-center items-center  pb-32 px-6 xl:px-0'>
       <Wrapper
-        className={"flex flex-col sm:justify-between sm:flex-row  sm:pt-16"}
+        className={"flex flex-col sm:justify-between sm:flex-row sm:gap-x-4  sm:pt-16"}
       >
 
 
@@ -70,7 +70,7 @@ function HeroSection() {
             <p className='text-pri_yellow text-3xl md:text-4xl xl:text-6xl'>
               <span> Starting From $19</span>{" "}
               <span className='size-full relative'>
-                <sup className='line-through absolute top-0  text-white text-lg md:text-4xl'>
+                <sup className='line-through absolute top-0  text-white text-lg md:text-2xl xl:text-4xl'>
                   $45
                 </sup>
               </span>
@@ -98,7 +98,7 @@ function HeroSection() {
                 <p>Quick Turnaround Time</p>
               </span>
             </div>
-            <div className='w-full flex flex-col  md:text-base xl:text-lg  *:flex space-y-1 *:items-center *:space-x-2'>
+            <div className='w-full flex flex-col   md:text-base xl:text-lg  *:flex space-y-1 *:items-center *:space-x-2'>
               <span>
                 <IoIosArrowDroprightCircle className='size-4' />
                 <p>Attractive modern logo design</p>

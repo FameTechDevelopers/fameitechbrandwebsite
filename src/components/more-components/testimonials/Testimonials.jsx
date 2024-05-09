@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useRef } from "react";
 // import whiteQuote from "../../assets/white-quote.PNG"
 // import blackQuote from "../../assets/black-quote.PNG"
 import { FaStar } from "react-icons/fa";
@@ -6,6 +7,8 @@ import ZachImg from "../../assets/zach.webp";
 import SydneyImg from "../../assets/sydney.webp";
 import AmandaImg from "../../assets/amanda.webp";
 import WheellifeImg from "../../assets/wheellife.webp";
+import Slider from "react-slick";
+import Wrapper from "../common/Wrapper";
 const Testimonials = () => {
   const testimonialArr = [
     {
@@ -29,25 +32,107 @@ const Testimonials = () => {
       name: "WheelLifeConnections",
     },
   ];
+
+
+
+  const sliderRef = useRef(null);
+
+  
+
+  var settings = {
+    className: "center",
+    slidesToShow: 1,
+    speed: 500,
+    infinite: true,
+
+    
+    // rows: 2,
+    arrows: false,
+    slidesToScroll: 1,
+    centerPadding:"60px",
+    initialSlide: 4,
+    // slidesToShow: 4,
+    // slidesToScroll: 4,
+    // slidesPerRow: 1,
+  
+    responsive: [
+      {
+        breakpoint: 4000,
+        settings: {
+          slidesToShow: 4,
+          initialSlide: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: false,
+         
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          initialSlide: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: false,
+          autoplay: true,
+          speed: 500,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          autoplay: true,
+          speed: 500,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          autoplay: true,
+          speed: 500,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+        },
+      },
+    ],
+  };
+
+
+
   return (
     <div className="py-10 flex justify-center items-center flex-col bg-gray-100 h-full w-full bg-gradient-to-b from-[#060551] from-60% to-100% to-white ">
+    
+
+     
       <div className="text-center flex flex-col space-y-4 px-4 md:px-0">
-        <h1 className="text-4xl md:text-6xl leading-[50px] tracking-widest text-white font-semibold">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl !leading-[60px] tracking-widest text-white font-semibold">
           OUR SERVICES ARE CHERISHED BY ALL!
         </h1>
         <p className="w-full font-medium text-xl text-white">
-          We have served hundreds of brands, and look at what they have to say
-          for us.
+        Explore the testimonials of brands worldwide and witness the power of our unique creation.
         </p>
       </div>
-      <div className="container w-full h-full">
-        <div className="grid grid-cols-12 gap-4 p-2">
+
+      <div className=" w-full h-full max-w-[1300px]">
+        <div className="size-full p-2  ">
+      <Slider {...settings} ref={sliderRef} className="size-full  main-slide ">
           {testimonialArr?.map((test, index) => (
             <div
               key={test.name}
-              className="group md:col-span-6 lg:col-span-3 col-span-12 relative py-10 px-4 md:px-0 "
+              className="mx-auto h-[620px] lmb:h-[700px] tablet:h-[600px] lp:h-[700px] lcd:h-[600px] size-full flex justify-center items-center  group max-full  md:col-span-6 lg:col-span-3 col-span-12  py-10  relative  px-5 lp:px-2   "
             >
-              <div className="group-hover:bg-testimonial-hover-blue size-full group-hover:text-white bg-white pt-4 pb-12 px-8 rounded-2xl flex items-center flex-col border  border-white transition-all duration-300">
+              <div className=" group-hover:bg-testimonial-hover-blue size-full group-hover:text-white bg-white pt-4  px-8 rounded-2xl flex items-center  pb-[4.5rem]  flex-col border  border-white transition-all duration-300">
                 {/* {changeQuoteIndex === index ? (
                   changeQuote && (
                     <Image
@@ -70,7 +155,7 @@ const Testimonials = () => {
                 {/*  QUOTES */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-14 fill-black group-hover:fill-white transition-all"
+                  className="w-14  fill-black group-hover:fill-white transition-all"
                   enableBackground="new 0 0 512 512"
                   viewBox="0 0 3873 3873"
                 >
@@ -97,7 +182,7 @@ const Testimonials = () => {
                 <p className="text-lg italic text-center my-6 font-medium">
                   {test.text}
                 </p>
-                <div className="flex gap-4 mt-6">
+                <div className="flex gap-4 mt-6 ">
                   <FaStar color="#FF7400" />
                   <FaStar color="#FF7400" />
                   <FaStar color="#FF7400" />
@@ -105,19 +190,23 @@ const Testimonials = () => {
                   <FaStar color="#FF7400" />
                 </div>
               </div>
-              <div className="rounded-full absolute -bottom-5 flex justify-center items-center w-full flex-col">
+              <div className="rounded-full w-full absolute  -bottom-1 right-1 flex justify-center items-center flex-col">
                 <img
                   width={100}
                   height={100}
                   src={test.img}
                   className="w-20 rounded-full p-1 bg-white"
                 />
-                <p style={{ textShadow: "1px 1px 1px black" }} className="font-semibold text-primary  font-poppins">{test.name}</p>
+                <p className="font-semibold text-black  font-poppins">{test.name}</p>
               </div>
             </div>
           ))}
+        </Slider>
         </div>
       </div>
+
+
+    
     </div>
   );
 };

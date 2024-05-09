@@ -16,7 +16,7 @@ const LiveChatBtnLanding = () => {
 
   return (
     <>
-    <button className="bg-pri_orange w-fit px-6 py-3 font-poppins-semibold" onClick={maximizeChat}>
+    <button className="bg-pri_orange text-black w-fit px-6 py-3 font-poppins-semibold" onClick={maximizeChat}>
             LiveChat
           </button>
           <LiveChat visibility={visibility} setVisibility={setVisibility} />

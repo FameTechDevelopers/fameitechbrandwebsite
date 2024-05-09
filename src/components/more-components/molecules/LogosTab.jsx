@@ -30,11 +30,15 @@ import abstract5 from "/public/images/slider-data/abstract/i (5).png";
 import abstract6 from "/public/images/slider-data/abstract/i (6).png";
 import abstract7 from "/public/images/slider-data/abstract/i (7).png";
 import abstract8 from "/public/images/slider-data/abstract/i (8).png";
+import abstract9 from "../../../assets/slider-data/abstract/i (9).png";
+import abstract10 from "../../../assets/slider-data/abstract/i (10).png";
+import abstract11 from "../../../assets/slider-data/abstract/i (11).png";
+import abstract12 from "../../../assets/slider-data/abstract/i (12).png";
 
 import creative1 from "/public/images/slider-data/creative/1.webp";
 import creative2 from "/public/images/slider-data/creative/2.webp";
 import creative3 from "/public/images/slider-data/creative/3.webp";
-import creative4 from "/public/images/slider-data/creative/4.webp";
+import creative4 from "/public/images/slider-data/creative/4.jpg";
 import creative5 from "/public/images/slider-data/creative/5.webp";
 import creative6 from "/public/images/slider-data/creative/6.webp";
 import creative7 from "/public/images/slider-data/creative/7.webp";
@@ -43,10 +47,11 @@ import creative9 from "/public/images/slider-data/creative/9.webp";
 import creative10 from "/public/images/slider-data/creative/10.webp";
 import creative11 from "/public/images/slider-data/creative/11.webp";
 import creative12 from "/public/images/slider-data/creative/12.webp";
-import creative13 from "/public/images/slider-data/creative/13.webp";
+import creative13 from "/public/images/slider-data/creative/13.jpg";
 import creative14 from "/public/images/slider-data/creative/14.webp";
 import creative15 from "/public/images/slider-data/creative/15.webp";
-import creative16 from "/public/images/slider-data/creative/16.webp";
+// import creative16 from "/public/images/slider-data/creative/16.jpg";
+
 
 import mascot1 from "/public/images/slider-data/mascot/i (1).png";
 import mascot2 from "/public/images/slider-data/mascot/i (2).webp";
@@ -56,6 +61,11 @@ import mascot5 from "/public/images/slider-data/mascot/i (4).webp";
 import mascot6 from "/public/images/slider-data/mascot/i (5).webp";
 import mascot7 from "/public/images/slider-data/mascot/i (6).webp";
 import mascot8 from "/public/images/slider-data/mascot/i (1).png";
+import mascot9 from "../../../assets/slider-data/mascot/i (7).webp";
+import mascot10 from "../../../assets/slider-data/mascot/i (8).webp";
+import mascot11 from "../../../assets/slider-data/mascot/i (9).webp";
+import mascot12 from "../../../assets/slider-data/mascot/i (10).webp";
+import mascot13 from "../../../assets/slider-data/mascot/i (11).webp";
 
 import minimal1 from "/public/images/slider-data/minimal/i (1).webp";
 import minimal2 from "/public/images/slider-data/minimal/i (2).webp";
@@ -102,6 +112,10 @@ const Tabs = () => {
     abstract6,
     abstract7,
     abstract8,
+    abstract9,
+    abstract10,
+    abstract11,
+    abstract12,
   ];
 
   const creativeImagesArr = [
@@ -120,7 +134,7 @@ const Tabs = () => {
     creative13,
     creative14,
     creative15,
-    creative16,
+    // creative16,
   ];
 
   const mascotImagesArr = [
@@ -132,6 +146,10 @@ const Tabs = () => {
     mascot6,
     mascot7,
     mascot8,
+    mascot9,
+    mascot10,
+    mascot11,
+    mascot12,
   ];
 
   const minimalImagesArr = [

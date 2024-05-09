@@ -77,10 +77,10 @@ function Form() {
             welcoming.
           </p>
           <div className='flex flex-col py-10'>
-            <p className='font-bold font-poppins text-xl md:text-2xl'>
+            <p className='font-bold font-poppins text-lg md:text-2xl'>
               +1 302-501-7152
             </p>
-            <p className='font-bold font-poppins text-xl md:text-2xl'>
+            <p className='font-bold font-poppins text-lg md:text-2xl'>
               info@fameitech.com
             </p>
           </div>

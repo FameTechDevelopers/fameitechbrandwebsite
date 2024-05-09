@@ -9,6 +9,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        "mb": "320px",
+        "lmb": "480px",
+        "tablet": "768px",
+        "lp": "1024px",
+        "lcd": "1400px"
+
+      },
       colors: {
         primary: "#ff7502",
         pri_blue:"#020CE7",
@@ -16,7 +24,7 @@ module.exports = {
         pri_black:"#1A1A1A",
         pri_purple:"#352DFA",
         pri_yellow:"#F2D119",
-        pri_orange:"#FFA500",
+        pri_orange:"#F2D119",
         dark_blue: "#010246",
       },
     fontFamily: {

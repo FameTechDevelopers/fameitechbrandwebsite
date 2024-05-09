@@ -11,7 +11,7 @@ import Testimonials from "../../components/more-components/testimonials/Testimon
 
 function LogoDesign() {
   return (
-    <main className="size-full font-oswald">
+    <main className="size-full font-oswald !overflow-x-hidden">
       <div className='bg-[url("/images/heroBanner.webp")] bg-no-repeat bg-cover bg-center'>
         <Navbar />
         <HeroSection />

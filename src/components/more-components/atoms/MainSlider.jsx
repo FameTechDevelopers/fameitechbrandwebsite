@@ -18,7 +18,7 @@ const MainSlider = ({ imagesArr }) => {
     // dots: true,
     arrows: false,
     navigator: false,
-    rows: 2,
+    rows: 3,
     infinite: true,
     autoplay: true,
     speed: 500,

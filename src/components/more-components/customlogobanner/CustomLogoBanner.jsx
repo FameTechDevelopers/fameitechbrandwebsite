@@ -20,8 +20,8 @@ function CustomLogoBanner() {
             className='w-[150px] xl:w-[250px] 2xl:w-[400px] sm:absolute -bottom-5 left-5 '
           />
           <div className='flex flex-col space-y-10 '>
-            <p className='max-w-[900px] relative text-3xl lg:text-4xl  2xl:text-5xl leading-[50px] md:!leading-[80px]'>
-              Get Your Custom <span className="text-pri_orange">Logo Designed</span> in just $19<sup className="text-pri_orange text-lg line-through ">$45</sup>
+            <p className='max-w-[900px]  text-3xl lg:text-4xl  2xl:text-5xl leading-[50px] md:!leading-[80px]'>
+              Get Your Custom <span className="text-pri_orange">Logo Designed</span> in just $19<span className="text-pri_orange text-base md:text-lg line-through  ">$45</span>
             </p>
             <div className='flex space-x-2 md:space-x-6 justify-center *:px-4 *:py-2 md:*:px-6 md:*:py-4 *:text-sm md:*:text-lg'>
               <a href="#name_field" className=' bg-pri_blue'>Order Now</a>

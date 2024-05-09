@@ -12,7 +12,7 @@ function ComboPackage() {
     <section className='size-full flex justify-center comboBgImage text-white '>
       <Wrapper>
         <div className='size-full flex flex-col justify-center items-center px-5 xl:px-0 py-10 '>
-          <div className='size-full flex flex-col  md:flex-row  md:justify-center space-x-10  py-6'>
+          <div className='size-full flex flex-col items-center justify-center  md:flex-row  md:justify-center md:space-x-10  py-6'>
             <div className='w-full md:w-[55%] xl:w-[45%] flex flex-col justify-center  space-y-4'>
               <p className='font-oswald-bold font-bold'>
                 ULTIMATE VALUE FOR START-UPS AND BUSINESSES
@@ -35,7 +35,7 @@ function ComboPackage() {
               </p>
             </div>
 
-            <div className='w-full md:w-[45%] xl:w-[55%] !mr-10 flex justify-center items-center'>
+            <div className='w-full md:w-[45%] xl:w-[55%]  flex justify-center items-center'>
               <div className='flex justify-between items-center border p-2 md:p-6 xl:p-10 space-x-10'>
                 <div className='flex flex-col md:justify-center'>
                   <p className='text-xl md:text-2xl xl:text-4xl font-bold flex-nowrap'>COMBO PACKAGE</p>
@@ -57,7 +57,7 @@ function ComboPackage() {
             </div>
           </div>
 
-          <div className='size-full flex flex-col md:flex-row justify-between  '>
+          <div className='size-full flex flex-col md:flex-row justify-between   '>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-10'>
               <div className='flex flex-col space-y-4'>
                 <p className='text-xl md:text-3xl font-bold'>Logo Design</p>
@@ -191,10 +191,10 @@ function ComboPackage() {
             </div>
 
             {/* MOCKUP IMAGE  */}
-            <div className='w-[50%] flex items-center space-x-4 justify-center'>
+            <div className='w-full md:w-[50%] flex items-center md:space-x-4 justify-center'>
           
                   <Image  width={1000}
-          height={1000} src={mockupImage} alt="" className="md:max-w-[300px] xl:max-w-none" />
+          height={1000} src={mockupImage} alt="" className=" max-w-[250px] md:max-w-[300px] xl:max-w-[500px]" />
             </div>
           </div>
         </div>
