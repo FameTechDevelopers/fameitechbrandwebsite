@@ -337,7 +337,7 @@ const PricingForm = () => {
                 Combo Package Complete Branding Solution
               </p>
 
-              <div className=" md:mt-24  text-white text-center xl:text-4xl lg:text-3xl sm:text-3xl text-2xl font-bold flex max-sm:flex-col gap-4 items-center justify-center px-4">
+              <div className=" md:mt-24 sm:mt-12  text-white text-center xl:text-4xl lg:text-3xl sm:text-3xl text-2xl font-bold flex max-sm:flex-col gap-4 items-center justify-center px-4">
                 <div className="text-[#f2d119]">$999</div>
                 <div className="relative">
                   <div className="absolute p-0.5 top-5 w-full bg-[#f2d119] "></div>
