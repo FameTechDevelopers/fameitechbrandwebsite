@@ -29,7 +29,6 @@ const LogoTestimonials = () => {
     slidesToShow: 3,
     speed: 500,
     autoplay: true,
-    // rows: 2,
     arrows: false,
     slidesToScroll: 1,
     slidesPerRow: 1,
@@ -64,13 +63,13 @@ const LogoTestimonials = () => {
     <>
       <div className=" bg-black">
         <div className="max-w-[1300px] md:px-12 px-6 py-4 mx-auto text-center">
-          <h2 className=" text-[#fff] text-[2.2rem] font-oswald-bold md:text-[3.2rem] md:leading-[70px] leading-[50px] font-bold ">
-            <span className=" text-[45px] font-bold ">OUR SERVICES</span> ARE
+          <h2 className=" text-[#fff] md:text-[45px] text-[2.2rem] font-oswald-bold  md:leading-[70px] leading-[50px] font-bold ">
+            <span className=" md:text-[45px] text-[2.2rem] font-bold ">OUR SERVICES</span> ARE
             CHERISHED BY <span className="text-[#f2d119]">ALL!</span>
           </h2>
           <p className=" text-[#fff] font-oswald-light text-[21px] font-light pt-3 pb-5 ">
-            We have served hundreds of brands, and look at what they have to say
-            for us.
+            Explore the testimonials of brands worldwide and witness the power
+            of our unique creation.
           </p>
         </div>
 
@@ -89,7 +88,7 @@ const LogoTestimonials = () => {
               <FaArrowRight className="text-[21px]" />
             </button>
           </div>
-          <Slider {...settings} ref={sliderRef}>
+          <Slider className=" hidden" {...settings} ref={sliderRef}>
             <div className="lg:col-span-4 col-span-12 ">
               <div className=" border border-[#073A9C] rounded-lg  py-10 m-3 ">
                 <div className="testiBgQuote w-100 flex flex-col justify-center items-center ">
@@ -142,7 +141,6 @@ const LogoTestimonials = () => {
                 <h5 className=" text-white text-center pt-3 ">⭐⭐⭐⭐⭐</h5>
               </div>
             </div>
-
             <div className="lg:col-span-4 col-span-12 ">
               <div className=" border border-[#073A9C] rounded-lg  py-10 m-3 ">
                 <div className="testiBgQuote w-100 flex flex-col justify-center items-center ">

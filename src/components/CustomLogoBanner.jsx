@@ -28,7 +28,7 @@ const CustomLogoBanner = () => {
               <h2 className=" text-[#fff] font-oswald-bold  text-center font-bold text-[2.2rem] md:text-[3.5rem] md:leading-[70px] leading-[50px] capitalize ">
                 Get Your Custom Logo Designed in just{" "}
                 <span className="text-[#f2d119] ">$19</span>{" "}
-                <span className=" md:text-[1rem] text-[1.4rem] line-through">
+                <span className=" md:text-[2rem] text-[1.4rem] line-through">
                   $45
                 </span>
               </h2>

@@ -333,7 +333,7 @@ const PricingForm = () => {
 
           <div className="lg:col-span-5 col-span-12">
             <div className="relative border border-white mt-6 sm:h-36 md:h-60 h-64 max-sm:pt-20">
-              <p className="absolute -top-8 left-0 z-10 bg-black xl:text-2xl text-xl text-center font-light text-gray-300 sm:mx-14 md:w-[50%] mt-4 w-full ">
+              <p className="absolute -top-8 left-8 z-10 bg-black xl:text-2xl text-[16px] text-center font-light text-gray-300 sm:mx-14 md:w-[50%] w-[201px] mt-4  ">
                 Combo Package Complete Branding Solution
               </p>
 
@@ -362,7 +362,7 @@ const PricingForm = () => {
           <div className="grid grid-cols-12 gap-6 md:p-12">
             <div className="md:col-span-5 col-span-12 text-white">
               <p className="text-lg mt-4 pr-12 font-bold">
-                Ask us anything; our customer carerepresentatives are the most
+                Ask us anything; our customer care representatives are the most
                 welcoming.
               </p>
 

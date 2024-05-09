@@ -98,6 +98,10 @@ const Portfolio = () => {
                   US?
                 </span>
               </h2>
+              <p className=" text-[#fff] text-center font-oswald-light text-[21px] font-light pt-3 pb-5 ">
+                When you choose us, you're choosing a team with years of
+                hands-on experience and a deep understanding of design industry.
+              </p>
               <div className=" w-full flex justify-center ">
                 {/* <Image src={ArrowD} className=" w-[200px] h-[200px] mt-12" /> */}
               </div>
