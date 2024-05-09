@@ -7,7 +7,7 @@ import Logo from "../../assets/logo.png";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-const Navbar = () => {
+const NavbarBlack = () => {
   const router = useRouter();
 
   const [show, setShow] = useState(false);
@@ -160,4 +160,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarBlack;

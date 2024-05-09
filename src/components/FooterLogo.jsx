@@ -4,10 +4,8 @@ import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import Image from "next/image";
 import paymentImg from "@/assets/images/payment.webp";
-import footerBg from "../assets/logo-footer-bg.png";
 import logo from "../components/assets/main-logo.png";
-import { IoIosArrowForward } from "react-icons/io";
-
+import Link from "next/link";
 const FooterLogo = () => {
   return (
     <div className=" footer-bg md:pt-56 pt-20 pb-20">
@@ -21,6 +19,22 @@ const FooterLogo = () => {
               blockchain, and data analytics to help people and organizations.
             </p>
             <Image width={1000} height={1000} src={paymentImg} alt="" />
+            <div className=" mt-20 flex">
+                <Link
+                  href={"/terms-conditions"}
+                  className="text-[#ff7502] text-[14px] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out"
+                >
+                  Terms and Conditions {" "}
+                </Link>
+              <p className=" text-[#92929272] mx-4">|</p>
+                <Link
+                  href={"/privacy-policy"}
+                  className="text-[#ff7502] text-[14px] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out"
+                >
+                  {" "}
+                  Privacy Policy{" "}
+                </Link>
+              </div>
           </div>
 
           <div className=" lg:col-span-4 col-span-12">
