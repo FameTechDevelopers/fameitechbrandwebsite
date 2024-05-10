@@ -39,8 +39,8 @@ const MainSection = () => {
           />
 
           <div className=" mt-12 font-oswald-light lg:mt-0">
-            <div className="flex lg:hidden sm:hidden mt-14 justify-between">
-              <a href="/">
+            <div className="flex lg:hidden mb-6 sm:hidden mt-14 justify-between">
+              <a href="#">
                 <Image
                   width={1000}
                   height={1000}

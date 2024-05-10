@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
 
           <div className=" grid grid-cols-12">
-            <div className=" lg:col-span-3 col-span-12 mr-8">
+            <div className=" lg:col-span-5 col-span-12 mr-24">
               <p className="">
                 Fameitech is an innovative tech company that wants to change
                 online technology. Fameitech provides creative solutions using
@@ -86,7 +86,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className=" lg:col-span-2 col-span-12">
+            <div className=" lg:col-span-3 col-span-12">
               <h2 className=" text-[26px] font-[800] mb-8">Location</h2>
               <div className="">
                 <iframe

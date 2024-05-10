@@ -8,9 +8,12 @@ import mail from "../../assets/envolep.png";
 import Lottie from "react-lottie";
 import SuccessAnim from "@/lottieAnimation/succesAnimation.json";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 import LiveChat from "../LiveChat";
 
 const PricingForm = () => {
+  const router = useRouter();
+
   const [visibility, setVisibility] = useState("minimized");
 
   const maximizeChat = async () => {
@@ -57,6 +60,8 @@ const PricingForm = () => {
       setMessage("");
       setPending(false);
       setSuccess(true);
+
+      router.push("/thankyou");
     } catch (error) {
       console.log(error);
     }

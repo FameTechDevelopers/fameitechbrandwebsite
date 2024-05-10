@@ -870,3 +870,28 @@ p.text-\[\#F8B421\].font-\[22px\] {
 p.text-\[\#92929272\].mx-4 {
   color: #888888;
 }
+
+.thank-bg {
+  background-image: url(../components/assets/grad-circle1.png);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+}
+
+.thank2-bg {
+
+}
+
+
+.privacy-bg {
+  background-image: linear-gradient(to top,  #fcfdff 64%, #00349540 100%), url(../assets/policy.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+.terms-bg {
+  background-image: linear-gradient(to top,  #fcfdff 64%, #00349540 100%), url(../assets/policy.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
