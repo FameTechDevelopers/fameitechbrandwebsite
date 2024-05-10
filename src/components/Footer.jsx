@@ -7,7 +7,7 @@ import logo from "@/assets/logo.png";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaPinterestP } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa6";
 import Link from "next/link";
 
 const Footer = () => {
@@ -22,16 +22,32 @@ const Footer = () => {
             <div className=" lg:col-span-4 mb-6 col-span-12 footer-social-icons flex lg:justify-center items-center">
               <ul className=" flex justify-center items-center">
                 <li className=" bg-primary rounded-full mx-1 p-4 flex justify-center items-center">
-                  <FaFacebookF className=" text-[20px] text-white" />
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/fameitechllc"
+                  >
+                    <FaFacebookF className=" text-[20px] text-white" />
+                  </a>
                 </li>
-                <li className=" bg-primary rounded-full mx-1 p-4 flex justify-center items-center">
+                {/* <li className=" bg-primary rounded-full mx-1 p-4 flex justify-center items-center">
                   <FaPinterestP className=" text-[20px] text-white" />
+                </li> */}
+                <li className=" bg-primary rounded-full mx-1 p-4 flex justify-center items-center">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/company/fameitech-llc"
+                  >
+                    <FaLinkedinIn className=" text-[20px] text-white" />
+                  </a>
                 </li>
                 <li className=" bg-primary rounded-full mx-1 p-4 flex justify-center items-center">
-                  <BsTwitterX className=" text-[20px] text-white" />
-                </li>
-                <li className=" bg-primary rounded-full mx-1 p-4 flex justify-center items-center">
-                  <FaInstagram className=" text-[20px] text-white" />
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/fameitechllc/"
+                  >
+                    {" "}
+                    <FaInstagram className=" text-[20px] text-white" />
+                  </a>
                 </li>
               </ul>
             </div>
@@ -56,9 +72,9 @@ const Footer = () => {
                   href={"/terms-conditions"}
                   className="text-[#ff7502] text-[14px] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out"
                 >
-                  Terms and Conditions {" "}
+                  Terms and Conditions{" "}
                 </Link>
-              <p className=" text-[#92929272] mx-4">|</p>
+                <p className=" text-[#92929272] mx-4">|</p>
                 <Link
                   href={"/privacy-policy"}
                   className="text-[#ff7502] text-[14px] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out"

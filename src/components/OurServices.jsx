@@ -7,6 +7,7 @@ import clock from "../assets/clock.png";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import DiscoverLiveChat from "./DiscoverLiveChat";
+import Link from "next/link";
 
 const OurServices = () => {
 
@@ -41,10 +42,10 @@ const OurServices = () => {
                 all digital platforms.
               </p>
               <div className=" flex items-center mt-12">
-                <button className=" discover-btn mr-[12px] flex justify-center items-center" onClick={handleClick}>
+                <Link href={"/contact-us"} className=" discover-btn mr-[12px] flex justify-center items-center" onClick={handleClick}>
                   Get A Quote
                   <FaArrowRight className=" ml-2" />
-                </button>
+                </Link>
            <DiscoverLiveChat/>
               </div>
             </div>
