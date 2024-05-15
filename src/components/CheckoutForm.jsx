@@ -11,10 +11,8 @@ const CheckoutForm = () => {
   const elements = useElements();
   const [error, setError] = useState(null);
   const [paymentMethod, setPaymentMethod] = useState(null);
-
-  const pricePlan = parseInt(localStorage.getItem("fame-price"));
-  const title = localStorage.getItem("fame-title")
-
+  const [pricePlan, setPricePlan] = useState(null);
+  const [title, setTitle] = useState(null);
   const countries = [
     { code: "AD", label: "Andorra", phone: "376" },
     {
@@ -439,6 +437,17 @@ const CheckoutForm = () => {
     { code: "ZM", label: "Zambia", phone: "260" },
     { code: "ZW", label: "Zimbabwe", phone: "263" },
   ];
+
+  useEffect(() => {
+    // now access your localStorage
+// const pricePlan = 
+
+const price = localStorage.getItem("fame-price")
+const titleData = localStorage.getItem("fame-title")
+setPricePlan(parseInt(price))
+ setTitle(titleData)
+  },[]);
+
 
   const handleSubmit = async (event) => {
     event.preventDefault();
