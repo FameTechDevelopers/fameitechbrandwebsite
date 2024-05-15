@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import safeCheckout from "@/assets/safe-checkout.jpg";
 import stripeImage from "@/assets/powered-stripe.png";
 import Image from "next/image";
