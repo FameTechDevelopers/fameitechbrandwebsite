@@ -42,7 +42,7 @@ const Testimonials = () => {
   return (
     <div className="py-10 flex justify-center items-center flex-col bg-gray-100 h-full w-full">
       <div className="text-center">
-        <h1 className="text-5xl font-semibold">
+        <h1 className="md:text-5xl text-3xl font-semibold">
           Our Services Are{" "}
           <span className="text-primary italic"> Cherished </span> By All!
         </h1>

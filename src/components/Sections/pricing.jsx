@@ -3,8 +3,11 @@ import Image from "next/image";
 import ListIcon from "./images/pricing-list-icon.png";
 import Slider from "react-slick";
 import LiveChat from "../LiveChat";
+import { useRouter } from "next/navigation";
 
 const CustomLogoPricing = () => {
+  const router = useRouter()
+
   const sliderRef = useRef(null);
   const [visibility, setVisibility] = useState("minimized");
 
@@ -76,6 +79,18 @@ const CustomLogoPricing = () => {
       setVisibility("minimized");
     }
   };
+
+  const handlePrice = (price,title)=>{
+
+    localStorage.setItem("fame-price",price)
+    localStorage.setItem("fame-title",title)
+
+router.push("/checkout")
+  }
+
+
+
+  
   return (
     <div className="bg-black">
       <div className="  bg-[#073A9C] pt-16 py-8 px-2 rounded-bl-[100px] rounded-br-[100px] ">
@@ -189,12 +204,12 @@ const CustomLogoPricing = () => {
                   </div>
                   <div className="flex justify-center ">
                     <div className="pt-10 flex gap-4  ">
-                      <a
-                        href="#last_custom_form"
+                      <button
+onClick={()=>handlePrice(19,'Discounted Logo Package')}
                         className=" uppercase text-black text-[15px]  bg-[#f2d119] px-5 py-2 rounded-full shadow-stone-400 "
                       >
                         ORDER NOW
-                      </a>
+                      </button>
                       <button
                         className="uppercase text-[#000000] text-[15px] bg-[#ffffff] px-5 py-2 rounded-full shadow-stone-400 "
                         onClick={maximizeChat}
@@ -298,12 +313,12 @@ const CustomLogoPricing = () => {
                   </div>
                   <div className="flex justify-center ">
                     <div className="pt-10 flex gap-4  ">
-                      <a
-                        href="#last_custom_form"
+                      <button
+onClick={()=>handlePrice(55,'Basic Logo Package')}
                         className=" uppercase text-black text-[15px]  bg-[#f2d119] px-5 py-2 rounded-full shadow-stone-400 "
                       >
                         ORDER NOW
-                      </a>
+                      </button>
                       <button
                         className="uppercase text-[#000000] text-[15px] bg-[#ffffff] px-5 py-2 rounded-full shadow-stone-400 "
                         onClick={maximizeChat}
@@ -409,12 +424,12 @@ const CustomLogoPricing = () => {
                   </div>
                   <div className="flex justify-center ">
                     <div className="pt-10 flex gap-4  ">
-                      <a
-                        href="#last_custom_form"
+                      <button
+                      onClick={()=>handlePrice(100,'Business Logo Package')}
                         className=" uppercase text-black text-[15px]  bg-[#f2d119] px-5 py-2 rounded-full shadow-stone-400 "
                       >
                         ORDER NOW
-                      </a>
+                      </button>
                       <button
                         className="uppercase text-[#000000] text-[15px] bg-[#ffffff] px-5 py-2 rounded-full shadow-stone-400 "
                         onClick={maximizeChat}
@@ -522,12 +537,12 @@ const CustomLogoPricing = () => {
                   </div>
                   <div className="flex justify-center ">
                     <div className="pt-10 flex gap-4  ">
-                      <a
-                        href="#last_custom_form"
+                      <button
+                      onClick={()=>handlePrice(19,'Discounted Logo Package')}
                         className=" uppercase text-black text-[15px]  bg-[#f2d119] px-5 py-2 rounded-full shadow-stone-400 "
                       >
                         ORDER NOW
-                      </a>
+                      </button>
                       <button
                         className="uppercase text-[#000000] text-[15px] bg-[#ffffff] px-5 py-2 rounded-full shadow-stone-400 "
                         onClick={maximizeChat}
@@ -631,12 +646,12 @@ const CustomLogoPricing = () => {
                   </div>
                   <div className="flex justify-center ">
                     <div className="pt-10 flex gap-4  ">
-                      <a
-                        href="#last_custom_form"
+                      <button
+                      onClick={()=>handlePrice(55,'Basic Logo Package')}
                         className=" uppercase text-black text-[15px]  bg-[#f2d119] px-5 py-2 rounded-full shadow-stone-400 "
                       >
                         ORDER NOW
-                      </a>
+                      </button>
                       <button
                         className="uppercase text-[#000000] text-[15px] bg-[#ffffff] px-5 py-2 rounded-full shadow-stone-400 "
                         onClick={maximizeChat}
@@ -742,12 +757,12 @@ const CustomLogoPricing = () => {
                   </div>
                   <div className="flex justify-center ">
                     <div className="pt-10 flex gap-4  ">
-                      <a
-                        href="#last_custom_form"
+                      <button
+                      onClick={()=>handlePrice(100,'Business Logo Package')}
                         className=" uppercase text-black text-[15px]  bg-[#f2d119] px-5 py-2 rounded-full shadow-stone-400 "
                       >
                         ORDER NOW
-                      </a>
+                      </button>
                       <button
                         className="uppercase text-[#000000] text-[15px] bg-[#ffffff] px-5 py-2 rounded-full shadow-stone-400 "
                         onClick={maximizeChat}

@@ -287,7 +287,7 @@ section.main-contact.w-full.rounded-2xl.border-\[\#073A9C\].border-1.p-\[32px\] 
     top: 0;
     content: "";
     left: 0;
-    height: 45%;
+    height: 65%;
     width: 100%;
     z-index: -1;
     background: url("../assets/about-hero.webp") center center/cover;
@@ -295,14 +295,12 @@ section.main-contact.w-full.rounded-2xl.border-\[\#073A9C\].border-1.p-\[32px\] 
 
   .hero::after {
     position: absolute;
-    content: "";
     top: 0;
     left: 0;
-    height: 45%;
     width: 100%;
-    z-index: 1;
-    background: #000;
-    opacity: 0.5;
+    z-index: -1;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -425,9 +423,9 @@ section.main-contact.w-full.rounded-2xl.border-\[\#073A9C\].border-1.p-\[32px\] 
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .video-container {
-    height: 113vh;
+    height: 102vh !important;
   }
 }
 
@@ -494,9 +492,9 @@ section.main-contact.w-full.rounded-2xl.border-\[\#073A9C\].border-1.p-\[32px\] 
   background: transparent !important;
 }
 
-.h-10.rounded-md.bg-slate-100.p-1.text-slate-500.dark\:bg-slate-800.dark\:text-slate-400.flex.justify-center.items-center button {
+/* .h-10.rounded-md.bg-slate-100.p-1.text-slate-500.dark\:bg-slate-800.dark\:text-slate-400.flex.justify-center.items-center button {
   font-size: 18px;
-}
+} */
 
 .h-10.rounded-md.bg-slate-100.p-1.text-slate-500.dark\:bg-slate-800.dark\:text-slate-400.flex.justify-center.items-center button[aria-selected="true"] {
   border: 1px solid black;
@@ -547,10 +545,10 @@ p.text-\[\#F8B421\].font-\[22px\] {
 .h-10.rounded-md.bg-slate-100.p-1.text-slate-500.dark\:bg-slate-800.dark\:text-slate-400.flex.justify-center.items-center {
   background: transparent !important;
 }
-
+/* 
 .h-10.rounded-md.bg-slate-100.p-1.text-slate-500.dark\:bg-slate-800.dark\:text-slate-400.flex.justify-center.items-center button {
   font-size: 18px;
-}
+} */
 
 .h-10.rounded-md.bg-slate-100.p-1.text-slate-500.dark\:bg-slate-800.dark\:text-slate-400.flex.justify-center.items-center button[aria-selected="true"] {
   border: 1px solid black;

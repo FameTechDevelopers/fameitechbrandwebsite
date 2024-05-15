@@ -15,8 +15,11 @@ const MainSection = () => {
   const [phone, setPhone] = useState("");
   const [pending, setPending] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [errMessage, setErrMessage] = useState("");
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
     const formData = new FormData();
 
     formData.append("name", name);
@@ -45,6 +48,14 @@ const MainSection = () => {
       }, 3000);
     } catch (error) {
       console.log(error);
+
+      if (!name || !email || !phone) {
+        setErrMessage(
+          "Please provide your contact information so we can connect with you."
+        );
+      }
+    } finally {
+      setPending(false);
     }
   };
 
@@ -83,7 +94,10 @@ const MainSection = () => {
             CUSTOM WEBSITES, BRANDING & DIGITAL MARKETING SOLUTIONS
           </p>
 
-          <div className=" grid grid-cols-12 lg:mt-16 mt-6 lg:w-[64%] w-full py-8 px-4 mx-auto bg-[#00000076]">
+          <form
+            className=" grid grid-cols-12 lg:mt-16 mt-6 lg:w-[64%] w-full py-8 px-4 mx-auto bg-[#00000076]"
+            onSubmit={handleSubmit}
+          >
             <div className=" md:col-span-3 col-span-12">
               <input
                 className="border-2 border-white w-[92%] m-2 py-3 px-6 bg-transparent"
@@ -115,10 +129,7 @@ const MainSection = () => {
             </div>
             <div className=" md:col-span-3 flex justify-center items-center col-span-12">
               {" "}
-              <button
-                className="btn w-full m-2 btn-main"
-                onClick={handleSubmit}
-              >
+              <button className="btn w-full m-2 btn-main" type="submit">
                 {success ? (
                   <Lottie options={defaultOptions} height={35} width={35} />
                 ) : pending === true ? (
@@ -133,7 +144,9 @@ const MainSection = () => {
                 Successful We Will Get In Touch With You Shortly
               </p>
             )}
-          </div>
+          {errMessage && <p className="text-red-500 mt-2 font-semibold col-span-12">{errMessage}</p>}
+          </form>
+
 
           <div className="flex justify-center items-center lg:mt-12 sm:mt-6 mt-3">
             <Link href={"/contact-us"}>

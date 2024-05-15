@@ -2,25 +2,10 @@ import Image from "next/image";
 import React from "react";
 import { MdArrowForwardIos } from "react-icons/md";
 import LogoBrandingSlider from "@/components/LogoBrandingSlider";
-// import kya from "../../../assets/kya.webp";
-// import bbc from "../../../assets/bbc.webp";
-// import msfut from "../../../assets/msfut.webp";
-// import ascend from "../../../assets/ascend-guitar.webp";
-// import mcnasty from "../../../assets/mcnasty.webp";
-// import rnl from "../../../assets/randl.webp";
-// import pizzera from "../../../assets/pizzera.webp";
-// import fishon from "../../../assets/fishon.webp";
-// import dwelo from "../../../assets/dwelo.webp";
-// import johnhook from "../../../assets/johnhook.webp";
-// import floki from "../../../assets/floki.webp";
-// import rosemount from "../../../assets/rosemount.webp";
-
-
 import Testimonials from "@/components/testimonials";
 import LogoPricingCard from "@/components/LogoPricingCard";
 import Pricings from "@/components/Pricings";
 import WhiteBgPortfolio from "@/components/WhiteBgPortfolio";
-
 import bouncebees from "../../../assets/bounce-bes.jpg";
 import pragmatic from "../../../assets/pragmatic.jpg";
 import enemi from "../../../assets/enemi.jpg";
@@ -164,9 +149,9 @@ const page = () => {
   
   return (
     <div>
-      <div className="md:h-[70vh] h-[55vh] p-2.5 ">
+      <div className="md:h-[70vh] h-[65vh] p-2.5 ">
         <div className="contact-hero flex h-full justify-center md:items-center">
-          <div className="container z-30 max-md:mt-10">
+          <div className="container z-30">
             <p className="text-white w-full font-semibold my-8 flex items-center text-sm">
               Home{" "}
               <span className="mx-2.5">
@@ -175,12 +160,12 @@ const page = () => {
               Logo Designing And Branding
             </p>
             <div className="font-semibold text-white ">
-              <h1 className="xl:text-6xl lg:text-5xl text-4xl lh">
+              <h1 className="xl:text-6xl lg:text-5xl text-[2rem] ">
               Discover the{" "}
                 <span className="text-primary italic">artistry</span>{" "}
                 behind every logo we craft
               </h1>
-              <p className="lg:text-2xl md:mt-4 mt-8">
+              <p className="lg:text-2xl md:mt-4 mt-6">
                 Get Your Brands Connected With Your Customers 24/7.
               </p>
               <div className="mt-6 leading-10">

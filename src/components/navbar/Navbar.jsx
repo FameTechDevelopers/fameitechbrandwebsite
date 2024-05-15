@@ -100,7 +100,7 @@ const Navbar = () => {
           <Image
             src={Logo}
             alt="logo"
-            className="lg:w-52 w-44 p-2"
+            className="lg:w-52 w-36 p-2"
             width={1000}
             height={1000}
             objectFit="contain"
@@ -108,7 +108,7 @@ const Navbar = () => {
           />
 
           <nav>
-            <ul className="flex lg:gap-6 gap-2 font-semibold xl:text-lg text-base text-slate-200 max-lg:hidden">
+            <ul className="flex lg:gap-6 gap-1 font-semibold xl:text-lg text-[0.95rem] text-slate-200 max-lg:hidden px-2">
               <Link
                 href={"/about-us"}
                 className="hover:text-[#ff7502] border-b-[2px] hover:border-[#ff7502] border-transparent cursor-pointer p-0 m-0 transition-all ease-in-out"

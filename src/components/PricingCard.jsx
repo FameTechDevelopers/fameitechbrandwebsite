@@ -1,6 +1,19 @@
+"use client";
+
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const PricingCard = ({pricing}) => {
+
+  const router = useRouter()
+
+  const handlePrice = (price,title)=>{
+
+    localStorage.setItem("fame-price",price)
+    localStorage.setItem("fame-title",title)
+
+router.push("/checkout")
+  }
 
   return (
     <div className='grid grid-cols-12 gap-4 z-50'>
@@ -24,7 +37,7 @@ const PricingCard = ({pricing}) => {
     </ul>
 
 <div className="flex justify-center items-center">
-    <button className="rounded-full border-[1px] border-gray-300 py-2 px-6 font-semibold bg-white text-gray-950">Learn More</button>
+    <button onClick={()=>handlePrice(price.price,price?.title)} className="rounded-full border-[1px] border-gray-300 py-2 px-6 font-semibold bg-white text-gray-950">Learn More</button>
 </div>
 
       </div>

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ic1 from "../../assets/whychooseusicons/1.webp";
 import ic2 from "../../assets/whychooseusicons/2.webp";
@@ -7,8 +8,11 @@ import ic5 from "../../assets/whychooseusicons/5.webp";
 import ic6 from "../../assets/whychooseusicons/6.webp";
 import { FaCheckCircle } from "react-icons/fa";
 import Wrapper from "../common/Wrapper";
+import { useRouter } from "next/navigation";
 
-function Pricing() {
+function Pricing() { 
+  const router = useRouter()
+ 
   const sectionData = [
     {
       title: "Discounted Logo Package",
@@ -48,6 +52,14 @@ function Pricing() {
       ],
     },
   ];
+
+  const handlePrice = (price,title)=>{
+
+    localStorage.setItem("fame-price",price)
+    localStorage.setItem("fame-title",title)
+
+router.push("/checkout")
+  }
 
   return (
     <section className='flex flex-col justify-center items-center  '>
@@ -96,12 +108,12 @@ function Pricing() {
                 </div>
 
                 <div className='flex flex-col gap-y-2 text-center lg:flex-row lg:space-x-12  *:font-bold *:text-sm '>
-                  <a
-                    href='#name_field'
+                  <button
+                    onClick={()=>handlePrice(item.price,item.title)}
                     className='bg-gradient-to-t  transition-all duration-300 font-poppins  from-dark_blue to-sec_blue hover:bg-gradient-to-t hover:from-cyan-900 hover:to-cyan-600 shadow-[2px_2px_40px_1px_rgba(230,81,108,0.5)] hover:shadow-[2px_2px_40px_20px_rgba(3,167,211,0.2)]  px-6 py-3 rounded-full '
                   >
                     Order Now
-                  </a>
+                  </button>
                   <a
                     href='tel:+18722333612'
                     className='bg-gradient-to-t  transition-all duration-300 font-poppins  from-dark_blue to-sec_blue hover:bg-gradient-to-t hover:from-cyan-900 hover:to-cyan-600 shadow-[2px_2px_40px_1px_rgba(230,81,108,0.5)] hover:shadow-[2px_2px_40px_20px_rgba(3,167,211,0.2)]  px-6 py-3 rounded-full '

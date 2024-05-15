@@ -8,6 +8,9 @@ import studio from "@/assets/studio.webp";
 import yearExo from "@/assets/years-exp.png";
 import afford from "@/assets/afford.png";
 import time from "@/assets/time.png";
+import qualityWork from "@/assets/quality-work.png";
+import latestTech from "@/assets/latest-tech.png";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -53,7 +56,9 @@ const page = () => {
               involving digital marketing, content creation, logo design,
               branding, and web development.
             </p>
+            <Link href={"/contact-us"}>
             <button className="btn mt-8">Conatct Us</button>
+            </Link>
           </div>
 
           <div className="md:w-1/2 w-full flex justify-center items-center">
@@ -143,7 +148,7 @@ const page = () => {
             </p>
 
             <div className="grid grid-cols-12 mt-6 max-lg:gap-2">
-              <div className="lg:col-span-4 md:col-span-6 col-span-12 flex items-center flex-col h-full w-full bg-gray-200 py-6 px-10 gap-6">
+              <div className="lg:col-span-4 md:col-span-6 col-span-12 flex items-center flex-col h-full w-full bg-gray-200 py-6 px-6 gap-6">
                 <Image
                   src={yearExo}
                   alt=""
@@ -152,7 +157,7 @@ const page = () => {
                   height={1000}
                 />
 
-                <h4 className="text-3xl font-semibold">Years Of Experience</h4>
+                <h4 className="text-3xl text-center font-semibold">Years Of Experience</h4>
 
                 <p className="text-center">
                   Fameitech has solidified its position as a leading digital
@@ -164,7 +169,7 @@ const page = () => {
                 </p>
               </div>
 
-              <div className="lg:col-span-4 md:col-span-6 col-span-12 flex  items-center flex-col h-full w-full bg-white py-6 px-10 gap-6">
+              <div className="lg:col-span-4 md:col-span-6 col-span-12 flex  items-center flex-col h-full w-full bg-white py-6 px-6 gap-6">
                 <Image
                   src={studio}
                   alt=""
@@ -173,7 +178,7 @@ const page = () => {
                   height={1000}
                 />
 
-                <h4 className="text-3xl font-semibold">Full-Service Studio</h4>
+                <h4 className="text-3xl font-semibold text-center">Full-Service Studio</h4>
 
                 <p className="text-center">
                   The digital world of Fameitech, where you can have the best of
@@ -190,16 +195,16 @@ const page = () => {
                 </p>
               </div>
 
-              <div className="lg:col-span-4 md:col-span-6 col-span-12 flex items-center flex-col h-full w-full bg-gray-200 py-6 px-10 gap-6">
+              <div className="lg:col-span-4 md:col-span-6 col-span-12 flex items-center flex-col h-full w-full bg-gray-200 py-6 px-6 gap-6">
                 <Image
-                  src="https://cdn-ikpnlcj.nitrocdn.com/weiDAkCcNhepGRAFGfsIHxqnlniULSbJ/assets/images/optimized/rev-11a753c/fameitech.com/wp-content/uploads/2024/03/2-1.png"
+                  src={qualityWork}
                   alt=""
                   className="w-1/3"
                   width={1000}
                   height={1000}
                 />
 
-                <h4 className="text-3xl font-semibold">Quality Work</h4>
+                <h4 className="text-3xl font-semibold text-center">Quality Work</h4>
 
                 <p className="text-center">
                   Quality work is our top priority at Fameitech. We focus on
@@ -216,7 +221,7 @@ const page = () => {
                 </p>
               </div>
 
-              <div className="lg:col-span-4 md:col-span-6 col-span-12 flex items-center flex-col h-full w-full bg-white py-6 px-10 gap-6">
+              <div className="lg:col-span-4 md:col-span-6 col-span-12 flex items-center flex-col h-full w-full bg-white py-6 px-6 gap-6">
                 <Image
                   src={afford}
                   alt=""
@@ -225,7 +230,7 @@ const page = () => {
                   height={1000}
                 />
 
-                <h4 className="text-3xl font-semibold">Affordability</h4>
+                <h4 className="text-3xl font-semibold text-center">Affordability</h4>
 
                 <p className="text-center">
                   The belief of quality digital solutions at Fameitech shouldn't
@@ -239,7 +244,7 @@ const page = () => {
                 </p>
               </div>
 
-              <div className="lg:col-span-4 md:col-span-6 col-span-12 flex items-center flex-col h-full w-full bg-gray-200 py-6 px-10 gap-6">
+              <div className="lg:col-span-4 md:col-span-6 col-span-12 flex items-center flex-col h-full w-full bg-gray-200 py-6 px-6 gap-6">
                 <Image
                   src={time}
                   alt=""
@@ -248,7 +253,7 @@ const page = () => {
                   height={1000}
                 />
 
-                <h4 className="text-3xl font-semibold">
+                <h4 className="text-3xl font-semibold text-center">
                   Quick Turnaround Time
                 </h4>
 
@@ -268,14 +273,14 @@ const page = () => {
 
               <div className="lg:col-span-4 md:col-span-6 col-span-12 flex items-center flex-col h-full w-full bg-white py-6 px-10 gap-6">
                 <Image
-                  src="https://cdn-ikpnlcj.nitrocdn.com/weiDAkCcNhepGRAFGfsIHxqnlniULSbJ/assets/images/optimized/rev-11a753c/fameitech.com/wp-content/uploads/2024/03/6-1.png"
+                  src={latestTech}
                   alt=""
                   className="w-1/3"
                   width={1000}
                   height={1000}
                 />
 
-                <h4 className="text-3xl font-semibold">Latest Technology</h4>
+                <h4 className="text-3xl font-semibold text-center">Latest Technology</h4>
 
                 <p className="text-center">
                   With Fameitech professional services, explore the realm of the

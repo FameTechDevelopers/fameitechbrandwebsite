@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from "../../assets/logo.png"
 import Image from 'next/image'
 import { FaPhoneVolume } from 'react-icons/fa'
+import Link from 'next/link'
 
 
 
@@ -12,7 +13,7 @@ const CheckOutNavbar = () => {
         <div className="container flex justify-between items-center gap-2">
 
       
-      <Image width={1000} height={1000} src={Logo} alt="logo" className=' sm:w-52 w-36 object-contain'/>
+     <Link href={"/"}><Image width={1000} height={1000} src={Logo} alt="logo" className=' sm:w-52 w-36 object-contain'/></Link>
 
 
 <div className="flex items-center justify-center space-x-2">

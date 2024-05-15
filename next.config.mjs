@@ -9,7 +9,7 @@ const nextConfig = {
     return config
 },
     images: {
-      domains:['cdn-ikpnlcj.nitrocdn.com'],
+      domains:['cdn-ikpnlcj.nitrocdn.com','flagcdn.com'],
         remotePatterns: [
           {
             protocol: 'https',

@@ -20,31 +20,31 @@ const ShadeTabs = ({
 }) => {
   return (
     <>
-      <Tabs defaultValue={title1} className="w-[100%] mx-auto pb-20 max-lg:mt-20">
+      <Tabs defaultValue={title1} className="w-[100%] mx-auto pb-20 max-lg:mt-24">
         <TabsList className="flex flex-col lg:flex-row justify-center items-center ">
-          <TabsTrigger className=" mx-6" value={title1}>
+          <TabsTrigger className="mx-2 xl:mx-6" value={title1}>
             {" "}
             {/* {serviceTabsData[0].title} */}
             {title1}
           </TabsTrigger>
-          <TabsTrigger className=" mx-6" value={title2}>
+          <TabsTrigger className="mx-2 xl:mx-6" value={title2}>
             {title2}
           </TabsTrigger>
-          <TabsTrigger className=" mx-6" value={title3}>
+          <TabsTrigger className="mx-2 xl:mx-6" value={title3}>
             {title3}
           </TabsTrigger>
-          <TabsTrigger className=" mx-6" value={title4}>
+          <TabsTrigger className="mx-2 xl:mx-6" value={title4}>
             {title4}
           </TabsTrigger>
-          <TabsTrigger className=" mx-6" value={title5}>
+          <TabsTrigger className="mx-2 xl:mx-6" value={title5}>
             {title5}
           </TabsTrigger>
-          <TabsTrigger className=" mx-6" value={title6}>
+          <TabsTrigger className="mx-2 xl:mx-6" value={title6}>
             {title6}
           </TabsTrigger>
         </TabsList>
 
-<div className="lg:mt-6 mt-20">
+<div className="lg:mt-6 mt-28">
 
         <TabsContent value={title1}>{title1Content}</TabsContent>
         <TabsContent value={title2}>{title2Content}</TabsContent>

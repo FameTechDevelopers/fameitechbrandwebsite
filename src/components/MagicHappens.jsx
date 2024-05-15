@@ -7,7 +7,7 @@ import magic3 from "../assets/magic-3.png"
 
 const MagicHappens = () => {
   return (
-    <div className='bg-gray-100 flex justify-center  py-9'>
+    <div className='bg-gray-100 flex justify-center py-9'>
 
         <div className="container">
 <div className='text-center'>
@@ -17,7 +17,7 @@ const MagicHappens = () => {
 
 <div className="grid grid-cols-12 gap-8 mt-10 justify-items-center">
 
-<div className="md:col-span-4 col-span-12 flex md:mb-7 flex-col justify-center items-center gap-4 text-center p-2">
+<div className="md:col-span-4 col-span-11 flex md:mb-7 flex-col justify-center items-center gap-4 text-center p-2">
 
 <Image src={magic1} width={1000} height={1000} className='w-36 object-contain h-full hover:scale-105 transition-all ease-in-out' />
 
@@ -27,7 +27,7 @@ const MagicHappens = () => {
 
 </div>
 
-<div className="md:col-span-4 col-span-12 flex flex-col justify-center items-center gap-4 text-center p-2">
+<div className="md:col-span-4 col-span-11 flex flex-col justify-center items-center gap-4 text-center p-2">
 
 <Image src={magic2} width={1000} height={1000} className='w-36 object-contain h-full hover:scale-105 transition-all ease-in-out' />
 
@@ -37,7 +37,7 @@ const MagicHappens = () => {
 
 </div>
 
-<div className="md:col-span-4 col-span-12 md:mb-3 flex flex-col justify-center items-center gap-4 text-center p-2">
+<div className="md:col-span-4 col-span-11 md:mb-3 flex flex-col justify-center items-center gap-4 text-center p-2">
 
 <Image src={magic3} width={1000} height={1000} className='w-36 object-contain h-full hover:scale-105 transition-all ease-in-out' />
 
