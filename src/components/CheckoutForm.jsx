@@ -1,15 +1,23 @@
 "use client";
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import safeCheckout from "@/assets/safe-checkout.jpg";
 import stripeImage from "@/assets/powered-stripe.png";
 import Image from "next/image";
-import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
+import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import axios from "axios";
+import ThankYouMoadal from "./ThankYouModal";
+import { MoonLoader } from "react-spinners";
+import DeclineMoadal from "./DeclineModal";
 
 const CheckoutForm = () => {
   const stripe = useStripe();
   const elements = useElements();
+
+  const [loading, setLoading] = useState(false);
+
   const [error, setError] = useState(null);
+  const [errorOpen, setErrorOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   const [paymentMethod, setPaymentMethod] = useState(null);
   const [pricePlan, setPricePlan] = useState(null);
   const [title, setTitle] = useState(null);
@@ -439,62 +447,61 @@ const CheckoutForm = () => {
   ];
 
   useEffect(() => {
-    // now access your localStorage
-// const pricePlan = 
-
-const price = localStorage.getItem("fame-price")
-const titleData = localStorage.getItem("fame-title")
-setPricePlan(parseInt(price))
- setTitle(titleData)
-  },[]);
-
+    const price = localStorage.getItem("fame-price");
+    const titleData = localStorage.getItem("fame-title");
+    setPricePlan(parseInt(price));
+    setTitle(titleData);
+  }, []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-
-
-
+    setLoading(true);
+    
     if (!stripe || !elements) {
       return;
     }
-
+    
     const cardElement = elements.getElement(CardElement);
 
-    const { error, paymentMethod } = await stripe.createPaymentMethod({
-      type: 'card',
-      card: cardElement,
-    });
+      const { error, token } = await stripe.createToken(cardElement);
 
-    if (error) {
-      setError(error);
-    } else {
-      try {
-        // setPaymentMethod(paymentMethod);
+      if (error) {
+        setError(error);
+      } else {
+        try {
+          setPaymentMethod(token);
 
-        const formData = new FormData()
+          const formData = new FormData();
 
-        formData.append("email","name@yahoo.com")
-        formData.append("source",paymentMethod?.id)
-        formData.append("amount",4000)
+          formData.append("email", "name@yahoo.com");
+          formData.append("source", token.id);
+          formData.append("amount", 1);
 
-        const response = await axios.post(`http://192.168.18.244:8000/stripe-payment`,formData)
+          const response = await axios.post(
+            `https://backend.fameitech.com/stripe-payment`,
+            formData
+          );
 
-        console.log(response.data)
+          console.log(response.data);
 
-      } catch (error) {
-        console.log(error)
+          setOpen(true);
+        } catch (error) {
+          console.log(error);
+          setErrorOpen(true)
+        }
       }
-    }
+   
+      setLoading(false);
+
   };
 
+  console.log("loading", loading);
 
-
-  console.log("payment",paymentMethod)
-
-
-  return (
+  return  (
     <div className="flex justify-center items-center my-6">
+      <ThankYouMoadal open={open} setOpen={setOpen} />
+      <DeclineMoadal open={errorOpen} setOpen={setErrorOpen}/>
       <div className="container">
         <div className="grid grid-cols-12 sm:gap-4 p-2">
           <div className="lg:col-span-8 col-span-12 bg-white p-3 rounded-lg mt-1.5">
@@ -503,7 +510,10 @@ setPricePlan(parseInt(price))
               <p className="text-white">Billing Information</p>
             </div>
 
-            <form className="mt-4 grid grid-cols-12 sm:gap-3 gap-2" onSubmit={handleSubmit}>
+            <form
+              className="mt-4 grid grid-cols-12 sm:gap-3 gap-2"
+              onSubmit={handleSubmit}
+            >
               <input
                 type="text"
                 placeholder="First Name"
@@ -540,9 +550,7 @@ setPricePlan(parseInt(price))
                 </option>
 
                 {countries?.map((option) => (
-                  <option value={option.label}>
-                    {option.label} 
-                    </option>
+                  <option value={option.label}>{option.label}</option>
                 ))}
               </select>
 
@@ -585,20 +593,17 @@ setPricePlan(parseInt(price))
                 />
               </div> */}
 
-<div className="col-span-12 p-3 rounded-lg border-[1px] border-gray-300 my-0.5">
-<CardElement options={{
-  hidePostalCode: true,
-}}/>
-</div>
+              <div className="col-span-12 p-3 rounded-lg border-[1px] border-gray-300 my-0.5">
+                <CardElement
+                  options={{
+                    hidePostalCode: true,
+                  }}
+                />
+              </div>
 
-
-
-              {/* <button className="rounded-lg col-span-12 bg-primary hover:bg-orange-600 py-1.5 text-xl text-white font-medium">
-                Pay Now
-              </button> */}
-
-
-
+              <button disabled={loading ? true : false} className={`rounded-lg col-span-12 ${ loading ? "bg-slate-300" :"bg-primary hover:bg-orange-600"} py-1.5 text-xl text-white font-medium`}>
+                {loading ? "Submitting ..." :"Pay Now"}
+              </button>
             </form>
           </div>
 
@@ -654,7 +659,7 @@ setPricePlan(parseInt(price))
           </div>
         </div>
       </div>
-      
+
       {/* {error && <div>{error.message}</div>}
       {paymentMethod && <div>Payment Method ID: {paymentMethod.id}</div>} */}
     </div>

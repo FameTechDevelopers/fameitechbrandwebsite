@@ -37,7 +37,7 @@ router.push("/checkout")
     </ul>
 
 <div className="flex justify-center items-center">
-    <button onClick={()=>handlePrice(price.price,price?.title)} className="rounded-full border-[1px] border-gray-300 py-2 px-6 font-semibold bg-white text-gray-950">Learn More</button>
+    <button onClick={()=>handlePrice(price.price,price?.title)} className="rounded-full border-[1px] border-gray-300 py-2 px-6 font-semibold bg-white text-gray-950">Order Now</button>
 </div>
 
       </div>

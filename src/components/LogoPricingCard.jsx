@@ -22,7 +22,7 @@ const LogoPricingCard = () => {
 
         <div className="flex justify-center items-center">
           <button className="rounded-full border-[1px] border-gray-300 py-2 px-6 font-semibold bg-white text-gray-950">
-            Learn More
+            Order Now
           </button>
         </div>
       </div>
@@ -47,7 +47,7 @@ const LogoPricingCard = () => {
 
         <div className="flex justify-center items-center">
           <button className="rounded-full border-[1px] border-gray-300 py-2 px-6 font-semibold bg-white text-gray-950">
-            Learn More
+            Order Now
           </button>
         </div>
       </div>
@@ -71,7 +71,7 @@ const LogoPricingCard = () => {
 
         <div className="flex justify-center items-center">
           <button className="rounded-full border-[1px] border-gray-300 py-2 px-6 font-semibold bg-white text-gray-950">
-            Learn More
+            Order Now
           </button>
         </div>
       </div>
@@ -95,7 +95,7 @@ const LogoPricingCard = () => {
 
         <div className="flex justify-center items-center">
           <button className="rounded-full border-[1px] border-gray-300 py-2 px-6 font-semibold bg-white text-gray-950">
-            Learn More
+            Order Now
           </button>
         </div>
       </div>
