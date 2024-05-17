@@ -464,7 +464,17 @@ const CheckoutForm = () => {
     
     const cardElement = elements.getElement(CardElement);
 
-      const { error, token } = await stripe.createToken(cardElement);
+    const { error, token } = await stripe.createToken(cardElement, {
+      name: 'Customer Name',
+      address_line1: '123 Main St',
+      address_city: 'San Francisco',
+      address_state: 'CA',
+      address_zip: '94111',
+      address_country: 'US',
+      email: 'customer@example.com',
+    })
+
+console.log(token)
 
       if (error) {
         setError(error);
@@ -472,11 +482,13 @@ const CheckoutForm = () => {
         try {
           setPaymentMethod(token);
 
+
           const formData = new FormData();
 
           formData.append("email", "name@yahoo.com");
-          formData.append("source", token.id);
+          formData.append("token", token?.id);
           formData.append("amount", 1);
+          // formData.append("customer", token?.id);
 
           const response = await axios.post(
             `https://backend.fameitech.com/stripe-payment`,
